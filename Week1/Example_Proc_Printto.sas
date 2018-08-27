@@ -1,0 +1,13 @@
+*Example_Proc_Printto.sas;
+options nocenter nodate nonumber;
+DM 'log;clear;output;clear';
+DM 'odsresults; clear';
+%LET Path=C:\SASCourse\Week11;
+FILENAME MYLOG "&Path\PP_log.TXT";
+FILENAME MYPRINT "&Path\PP_OUTPUT.TXT";
+PROC PRINTTO LOG=MYLOG PRINT=MYPRINT NEW;
+RUN;
+   proc print data=sashelp.class;
+   run;
+PROC PRINTTO;
+RUN;
