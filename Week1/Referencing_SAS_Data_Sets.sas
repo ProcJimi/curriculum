@@ -15,9 +15,17 @@ data Fclass;
   where sex='F';
 run;
 
+* Create a permanent SAS data set in a SAS library;
+libname new 'C:\SDS';
+data new.Fclass;
+  set sashelp.class;
+  where sex='F';
+run;
+
+
 /*You can get path to directory using %SYSFUNC and PATHNAME 
 on a libref.*/
-%put %sysfunc(pathname(SDS));
+%put %sysfunc(pathname(new));
 
 
 /*SAS automatically creates a SAS library with the libref SASUSER.
