@@ -69,6 +69,16 @@ from a SQL table  (i.e. SAS data set);
 	where libname = 'SASHELP' and memname = 'HEART'; 
 quit; 
 
+* Create a macro variable (VARIABLE_NAME) that will hold all variable names 
+(horizontal list) in the SAS data set (Advanced Topic);
+proc sql noprint; 
+     select name into :Variable_Names separated by ' ' 
+     from dictionary.columns 
+     where LIBNAME='SASHELP' and memname = 'HEART';
+ quit; 
+ %put &Variable_Names;
+
+
 proc sql ;
           select *
             from sashelp.vcolumn
