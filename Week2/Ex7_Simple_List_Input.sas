@@ -5,8 +5,13 @@ DATA Work.Have1;
 	DATALINES;
     Alabama 4833722          77
     ;
-  PROC PRINT noobs; run;
+  PROC PRINT data=work.Have1 noobs; run;
   
+  * Use the $ option to read in character data
+    and the LENGTH statement to avoud unwanted
+    truncation of the values of character variables 
+    that are more than  8 chracters long;
+
   DATA Work.Have2;   
    LENGTH st_name $ 10;                        
     INPUT st_name $ pop percent_pop18p ;
@@ -14,27 +19,112 @@ DATA Work.Have1;
     Alabama            4833722  77
     California 38332521             76.1
   ;
- PROC PRINT noobs; run;
-  
-DATA Work.Have3;   
+ PROC PRINT data=work.Have2 noobs; run;
+  proc contents data=Have2 varnum;
+ ods select position;
+ run;
+
+ * The INFORMAT statement has the same impact of 
+  the LENGTH statement for character variables;
+
+ DATA Work.Have3;   
    INFORMAT st_name $ 10.;                        
     INPUT st_name $ pop percent_pop18p ;
     DATALINES;								
     Alabama 4833722  77
     California 38332521 76.1
   ;
- PROC PRINT noobs; run;
+ PROC PRINT data=work.Have3 noobs; run;
+ proc contents data=Have3 varnum;
+ ods select position;
+ run;
 
+ * Use the DLM= option to read in comma delimited data;
  DATA Work.Have4;   
-   INFORMAT st_name $ 10.;                        
+   LENGTH  st_name $ 10; 
+    infile datalines DLM=','; 
+    INPUT st_name $ pop percent_pop18p ;
+    DATALINES;								
+    Alabama, 4833722,  77
+    California, 38332521, 76.1
+  ;
+  PROC PRINT data=work.Have4 noobs; run;
+
+
+ 
+ /* Use a placeholder for the missing value for
+    fields in the middle of the record of the space-delimited file,
+    as shown below.
+ */
+
+ DATA Work.Have5;   
+   LENGTH st_name $ 10;                        
     INPUT st_name $ pop percent_pop18p ;
     DATALINES;								
     Alabama .    77
     California 38332521 76.1
   ;
- PROC PRINT noobs; run;
+ PROC PRINT data=work.Have5 noobs; run;
 
- /* Note:  You must assign a placeholder for the missing value 
-    for fields  in the middle of the record of the space-delimited 
-    file (in the first line of data record).
- */
+ * Use the @@ option to read in more than one 
+ record per line;
+
+  DATA Work.Have6;   
+   LENGTH  st_name $ 10;                        
+    INPUT st_name $ pop percent_pop18p  @@;
+    DATALINES;								
+    Alabama 4833722  77   California 38332521 76.1
+  ;
+  PROC PRINT data =work.Have6 noobs; run;
+
+
+ /* Use the LABEL OR FORMAT statement (or both)
+ in a DATA step to apply the labels and formats
+ to the data table. */
+
+DATA Work.Have7;   
+    LENGTH  st_name $ 10;                        
+    INPUT st_name $ pop percent_pop18p ;
+	FORMAT pop comma10. percent_pop18p 5.1;
+	LABEL st_name='State Name'
+          pop='Population Size'
+	      percent_pop18p='Percentage of Population Aged 18 Years and Older';
+    DATALINES;								
+    Alabama 4833722  77
+    California 38332521 76.1
+  ;
+
+  /* Use a LABEL option with PROC PRINT to display
+    descriptive column headings instead of 
+    variable names. */
+
+  PROC PRINT data=work.Have7 noobs label; 
+  run;
+
+  DATA Work.Have8;   
+    LENGTH  st_name $ 10;                        
+    INPUT st_name $ pop percent_pop18p ;
+	DATALINES;								
+    Alabama 4833722  77
+    California 38332521 76.1
+  ;
+  /* 
+  1) Use the LABEL OR FORMAT statement (or both)
+  in the PROC step to apply the labels and formats
+  to the data table
+
+   2) You must use a LABEL option with PROC PRINT 
+    to display descriptive column headings 
+    instead of   variable names.
+  */
+  PROC PRINT data=work.Have8 noobs label;
+    FORMAT pop comma10. percent_pop18p 5.1;
+	LABEL st_name='State Name'
+          pop='Population Size'
+	      percent_pop18p='Percentage of Population Aged 18 Years and Older';
+     
+  run;
+
+  
+  
+ 

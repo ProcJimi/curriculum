@@ -17,13 +17,12 @@ terminating semicolons on a new line and the RUN statement.
 */
 
 
-DATA Work.Have;   
-   INFORMAT st_name $ 10.;    
-    INPUT st_name $ pop percent_pop18p ;
-    DATALINES4;								
-    Alabama;  4833722; 77
+data Have;
+   input state $50. ;
+   datalines4;
+Alabama;  4833722; 77.0
     California;  38332521; 76.1
-    ;;;;
+;;;;
 
-   proc print data=work.HAVE;
+  proc print data=work.HAVE;
    run;
