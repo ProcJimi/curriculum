@@ -4,7 +4,7 @@
 proc datasets lib=work nolist kill; quit;
 
 data HAVE;
-*** TRUNKOVER option on the INFILE statement;
+*** TRUNCOVER option on the INFILE statement;
  infile 'C:\SASCourse\Week2\short_values.txt' TRUNCOVER;
  input id 1-3 name $ 5-16 
        score 18-19 @21 some_value 5.2;
@@ -19,3 +19,20 @@ If, when the DATA step encounters the end of an input record,
 there are variables without values, the variables are assigned 
 missing values for that observation.” SAS Documentation.
 */
+
+
+proc datasets lib=work kill nolist; quit;
+
+*Additional Examples;
+
+*** TRUNCOVER option on the INFILE statement;
+
+DATA test2;
+  INFILE "C:\SASCourse\Week2\test_data.txt" firstobs=2 truncover;
+  INPUT lastn $1-10 Firstn $ 11-20
+   Empid $21-30 Jobcode $31-40;
+   put _ALL_;
+RUN;
+title "Option TRUNCOVER"; 
+proc print data=test2; run;
+

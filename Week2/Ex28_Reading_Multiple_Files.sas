@@ -3,8 +3,8 @@
 
 *Method 1; 
 FILENAME test ('C:\SASCourse\Week2\testfile1.csv',
-               'C:\SASCourse\Week2\testfile1.csv',
-			   'C:\SASCourse\Week2\testfile1.csv');
+               'C:\SASCourse\Week2\testfile2.csv',
+			   'C:\SASCourse\Week2\testfile3.csv');
 data a; 
 infile test DLM=','; 
 input var1 $ var2 var3; 

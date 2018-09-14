@@ -11,7 +11,7 @@ value $regionfmt
 	run;
 proc freq data=sashelp.demographics; 
   tables region; 
-  format region $regionfmt.
+  format region $regionfmt.;
 run;
 proc sort data=sashelp.demographics out=work.demographics; 
   by region; run;
