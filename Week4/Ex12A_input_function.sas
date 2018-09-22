@@ -2,7 +2,6 @@
 data input_function_data;
   c_id = '12345678'; 
   n_id =input(c_id, 8.); 
-  c_id_x =input(c_id, $8.);
   c_amount = '$23,500'; 
   n_amount = input(c_amount, dollar7.);
   c_amount_x = '9999';
