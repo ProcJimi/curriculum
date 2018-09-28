@@ -1,0 +1,37 @@
+*** Example_call_sortn.sas;
+LIBNAME NEW "C:\SASCourse";
+OPTIONS NOCENTER NODATE NONUMBER ;
+Data Have (drop= I J);
+  call streaminit (123);
+  array X[*] TEST1-TEST5 ASSIGNMENT1 ASSIGNMENT2
+             MIDTERM FINAL;
+	DO I = 1 TO 24;
+	  DO  J = 1 TO DIM(X);
+        X[J] = RAND("Integer", 40, 100);
+	  END;
+	OUTPUT;
+	END;
+RUN;
+TITLE1 'Listing WORK.HAVE Data Set';
+PROC PRINT DATA=HAVE;
+run;
+
+DATA NEW.HAVE2;
+ SET HAVE;
+ CALL SORTN(TEST5, TEST4, TEST3, TEST2, TEST1);
+ ARRAY RAW[8] TEST1-TEST4 ASSIGNMENT1 ASSIGNMENT2
+             MIDTERM FINAL;
+ ARRAY WEIGHT[8] _TEMPORARY_ (.05, .05, .05, .05,
+                               .10, .10, .30, .30);
+ ARRAY WP[8] P_TEST1-P_TEST4 P_ASSIGNMENT1 P_ASSIGNMENT2
+             P_MIDTERM P_FINAL;
+    DO I = 1 TO 8;
+	  WP[I] = RAW[I]*WEIGHT[I];
+	END;
+	WPT = SUM(OF p:);
+ DROP I;
+ TITLE1 'Listing NEW.HAVE2 Data Set';
+ PROC PRINT DATA=HAVE2;
+  VAR TEST: P_: WPT;
+  FORMAT WPT 5.0;
+ RUN;
