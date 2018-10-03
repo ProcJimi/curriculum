@@ -39,16 +39,3 @@ run;
 proc print data=try3 noobs; run;
 
 
-*** Create an example data set;
-data class;
-  set sashelp.class;
-run;
-
-*** modify  a data set via direct access;
-data class;
-  point=nobs;
-  modify class nobs=nobs point=point;
-  remove;
-  stop;
-run;
-

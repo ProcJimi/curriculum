@@ -1,4 +1,19 @@
 *Ex22_Retain_Sum_Statement.sas;
+
+
+proc sort data = sashelp.cars; by make; run;
+data cars;
+  set sashelp.cars;
+  count + 1;
+  by make;
+  if first.make then count = 1;
+  if last.make;
+run;
+proc print data=cars;
+var make count;
+run;
+
+
 DATA temp ;
   INPUT month sales @@;
       Total_sales+sales;

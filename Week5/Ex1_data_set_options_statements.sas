@@ -1,7 +1,7 @@
 *Ex1_data_set_options_statements.sas;
 *Program 1;
 ** KEEP=, RENAME=, and WHERE= data Set Options;
-options nodate noname;
+options nodate nodate;
 data work.class1;
  set sashelp.class (keep=name age sex
 		           rename=(name=Student_Name sex=Gender)
@@ -40,6 +40,13 @@ data dsn2014 dsn2015 dsn2016 dsn2017 dsn2018;
  proc print data=want noobs;
  run;
 
+
+Data work.Class;
+  set sashelp.class (FIRSTOBS=7 OBS=10);
+run;
+title 'WORK.CLASS_REV3 Data Set';
+proc print data=work.class;
+run;
 
 
 
