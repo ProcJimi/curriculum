@@ -1,3 +1,4 @@
+
 *Ex1_concat_interleave.sas;
 options nonumber nodate;
 DATA D1;
@@ -28,6 +29,22 @@ title 'PROC APPEND - Concatenated';
 proc print data=master noobs;
 run;
 
+*** Create a data set with variables that have the same attribute 
+    as those in an existing SAS data set- code idea from
+    Marths Messineo (2017);
+
+  data class1 ;
+   set sashelp.class;
+  run; 
+  
+data class2;
+  if (0) then set SASHELP.CLASS;
+  input name sex age height weight;
+  datalines;
+  Kia F 13 62  102
+  ; 
+proc append base=class1 data=class2;
+
 proc sql;
  create table concat_sql as
  select * from D1
@@ -49,6 +66,16 @@ BY CustID descending Month;
 PROC PRINT DATA=interleave noobs;
 title 'Data - Interleaved';
 run;
+
+** With the UNION operator with PROC SQL, rows from intermediate result sets
+are concatenated. The default behavior of the UNION operator is that the 
+duplicate rows are removed from the final results. Due to ALL modifier,
+duplicate results are not removed. With the UNION operator, column names 
+in the final result set are determined by the first result set. however, 
+due to CORRESPONDING modifier, columns are matched by name and nonmatching 
+columns are removed from the intermediate result set (SAS Documentation);
+
+
 
 proc sql;
  create table concat_sql_i as
