@@ -31,17 +31,15 @@ Data _Null_;
  SET work.sorted_have END=eof; 
   BY ID;
   retain total_intake 0;
-  file 'C:\SASCourse\Week5\BY_VAR.txt'; 
+  file 'C:\SASCourse\Week6\BY_VAR.txt'; 
   if _n_=1 then  put @10 "ID" +3 "Total_intake";
 
-  if first.id=1 then do;
-   total_intake=calorie_intake; 
-  end; 
+  if first.id=1 then total_intake=calorie_intake; 
+  else total_intake= sum(total_intake,calorie_intake);
 
-  if first.id=0 | last.id=1 then do;
-   total_intake= sum(total_intake,calorie_intake);
+  if last.id=1 then do;
+     put @11 id +6 total_intake;
+     putlog @11 id +6 total_intake;
   end;
-
-  if last.id=1 then   put @11 id +6 total_intake;
   run;
 

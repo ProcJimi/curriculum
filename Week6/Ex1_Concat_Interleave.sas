@@ -67,20 +67,10 @@ PROC PRINT DATA=interleave noobs;
 title 'Data - Interleaved';
 run;
 
-** With the UNION operator with PROC SQL, rows from intermediate result sets
-are concatenated. The default behavior of the UNION operator is that the 
-duplicate rows are removed from the final results. Due to ALL modifier,
-duplicate results are not removed. With the UNION operator, column names 
-in the final result set are determined by the first result set. however, 
-due to CORRESPONDING modifier, columns are matched by name and nonmatching 
-columns are removed from the intermediate result set (SAS Documentation);
-
-
-
 proc sql;
  create table concat_sql_i as
  select * from D1
-   union corresponding all 
+   union /*corresponding all */
  select * from D2
  order by CustID, Month desc;
   title
@@ -88,4 +78,20 @@ proc sql;
  select * from concat_sql_i;
 quit;
 
+
+/* With the UNION operator with PROC SQL, rows from intermediate
+result setsare concatenated. 
+
+The default behavior of the UNION operator
+is that the duplicate rows are removed from the final results. 
+
+Due to ALL modifier,duplicate results are not removed. 
+
+With the UNION operator, column names 
+in the final result set are determined by the first result set.
+However, due to CORRESPONDING modifier, columns are matched 
+by name and nonmatching columns are removed 
+from the intermediate result set (SAS Documentation). */
+
+/* New example to be added */
 

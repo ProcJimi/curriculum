@@ -8,7 +8,8 @@ proc sql;
          UPCASE(MEMNAME)="HEART";  
 QUIT;
 
-* Get the column names that are the same all SAS tables in a library;
+* Get the column names that are the same in all SAS tables
+  in the same library;
 proc sql;
  SELECT MEMNAME 'Table Names', NAME
   FROM DICTIONARY.COLUMNS  

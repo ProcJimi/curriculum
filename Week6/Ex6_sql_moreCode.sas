@@ -3,6 +3,7 @@
       and UPDATE clauses) is obtained from Martha Messineo (2017);
 
 *** Use the INSERT clause to create a data table;
+options nocenter nonumber nodate;
 proc sql;
 Create table have(ID varchar(6), stype varchar(13), Score float);
 	Insert into have(id, stype, score)
@@ -71,18 +72,19 @@ quit;
 
 *** The following two code blocks (PROC PRINT and PROC SQL) 
     provide the same results;
-
-proc print data=sashelp.cars;
+title 'Listing from PROC PRINT';
+proc print data=sashelp.cars noobs;
   var make type;
  where make='BMW';
 run;
 
 proc sql;
+title 'Query from from the SELECT clause with PROC SQL';
  select make, type
  From sashelp.cars
  where make='BMW';
 quit;
-
+title;
 *** The following two code blocks (DATA Step and PROC SQL) 
     provide the same results -  there are other DATA step solutions
     (not shown here);
@@ -107,7 +109,7 @@ proc sort data=sashelp.cars
   out=distinct_make_type (keep=make type);
   by make type;
 run;
-proc print data=distinct_make_type;
+proc print data=distinct_make_type noobs;
 run;
 
 proc sql;
