@@ -1,4 +1,5 @@
 *Ex10_first_var_last_var.sas;
+/* This is a comment */
 DATA work.Have;
 INPUT ID $ calorie_intake;
  DATALINES;
