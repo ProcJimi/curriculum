@@ -1,3 +1,4 @@
+
 *Example_substr.sas;
 data _Null_;
    var1 = 'Geology';
@@ -7,3 +8,9 @@ data _Null_;
 putlog (_ALL_) (=// +2);
  run;
 
+ data _Null_;
+   var1 = 'Stat4197';
+   new_var1 = SUBSTR(var1,5);
+   new_var3= SUBSTR(var1,5,5);
+ putlog (_ALL_) (=// +2);
+ run;
