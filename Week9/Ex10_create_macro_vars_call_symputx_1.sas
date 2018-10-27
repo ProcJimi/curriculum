@@ -79,7 +79,21 @@ data _null_;
 %mvarlist
 %put _GLOBAL_;
 
-
-
+*Ex10_create_macro_vars_call_symputx_1.sas;
+data Have;
+ set SASHELP.CLASS end=last;
+  if age >14 then do;
+   n+1;
+  if last then call symputx('number', n);
+  output;
+ end;
+run;
+Footnote "There are &number of observations with AGE>14";
+proc print data=have; run;
  
-
+*Ex10_create_macro_vars_call_symputx_1.sas;
+DATA _NULL_;
+ set sashelp.class;
+ call symputx('Name' || STRIP(put( _N_, 2.)), Name);
+run;
+%put &Name1 &Name2 &Name3;

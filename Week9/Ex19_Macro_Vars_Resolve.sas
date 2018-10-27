@@ -33,11 +33,12 @@ run;
 %mend mac1;
 %mac1
 %put _user_;
+*Concatenate all four files;
 data Want;
  set have:;
  run;
- title 'Table 1: Distribution of emergency department visits within past 12 months
- for adults aged 18-64, by type of insurance coverage, United States, 2014';
+ title1 'Table 1: Distribution of emergency department visits within past 12 months';
+ title2 'for adults aged 18-64, by type of insurance coverage, United States, 2014';
 proc print data=want noobs split='*'; 
 label category='Insurance Coverage'
 	percent='Percentage* of Adults'

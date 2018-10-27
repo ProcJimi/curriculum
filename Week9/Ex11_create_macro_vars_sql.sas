@@ -7,6 +7,7 @@ quit;
 %put Number of Observations = %SYSFUNC(LEFT(&nobs));
 run;
 
+*Ex11_one_multiple_mvars_sql.sas;
 Options nosymbolgen;
 proc sql noprint;
  select distinct make
@@ -15,7 +16,7 @@ proc sql noprint;
 quit;
 %put List of Values of Car Make (Unique) : &makes;
 
-
+*Ex11_one_multiple_mvars_sql.sas;
 %let Put_title = List of Values into a Series of Macro Variables;
 proc sql noprint;
  select distinct make
