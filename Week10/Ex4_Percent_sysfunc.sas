@@ -1,3 +1,40 @@
+* Ex4_Percent_sysfunc.sas;
+*** %SYSFUNC Function;
+
+data _null_;
+  st ='Alabama|Alaska|Vermont|Oregon|Utah';
+  words = countw(st, '|');
+  put 'Number of ' words=;
+run;
+
+
+%let st = Alabama|Alaska|Vermont|Oregon|Utah;
+%let words = %sysfunc(countw(&st, %str(|)) );
+%put &=st;
+%put Notes: Number of &=words;
+
+data _null_;
+	var1= 'NR_C_Checkup';
+    var2 = tranwrd(var1, 'C_', 'P_ ');
+	put var1= // var2= ;  
+run;
+
+*Use %SYSFUNC function to execute the data step function like TRANWRD.
+
+%let mvar1 =NR_C_Checkup;
+%let mvar2=%sysfunc(tranwrd(&mvar1,C_, P_));
+%put Note: &=mvar1  &=mvar2 ;
+%put Note: %sysfunc(cats(&mvar1,*, %sysfunc(tranwrd(&mvar1,C_, P_))));
+
+%put %sysfunc(intnx(month,%sysfunc(today()),1),monname3.);
+%put %sysfunc(intnx(month,%sysfunc(today()),-1,s),year.);
+%put %sysfunc(intnx(year,%sysfunc(today()),2),year.);
+
+
+%let x13=%sysfunc(intnx(month,%sysfunc(today()),1));
+%let x14=%sysfunc(putn(%eval(&x13-1),year.));
+%put &x13 &x14;
+
 
 %let stat=weight;
 %let vars=age sex;
@@ -19,7 +56,7 @@ Author Haikuo - 08/09/2013;
   %let lst= '1234' '3222' '0056';
 
 data _null_;
-  j = countw("&lst");
+  j = countw("&lst2");
   put j=;
 run;
 
@@ -32,11 +69,17 @@ run;
  %put %sysfunc(countw(%sysfunc(quote(&lst3))),%str(,) );
 
 
-
-data _null_;
-  j = countw("&lst2");
-  put j=;
+ Data work.Created_%sysfunc(today(),date9.);
+  set sashelp.class;
 run;
+
+
+Data work.Created_&sysday
+     work.&sysday._Created
+     work.Created_By_%sysfunc(left(%SCAN(&sysuserid, 2)));
+    set sashelp.class;
+run;
+
 
 *The following is from the SAS Documentation;
 proc format;
@@ -66,6 +109,10 @@ run;
 %let string1 = V01N01-V01N10;
 %let string1 = %sysfunc(translate(&string1,P, N));
 %put With N translated to P, V01N01-V01N10 is &string1;
+
+*** %QSYSCFUNC Function;
+%put %sysfunc(left(%qsysfunc(today(), worddate.)));
+
 
 *SAS Documentation 9.4;
 %macro checkds(dsn);
