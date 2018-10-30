@@ -1,6 +1,5 @@
 *Ex8_%DO_Nonsequential2.sas;
-options nosymbolgen;
-options symbolgen;
+options nocenter nodate nonumber symbolgen;
 %macro loop(dslist);                                                                                            
      /* Count the # of values in the string */                                                                                                                                   
      %let xcount=%sysfunc(countw(&dslist, %STR(|))); 
@@ -9,10 +8,7 @@ options symbolgen;
         title  "%left(%scan(&dslist,&i,%str(|)))"; 
         proc print data=%scan(&dslist,&i,%str(|))
                  (obs=5) noobs;
-	  %end;  
-      run;                                                                                                     
+	  run;
+	  %end;                                                                                            
 %mend loop;                                            
 %loop(%str(sashelp.class|sashelp.cars|sashelp.retail))
-
-%let dslist=(%str(sashelp.class|sashelp.cars|sashelp.retail));
-%put %left(%scan(&dslist,1,%str(|))); 

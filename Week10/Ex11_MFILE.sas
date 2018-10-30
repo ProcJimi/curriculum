@@ -1,6 +1,6 @@
 *Ex11_MFILE.sas;
 options nocenter nodate nonumber;
-%LET path=C:\SASCourse\Week11;
+%LET path=C:\SASCourse\Week10;
 * Directing generated code to a SAS file;
 %macro read_year(start=, stop=);
   %do i = &start %to &stop;
@@ -16,7 +16,6 @@ options nocenter nodate nonumber;
 Filename mprint "&Path\Generated_Code1.sas";
 options mprint mfile;
 %read_year (start=12, stop=15)
-
 * Create a macro to generate text on the SET statement;
 %macro names(prefix, initial, maxnum);
   %do i=&initial %to &maxnum;
@@ -24,7 +23,6 @@ options mprint mfile;
   %end;
   ;
 %mend names;
-
 *Concatenate data sets using the macro already created;
 Filename mprint "&Path\Generated_Code_SET1.sas" ;
 options mprint mfile;

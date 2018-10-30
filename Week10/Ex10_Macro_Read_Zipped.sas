@@ -1,6 +1,6 @@
 *Ex10_Macro_Read_Zipped.sas;
 Options nocenter nodate nonumber;
-%Let Path = c:\SASCourse\Week11;
+%Let Path = c:\SASCourse\Week10;
 Libname mylib "&Path";
 %macro readraw (first=, last=);
 	Filename ZIPFILE SASZIPAM "&Path\names.zip";

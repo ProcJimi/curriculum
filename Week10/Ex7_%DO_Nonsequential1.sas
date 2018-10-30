@@ -8,7 +8,7 @@ options nonumber nocenter nodate symbolgen;
 %macro loop;
  /* Loop through the total # of data sets */ 
  %do i = 1 %to &count;
-   *title  "%left(%SCAN(&list, &i, %STR(|)))";
+   title  "%left(%unquote(%SCAN(&list, &i, %STR(|))))";
    proc print data=%scan(&list,&i, %str(|)) 
              (obs=5) noobs;  
 	run;
