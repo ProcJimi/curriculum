@@ -1,6 +1,8 @@
+*Ex19_Compiled_Macro.sas;
 *** This is a revised version of the macro obtained from 
     http://support.sas.com/kb/45/805.html
-    [Sample 45805: List all files within a directory including sub-directories]
+    [Sample 45805: List all files within a directory including 
+     sub-directories]
     Revisions: Macro calls are wrapped in data steps; 
 
 /* The following two lines and the options to the macro
@@ -36,10 +38,8 @@ options mstored sasmstore=MyLib;
      /* If directory name call macro again */                                                                                           
       %else %if %qscan(&name,2,.) = %then %do;                                                                                          
         %drive(&dir\%unquote(&name),&ext)                                                                                               
-      %end;                                                                                                                             
-                                                                                                                                        
+      %end;                                                                                                          
    %end;                                                                                                                                
-                                                                                                                                        
   /* Closes the directory and clear the fileref */                                                                                      
   %let rc=%sysfunc(dclose(&did));                                                                                                       
   %let rc=%sysfunc(filename(filrf));                                                                                                    
