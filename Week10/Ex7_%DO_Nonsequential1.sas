@@ -7,6 +7,7 @@ options nonumber nocenter nodate symbolgen;
 %LET count=%sysfunc(countw(&list, %STR(|))); 
 %macro loop;
  /* Loop through the total # of data sets */ 
+ %local i;
  %do i = 1 %to &count;
    title  "%left(%unquote(%SCAN(&list, &i, %STR(|))))";
    proc print data=%scan(&list,&i, %str(|)) 

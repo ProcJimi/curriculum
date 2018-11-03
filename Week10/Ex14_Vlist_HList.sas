@@ -1,6 +1,7 @@
 *Ex14_VList_HList.sas;
 options nodate nonumber symbolgen;
 %macro VList;
+%local ds1 ds2 ds3 ds4 j;
 %let ds1 = class;
 %let ds2 = revhub2;
 %let ds3 = iris;

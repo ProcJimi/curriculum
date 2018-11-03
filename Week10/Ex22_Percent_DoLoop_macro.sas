@@ -8,7 +8,7 @@
 	     run; 
 	   %end ;
 %mend runit;
-%runit(first=08, last=15);
+%runit(first=08, last=15)
 
 data all_yrs;
  retain year;
@@ -16,6 +16,6 @@ data all_yrs;
 run;
 proc print data=all_yrs noobs split='*';
 label year= 'Survey Year'
-      exp= 'Mean expenses*per person per year';
+      exp= 'Mean expenses*for treatment*on influenza*per person per year';
 run;
 

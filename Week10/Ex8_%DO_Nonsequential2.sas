@@ -1,6 +1,7 @@
 *Ex8_%DO_Nonsequential2.sas;
 options nocenter nodate nonumber symbolgen;
-%macro loop(dslist);                                                                                            
+%macro loop(dslist);    
+     %local xcount i; 
      /* Count the # of values in the string */                                                                                                                                   
      %let xcount=%sysfunc(countw(&dslist, %STR(|))); 
      /* Loop through the total # of data sets */                                                                                         
