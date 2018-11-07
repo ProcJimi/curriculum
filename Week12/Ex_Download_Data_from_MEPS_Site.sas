@@ -1,19 +1,16 @@
-*Ex12_download_unzip_create_macro.sas;
+
+
 /***********************************************************************
 This program automates the following:
-- downloading multiple SAS transport files from the MEPS website
-- unzipping those files
-- converting the SAS transport files into SAS data sets
-PLEASE CHANGE THE FOLLOWING:
-  - SPECIFICATION OF THE FOLDER IN THE FILENAME STATEMENT
-  - SPECIFICATION OF THE FOLDER FOLDER IN THE LIBNAME STATEMENT BELOW.
-Written by: Pradip Muhuri with 
-Acknowledgements: Thanks to SAS(R) Institute for providing support 
-to the revision/expansion of the original program.
+- unzips a transport file from the MEPS website
+- converts the transport file into a SAS data file
+PLEASE CHANGE THE USER-SPECIFIED FOLDER NAME IN THE LIBNAME STATEMENT BELOW
+(AT THE END OF THIS PROGRAM)
+Written by: Pradip Muhuri with SAS(R) Institute's Technical Support 
 ************************************************************************/
 
 %macro load_MEPS(filename);
-	filename inzip1 "C:\Data\&filename.ssp.zip";
+	filename inzip1 "u:\&filename.ssp.zip";
 	proc http 
 	 url="https://meps.ahrq.gov/data_files/pufs/&filename.ssp.zip"  
 	 out=inzip1;
@@ -21,7 +18,7 @@ to the revision/expansion of the original program.
 	/*
 	From: https://blogs.sas.com/content/sasdummy/2015/05/11/using-filename-zip-to-unzip-and-read-data-files-in-sas/ 
 	*/
-	filename inzip2 zip "c:\Data\&filename.ssp.zip" ;
+	filename inzip2 zip "u:\&filename.ssp.zip" ;
 	 
 	/* Read the "members" (files) from the ZIP file */
 	data contents(keep=memname isFolder);
@@ -62,7 +59,7 @@ to the revision/expansion of the original program.
 	   stop;
 	run;
 	 libname test xport "%sysfunc(getoption(work))/&memname.";
-	 libname myfolder "C:\Data";  /* User-specified folder name */
+	 libname myfolder "C:\MEPS";  /* User-specified folder name */
 
 	 /*verify folder names*/
 	 %PUT %SYSFUNC(PATHNAME(WORK));
@@ -80,8 +77,12 @@ to the revision/expansion of the original program.
    - 2016 Prescribed Medicine PUF
 */
 %load_MEPS(h181)
-%*load_MEPS(h192)
-%*load_MEPS(h164)
-%*load_MEPS(h172)
-%*load_MEPS(h183)
-%*load_MEPS(h188a)
+%load_MEPS(h192)
+%load_MEPS(h164)
+%load_MEPS(h172)
+%load_MEPS(h183)
+%load_MEPS(h188a)
+
+
+
+

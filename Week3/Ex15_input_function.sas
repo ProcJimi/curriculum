@@ -14,5 +14,12 @@ FORMAT n_date date9.  n_amount dollar7.;
 putlog (_ALL_) ( =/ +2);    
 proc contents data=input_function_data varnum; 
 run;
-
-
+** ?? Modifier used in the INPUT function;
+data _null_;
+input c_date $; 
+n_date=input(c_date, ?? mmddyy10.);
+put c_date= n_date=date9.;
+datalines;
+02292017
+03202017
+;
