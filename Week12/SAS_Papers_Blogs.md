@@ -3,23 +3,31 @@ SAS Topics in Blogs and Papers (not in particular order)
 DATA Step
 
 [THE SAS SUPERVISOR](https://www.lexjansen.com/nesug/nesug88/SAS_supervisor.pdf)
-(Paper)
+(SUGI, 1983)
 
-[Understanding How the SAS Supervisor Checks a
-Job](https://go.documentation.sas.com/?docsetId=basess&docsetTarget=p15asfu21lgmgjn117vpw2aphnj8.htm&docsetVersion=9.4&locale=en)
-(SAS Documentation)
+>   [Understanding How the SAS Supervisor Checks a
+>   Job](https://go.documentation.sas.com/?docsetId=basess&docsetTarget=p15asfu21lgmgjn117vpw2aphnj8.htm&docsetVersion=9.4&locale=en)
+>   (SAS Documentation, 2018)
+
+[Reading Raw Data with the INPUT
+Statement](https://go.documentation.sas.com/?docsetId=lrcon&docsetTarget=n1w749t788cgi2n1txpuccsuqtro.htm&docsetVersion=9.4&locale=en)
+(SAS Documentation, 2018)
 
 [Six ways to list variables in
 SAS](https://blogs.sas.com/content/iml/2018/05/29/6-easy-ways-to-specify-a-list-of-variables-in-sas.html)
-(Blog)
+(Blogs)
 
 [Six ways to use the \_NULL\_ data
 step](https://blogs.sas.com/content/iml/2018/06/11/6-ways-_null_-data-set-sas.html)
-(Blog)
+(Blogs)
+
+>   [Writing to the SAS Log – PUT, PUTLOG, %PUT and List
+>   Statements](https://go.documentation.sas.com/?docsetId=basess&docsetTarget=p1sx4ey81hmd7kn1dme08lghkbi3.htm&docsetVersion=9.4&locale=en)
+>   (SAS Documentation, 2018)
 
 [Reading multiple text files in
 SAS](https://blogs.sas.com/content/sasdummy/2018/10/09/read-multiple-text-files/)
-(Blog)
+(Blogs)
 
 [Six tips for using PUT and %PUT statements in
 SAS](https://blogs.sas.com/content/iml/2017/01/16/put-macro-arrays.html)
@@ -33,60 +41,63 @@ Filtering Data
 
 [Using informats to filter invalid
 values](https://blogs.sas.com/content/sastraining/2012/11/02/sas-authors-tip-using-informats-to-filter-invalid-values/)
+(Blogs)
 
 [Some useful WHERE
 operators](https://blogs.sas.com/content/sastraining/2013/08/02/sas-authors-tip-some-useful-where-operators/)
+(Blogs)
 
 Format
 
 [Controlling your
 formats](https://blogs.sas.com/content/sgf/2017/12/04/controlling-your-formats/)
-(Blog)
+(Blogs)
 
 Creating New Variables
 
-[Using the SELECT statement in SAS data
-step](https://blogs.sas.com/content/iml/2016/06/20/select-when-sas-data-step.html)
+[Using the SELECT Statement in the SAS DATA
+Step](https://blogs.sas.com/content/iml/2016/06/20/select-when-sas-data-step.html)
+(Blogs)
 
 [Cumulative values - "We can do this the easy way, or the hard
 way..."](https://blogs.sas.com/content/sastraining/2018/08/02/cumulative-values-we-can-do-this-the-easy-way-or-the-hard-way/)
-(Blog)
+(Blogs)
 
 [The IFN
 function](https://blogs.sas.com/content/iml/2017/06/07/ifn-function-versus-if-thenelse-sas.html)
-(Blog)
+(Blogs)
 
 Functions
 
 [Rounding values in
 SAS](https://blogs.sas.com/content/iml/2011/10/03/rounding-up-rounding-down.html)
-(Blog)
+(Blogs)
 
-[Using COUNTC and CATS functions together in
-SAS](https://blogs.sas.com/content/sastraining/2018/10/01/three-of-my-favorite-programming-tips/)
-(Blog)
+[Three of My Favorite Programming
+Tips](https://blogs.sas.com/content/sastraining/2018/10/01/three-of-my-favorite-programming-tips/)
+(Blogs)
 
 [Using CALL SORTN to save
 coding](https://blogs.sas.com/content/sastraining/2018/10/01/three-of-my-favorite-programming-tips/)
-(Blog)
+(Blogs)
 
 [Character-to-numeric conversion in
 SAS](https://blogs.sas.com/content/sastraining/2017/01/03/character-to-numeric-conversion-in-sas/)
-(Blog)
+(Blogs)
 
 [Converting variable
 types](https://blogs.sas.com/content/sgf/2015/05/01/converting-variable-types-do-i-use-put-or-input/)
-(Blog)
+(Blogs)
 
 [Using COMPRESS, CATS, and SUBSTR functions in
 SAS](https://blogs.sas.com/content/sastraining/2017/05/26/standardizing-phone-numbers-using-sas/)
-(Blog)
+(Blogs)
 
 Do Loop
 
 [Ways to control the flow in a SAS Do
 Loop](https://blogs.sas.com/content/iml/2017/03/15/leave-continue-sas.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+TheDoLoop+%2528The+DO+Loop%2529)
-(Blog)
+(Blogs)
 
 [Take Control: Understanding and Controlling Your
 Do-Loops](https://analytics.ncsu.edu/sesug/2010/FF01.Woodruff.pdf)
@@ -95,13 +106,8 @@ Arrays
 
 >   [Fun with Fancy Arrays](http://www2.sas.com/proceedings/sugi29/158-29.pdf)
 
->   A simple introduction to working with multidimensional and nested arrays.
-
 >   [Adventures in Arrays: A Beginning
 >   Tutorial](https://support.sas.com/rnd/papers/sgf07/arrays1780.pdf)
-
->   Examples of using arrays, ranging from a simple example to a
->   multidimensional array example.
 
 [Using ARRAYS to transform variables in
 SAS](https://blogs.sas.com/content/sastraining/2017/06/27/how-to-perform-an-operation-on-all-numeric-or-all-character-variables-in-a-sas-data-set/)
@@ -116,12 +122,8 @@ Combining Data
 >   [Many-to-Many Merges in the DATA
 >   Step](http://www2.sas.com/proceedings/forum2008/081-2008.pdf)
 
->   A paper examining many-to-many merges in the DATA step.
-
 >   [Merging Data Eight Different
 >   Ways](https://support.sas.com/resources/papers/proceedings09/197-2009.pdf)
-
-A paper detailing eight techniques for merging data.
 
 [Updating a master file from a transaction
 file](https://blogs.sas.com/content/sastraining/2013/03/01/sas-authors-tip-using-a-modify-statement-to-update-a-master-file-from-a-transaction-file/)
@@ -147,28 +149,34 @@ Destination](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-pro
 
 [Five reasons to use ODS EXCLUDE to suppress SAS
 output](https://blogs.sas.com/content/iml/2015/05/28/five-reasons-ods-exclude.html)
-(Blog)
+(Blogs)
 
 [Using ODS OUTPUT to capture PROC output results in
 SAS](https://blogs.sas.com/content/sastraining/2017/03/31/capturing-output-from-any-procedure-with-an-ods-output-statement/)
-(Blog)
+(Blogs)
 
 [Using ODS to send output to alternate
 destinations](https://blogs.sas.com/content/sastraining/2014/01/03/sas-authors-tip-using-ods-to-send-output-to-alternate-destinations/)
-(Blog)
+(Blogs)
 
 Distinct/Unique Values
 
 [Get the unique values of a variable in data
 order](https://blogs.sas.com/content/iml/2018/10/15/unique-values-data-order.html)
+(Blogs)
 
 DOW-Loop
 
 [The DOW-Loop
 Unrolled](http://support.sas.com/resources/papers/proceedings09/038-2009.pdf)
 
-[The DOW-loop: a Smarter Approach to your Existing
+[HOW to DOW](http://support.sas.com/resources/papers/proceedings12/156-2012.pdf)
+
+[The DOW-loop: A Smarter Approach to your Existing
 Code](http://support.sas.com/resources/papers/proceedings12/052-2012.pdf)
+
+[Understanding and Applying the Logic of the
+DOW-Loop](https://www.pharmasug.org/proceedings/2014/BB/PharmaSUG-2014-BB02.pdf)
 
 [Understanding and Applying the Logic of the
 DOW-Loop](https://www.pharmasug.org/proceedings/2014/BB/PharmaSUG-2014-BB02.pdf)
@@ -176,23 +184,36 @@ DOW-Loop](https://www.pharmasug.org/proceedings/2014/BB/PharmaSUG-2014-BB02.pdf)
 [The DOW loop](http://pages.stern.nyu.edu/~adesouza/sasfinphd/index/node46.html)
 (Code example)
 
+[Explanation of Nested DOW-Loop in
+SAS](https://stackoverflow.com/questions/45615466/explanation-of-nested-dow-loop-in-sas)
+
+[Practical Use of the DOW
+Loop](https://www.lexjansen.com/wuss/2009/tut/TUT-Allen.pdf) (Examples with
+Data)
+
 Lookup Techniques
 
 >   [Scalability of Table Lookup
 >   Techniques](https://support.sas.com/resources/papers/proceedings09/037-2009.pdf)
 
->   A paper examining the issues of memory and disk space consumption and
->   performance considerations for various table lookup techniques using large
->   amounts of data.
-
 >   [Table Lookups: From IF-THEN to
 >   Key-Indexing](http://www2.sas.com/proceedings/sugi26/p158-26.pdf)
 
->   A paper that demonstrates, compares, and contrasts various lookup
->   techniques.
-
 >   [Using Table Lookup Techniques
 >   Efficiently](http://www2.sas.com/proceedings/forum2008/095-2008.pdf)
+
+[Table Lookup Techniques: From the Basics to the
+Innovative](https://support.sas.com/resources/papers/proceedings15/2219-2015.pdf)
+
+[No More Merge - Alternative Table Lookup
+Techniques](http://www2.sas.com/proceedings/sugi22/CODERS/PAPER88.PDF)
+
+>   [Comparison of different ways using table lookups on huge
+>   tables](https://www.lexjansen.com/phuse/2007/cs/CS06.pdf) (Hash included)
+
+>   [Table Lookups in the SAS® Data
+>   Step](http://www.sascommunity.org/sugi/SUGI94/Sugi-94-232%20Katsanis.pdf)
+>   (in plain language
 
 Data Cleaning
 
@@ -202,18 +223,17 @@ Quality](https://gwu.app.box.com/file/330238623508) (SUGI 31)
 [Data Cleaning 101: An Analyst’s
 Perspective](https://gwu.app.box.com/file/330236748750) (Paper, 2013)
 
-[Data Cleaning 101](https://gwu.app.box.com/file/330238693263) (Paper)
+[Data Cleaning 101 (SUGI
+Paper)](http://www2.sas.com/proceedings/sugi27/p057-27.pdf)
 
 [Keeping your SAS data sets
 clean](https://blogs.sas.com/content/sastraining/2017/06/26/keeping-your-data-set-clean-integrity-constraints/)
-(Blog)
+(Blogs)
 
 Hash Tables
 
 >   [The SAS Hash Object in
 >   Action](http://support.sas.com/resources/papers/proceedings09/153-2009.pdf)
-
->   More examples of using hash objects.
 
 [E-Z Simple Hash Object
 Lookups](http://support.sas.com/resources/papers/proceedings15/3466-2015.pdf)
@@ -222,14 +242,10 @@ Lookups](http://support.sas.com/resources/papers/proceedings15/3466-2015.pdf)
 >   [Getting Started with the DATA Step Hash
 >   Object](http://www2.sas.com/proceedings/forum2007/271-2007.pdf)
 
->   An introduction to the DATA step hash object.
-
 PROC SQL
 
 >   [Dear Miss SASAnswers: A Guide to Efficient PROC SQL
 >   Coding](https://support.sas.com/resources/papers/sgf09/336-2009.pdf)
-
->   Questions from the field about various SQL topics.
 
 Summarizing Data with By-Group
 
@@ -239,7 +255,7 @@ Files](http://www2.sas.com/proceedings/sugi28/165-28.pdf)
 [PROC SQL for PROC SUMMARY
 Stalwarts](https://support.sas.com/resources/papers/proceedings15/3154-2015.pdf)
 
-PROC’s
+Summarizing Data with PROC’s
 
 [PROC TABULATE: Doing
 More](https://support.sas.com/resources/papers/proceedings11/173-2011.pdf)
@@ -258,40 +274,19 @@ Data View
 >   [Save Time Today Using SAS
 >   Views](http://www2.sas.com/proceedings/sugi27/p019-27.pdf)
 
->   A paper examining the SAS data view as a tool to reduce total job I/O and,
->   thereby, total time.
-
-[Table Lookup Techniques: From the Basics to the
-Innovative](https://support.sas.com/resources/papers/proceedings15/2219-2015.pdf)
-
-A comparison of table lookup techniques.
-
-[No More Merge - Alternative Table Lookup
-Techniques](http://www2.sas.com/proceedings/sugi22/CODERS/PAPER88.PDF)
-
-Five additional lookup methodologies
-
-[Comparison of different ways using table lookups on huge
-tables](https://www.lexjansen.com/phuse/2007/cs/CS06.pdf) (Hash included)
-
-[Table Lookups in the SAS® Data
-Step](http://www.sascommunity.org/sugi/SUGI94/Sugi-94-232%20Katsanis.pdf) (in
-plain language)
-
 Efficiency
 
 >   [Dear Miss SASAnswers: A Guide to
 >   SAS®](http://www2.sas.com/proceedings/forum2007/042-2007.pdf)
 
->   Questions from the field about various efficiency topics.
-
 >   [Essential SAS® Coding Techniques for Gaining
 >   Efficiency](https://www.mwsug.org/proceedings/2012/HW/MWSUG-2012-HW07.pdf)
 
->   More guidelines and useful coding techniques for improving the efficiency of
->   your SAS code.
-
 Macro Facility
+
+[Introduction to the Macro
+Facility](https://documentation.sas.com/?activeCdc=pgmsascdc&cdcId=sasstudiocdc&cdcVersion=3.71&docsetId=mcrolref&docsetTarget=p14qac7nd7n0s1n1rfte5bwrpfcy.htm&locale=en)
+(SAS Documentation, 2018)
 
 >   [Summary of Macro Quoting Functions and the Characters That They
 >   Mask](https://documentation.sas.com/?cdcId=pgmsascdc&cdcVersion=9.4_3.3&docsetId=mcrolref&docsetTarget=p0pwrvnlcooi3tn0z3g1755ebcng.htm&locale=en)
@@ -299,6 +294,7 @@ Macro Facility
 
 [Macro quoting made
 easy](https://blogs.sas.com/content/sgf/2014/08/15/macro-quoting-made-easy/)
+(Blogs)
 
 >   [Protecting Your Programs from Unwanted Text Using Macro
 >   Quoting](http://support.sas.com/resources/papers/proceedings17/1130-2017.pdf)
