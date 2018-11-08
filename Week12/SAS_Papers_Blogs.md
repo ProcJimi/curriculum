@@ -129,36 +129,6 @@ Combining Data
 file](https://blogs.sas.com/content/sastraining/2013/03/01/sas-authors-tip-using-a-modify-statement-to-update-a-master-file-from-a-transaction-file/)
 (Blog)
 
-SAS Data Sets from PROC Step
-
-[Creating summary data
-set](https://blogs.sas.com/content/sastraining/2013/05/24/sas-authors-tip-using-proc-means-to-create-a-data-set-containing-summary-information/)
-
-Output Delivery System (ODS)
-
-[A Deep Dive into the SAS® ODS Excel
-Destination](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2018/2174-2018.pdf)
-(SAS Global Forum, 2018)
-
-[Solutions to Common DATA Step Tasks](https://gwu.app.box.com/file/330653927891)
-(SAS Global Forum Paper 2017)
-
->   [Using Procedure-Based ODS Data Components in Statistical
->   Reporting](https://www.google.com/search?q=Using+Procedure-Based+ODS+Data+Components+in+Statistical+Reporting&rlz=1C1GGRV_enUS819US819&oq=Using+Procedure-Based+ODS+Data+Components+in+Statistical+Reporting&aqs=chrome..69i57.445j0j8&sourceid=chrome&ie=UTF-8)
->   (SUGI - Excellent paper)
-
-[Five reasons to use ODS EXCLUDE to suppress SAS
-output](https://blogs.sas.com/content/iml/2015/05/28/five-reasons-ods-exclude.html)
-(Blogs)
-
-[Using ODS OUTPUT to capture PROC output results in
-SAS](https://blogs.sas.com/content/sastraining/2017/03/31/capturing-output-from-any-procedure-with-an-ods-output-statement/)
-(Blogs)
-
-[Using ODS to send output to alternate
-destinations](https://blogs.sas.com/content/sastraining/2014/01/03/sas-authors-tip-using-ods-to-send-output-to-alternate-destinations/)
-(Blogs)
-
 Distinct/Unique Values
 
 [Get the unique values of a variable in data
@@ -268,6 +238,36 @@ Started](http://support.sas.com/resources/papers/proceedings10/135-2010.pdf)
 
 [Basic Differences Between Proc MEANS and Proc
 SUMMARY](https://amadeus.co.uk/sas-tips/basic-differences-between-proc-means-and-proc-summary/)
+
+SAS Data Sets from PROC Step
+
+[Creating summary data
+set](https://blogs.sas.com/content/sastraining/2013/05/24/sas-authors-tip-using-proc-means-to-create-a-data-set-containing-summary-information/)
+
+Output Delivery System (ODS)
+
+[A Deep Dive into the SAS® ODS Excel
+Destination](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2018/2174-2018.pdf)
+(SAS Global Forum, 2018)
+
+[Solutions to Common DATA Step Tasks](https://gwu.app.box.com/file/330653927891)
+(SAS Global Forum Paper 2017)
+
+>   [Using Procedure-Based ODS Data Components in Statistical
+>   Reporting](https://www.google.com/search?q=Using+Procedure-Based+ODS+Data+Components+in+Statistical+Reporting&rlz=1C1GGRV_enUS819US819&oq=Using+Procedure-Based+ODS+Data+Components+in+Statistical+Reporting&aqs=chrome..69i57.445j0j8&sourceid=chrome&ie=UTF-8)
+>   (SUGI - Excellent paper)
+
+[Five reasons to use ODS EXCLUDE to suppress SAS
+output](https://blogs.sas.com/content/iml/2015/05/28/five-reasons-ods-exclude.html)
+(Blogs)
+
+[Using ODS OUTPUT to capture PROC output results in
+SAS](https://blogs.sas.com/content/sastraining/2017/03/31/capturing-output-from-any-procedure-with-an-ods-output-statement/)
+(Blogs)
+
+[Using ODS to send output to alternate
+destinations](https://blogs.sas.com/content/sastraining/2014/01/03/sas-authors-tip-using-ods-to-send-output-to-alternate-destinations/)
+(Blogs)
 
 Data View
 
