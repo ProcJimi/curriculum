@@ -357,6 +357,9 @@ Variables](http://support.sas.com/resources/papers/proceedings17/1516-2017.pdf)
 
 PROC IML
 
+[SAS/IML 14.3 User's
+Guide](https://documentation.sas.com/?docsetId=imlug&docsetTarget=titlepage.htm&docsetVersion=14.3&locale=en)
+
 [Ten tips for learning the SAS/IML
 language](https://blogs.sas.com/content/iml/2014/08/11/ten-tips-for-learning-sasiml.html)
 
@@ -369,8 +372,25 @@ operations](https://blogs.sas.com/content/iml/2010/12/06/shorthand-notation-for-
 [Everything you wanted to know about writing SAS/IML
 modules](https://blogs.sas.com/content/iml/2015/06/17/everything-about-modules.html)
 
-[Do Loops in SAS (including PROC
-IML)](https://blogs.sas.com/content/iml/2011/09/07/loops-in-sas.html)
+[The chi-square test: An example of working with rows and columns in
+SAS](https://blogs.sas.com/content/iml/2018/04/02/chi-square-rows-columns-sas.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+TheDoLoop+%28The+DO+Loop%29)
+
+[The WHERE clause in
+SAS/IML](https://blogs.sas.com/content/iml/2016/04/04/where-clause-in-sasiml.html)
+
+[Complex assignment statements: CHOOSE
+wisely](https://blogs.sas.com/content/iml/2011/08/15/complex-assignment-statements-choose-wisely.html)
+
+[An easy way to specify dates and
+times](http://blogs.sas.com/content/iml/2011/07/18/an-easy-way-to-specify-dates-and-times.html)
+
+[Finding matrix elements that satisfy a logical
+expression](https://blogs.sas.com/content/iml/2015/01/20/elements-satisfy-logical-expression.html)
+
+[Finding observations that satisfy multiple conditions: The LOC-ELEMENT
+technique](https://blogs.sas.com/content/iml/2015/05/11/loc-element-trick.html)
+
+Do Loops in SAS (including PROC IML)
 
 [Never End PROC IML with a RUN
 Statement](https://blogs.sas.com/content/iml/2010/09/13/never-end-proc-iml-with-a-run-statement.html)
@@ -402,3 +422,10 @@ SAS/IML](https://blogs.sas.com/content/iml/2017/03/22/data-tables-in-sasiml.html
 [TABLEPRINT
 Call](http://go.documentation.sas.com/?docsetId=imlug&docsetTarget=imlug_langref_sect507.htm&docsetVersion=14.2&locale=en)
 (SAS/IML 14.2 User’s Guide)
+
+[Get the unique values of a variable in data
+order](https://blogs.sas.com/content/iml/2018/10/15/unique-values-data-order.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+TheDoLoop+%28The+DO+Loop%29)
+
+[Calling Functions in the R
+Language](https://documentation.sas.com/?docsetId=imlug&docsetTarget=imlug_r_toc.htm&docsetVersion=14.3&locale=en)
+(SAS Documentation)
