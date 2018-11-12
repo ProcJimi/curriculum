@@ -9,6 +9,6 @@ sample programs will supplement weekly class handouts that are posted to
 Blackboard. Students are encouraged to use these programs as practice exercises
 to enhance their comprehension of the materials being discussed in class. The
 programs were written by the course instructor or adapted from various sources
-including SAS® Documentation, SAS ®conference papers, SAS® Blogs, SAS-L, and
+including SAS® Documentation, SUGI/SGF papers, Blogs, SAS-L, and
 sasCommunity.org. Please let the instructor know of any errors if you have found
 in the code snippets posted here. Don't circulate the material.
