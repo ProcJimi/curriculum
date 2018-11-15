@@ -1,4 +1,4 @@
-SASCourse - GitHub Organization Account
+﻿SASCourse - GitHub Organization Account
 =======================================
 
 This repository contains sample programs that are used by the instructor to
@@ -10,5 +10,6 @@ Blackboard. Students are encouraged to use these programs as practice exercises
 to enhance their comprehension of the materials being discussed in class. The
 programs were written by the course instructor or adapted from various sources
 including SAS® Documentation, SUGI/SGF papers, Blogs, SAS-L, and
-sasCommunity.org. Please let the instructor know of any errors if you have found
-in the code snippets posted here. Don't circulate the material.
+SAS Support Communities (communities.sas.com). 
+Please let the instructor know of any errors if you have found
+in the code snippets posted here. Don't circulate the materials.

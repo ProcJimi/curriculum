@@ -21,3 +21,12 @@ proc sql;
 select distinct id, visit_date, visit_type
 from work.have;
 quit;
+
+
+proc sql;
+     create table statecodes as
+     select distinct statename, statecode, state
+     from sashelp.zipcode;
+	 select * from statecodes;
+quit;
+

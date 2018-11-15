@@ -1,4 +1,9 @@
-Selected SAS Topics in Blogs and Conference Papers
+Selected SAS Topics in Documentation, Blogs and Conference Papers
+
+SAS Knowledge Resources
+
+[How to share your SAS knowledge with your professional
+network](https://blogs.sas.com/content/sasdummy/2017/12/14/sas-professional-sharing/)
 
 DATA Step
 
@@ -400,9 +405,6 @@ sets](https://blogs.sas.com/content/iml/2018/10/08/intersection-of-multiple-sets
 
 [Statistical programming in SAS with an emphasis on SAS/IML
 programs](https://blogs.sas.com/content/iml/)
-
->   [Finding observations that satisfy multiple conditions: The LOC-ELEMENT
->   technique](https://blogs.sas.com/content/iml/2015/05/11/loc-element-trick.html)
 
 [PROC IML - Beware the naked
 LOC](https://blogs.sas.com/content/iml/2012/11/19/beware-the-naked-loc.html)
