@@ -1,4 +1,4 @@
-**Selected SAS Topics in Documentation, Blogs and Conference Papers**
+**Selected SAS Topics in Documentation, Blogs and Conference Papers (Revised)**
 
 SAS Knowledge Resources
 
