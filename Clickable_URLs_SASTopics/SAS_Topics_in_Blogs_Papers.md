@@ -1,4 +1,4 @@
-Selected SAS Topics in Documentation, Blogs and Conference Papers
+**Selected SAS Topics in Documentation, Blogs and Conference Papers**
 
 SAS Knowledge Resources
 
@@ -10,12 +10,22 @@ DATA Step
 [THE SAS SUPERVISOR](https://www.lexjansen.com/nesug/nesug88/SAS_supervisor.pdf)
 (SUGI, 1983)
 
+[The Secret Life of DATA
+STEP](https://www.mwsug.org/proceedings/2013/BB/MWSUG-2013-BB03.pdf)
+
+[The Essence of DATA Step
+Programming](http://support.sas.com/resources/papers/proceedings11/269-2011.pdf)
+
 >   [Understanding How the SAS Supervisor Checks a
 >   Job](https://go.documentation.sas.com/?docsetId=basess&docsetTarget=p15asfu21lgmgjn117vpw2aphnj8.htm&docsetVersion=9.4&locale=en)
 >   (SAS Documentation, 2018)
 
 [Reading Raw Data with the INPUT
 Statement](https://go.documentation.sas.com/?docsetId=lrcon&docsetTarget=n1w749t788cgi2n1txpuccsuqtro.htm&docsetVersion=9.4&locale=en)
+(SAS Documentation, 2018)
+
+[Starting with Raw Data: Beyond the
+Basics](https://documentation.sas.com/?docsetId=basess&docsetTarget=n1c9xsnpl22dd5n16pozcii2jtln.htm&docsetVersion=9.4&locale=en)
 (SAS Documentation, 2018)
 
 [Six ways to list variables in
@@ -74,6 +84,9 @@ function](https://blogs.sas.com/content/iml/2017/06/07/ifn-function-versus-if-th
 
 Functions
 
+[Working with Character
+Data](https://www.mwsug.org/proceedings/2014/SA/MWSUG-2014-SA06.pdf)
+
 [Rounding values in
 SAS](https://blogs.sas.com/content/iml/2011/10/03/rounding-up-rounding-down.html)
 (Blogs)
@@ -97,6 +110,37 @@ types](https://blogs.sas.com/content/sgf/2015/05/01/converting-variable-types-do
 [Using COMPRESS, CATS, and SUBSTR functions in
 SAS](https://blogs.sas.com/content/sastraining/2017/05/26/standardizing-phone-numbers-using-sas/)
 (Blogs)
+
+[One informat to rule them all: Read any date into
+SAS](https://blogs.sas.com/content/iml/2016/11/11/anydtdte-informat-read-any-date-sas.html)
+(Blogs)
+
+[ANYDTDTMw.
+Informat](https://go.documentation.sas.com/?docsetId=leforinforref&docsetTarget=p1hsn1ji141r4zn0z3xm2dthop6a.htm&docsetVersion=9.4&locale=en)
+(SAS Documentation)
+
+[How to convert a SAS character "date" variable to a SAS
+date?](https://communities.sas.com/t5/SAS-Programming/how-to-convert-char-var-to-sas-date/td-p/45067)
+
+[How to remove leading zeros from a character
+variable](https://communities.sas.com/t5/SAS-Procedures/How-to-remove-leading-zeroes-from-character-variable/td-p/51703)
+
+[Drop leading zeros from character
+variable](https://communities.sas.com/t5/SAS-Enterprise-Guide/Drop-leading-zeros-from-character-variable/td-p/444199)
+
+[Finding the Position of the First Non-Digit in a
+String](http://www.sascommunity.org/wiki/Tips:Finding_the_Position_of_the_First_Non-Digit_in_a_String)
+
+[Concatenate simple trimmed values with the CATS
+function](https://communities.sas.com/t5/SAS-Communities-Library/How-to-concatenate-values-in-SAS/ta-p/494125)
+
+[SAS Functions
+Q&A](https://communities.sas.com/t5/Ask-the-Expert/Top-10-SAS-Functions/ta-p/391244)
+
+Filtering Data
+
+[Use the CONTAINS Operator as an Alternative to the INDEX
+Function](https://communities.sas.com/t5/SAS-Tips-from-the-Community/SAS-Tip-Use-the-CONTAINS-Operator-as-an-Alternative-to-the-INDEX/m-p/475750#M174)
 
 Do Loop
 
@@ -155,6 +199,9 @@ Transpose"](http://www.sascommunity.org/sugi/SUGI95/Sugi-95-69%20Tilanus.pdf)
 [Challenges in Reshaping & Reporting DATA - Overcome with ARRAYS &
 'V'](https://www.phusewiki.org/docs/Conference%202014%20CS%20Papers/CS05.pdf)
 (PhUSE 2014)
+
+[Sharpening Your Skills in Reshaping
+data:](http://support.sas.com/resources/papers/proceedings13/082-2013.pdf)
 
 Combining Data
 
