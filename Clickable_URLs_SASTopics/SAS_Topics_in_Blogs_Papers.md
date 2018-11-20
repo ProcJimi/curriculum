@@ -289,6 +289,10 @@ clean](https://blogs.sas.com/content/sastraining/2017/06/26/keeping-your-data-se
 
 Hash Tables
 
+[Five things you (probably) don’t know you can do with a hash
+table](https://blogs.sas.com/content/sastraining/2018/08/09/five-things-you-probably-dont-know-you-can-do-with-a-hash-table/)
+(Blogs)
+
 >   [The SAS Hash Object in
 >   Action](http://support.sas.com/resources/papers/proceedings09/153-2009.pdf)
 
@@ -303,6 +307,9 @@ PROC SQL
 
 >   [Dear Miss SASAnswers: A Guide to Efficient PROC SQL
 >   Coding](https://support.sas.com/resources/papers/sgf09/336-2009.pdf)
+
+[Accessing Data Using
+SQL](https://www.sas.com/content/dam/SAS/en_us/doc/other1/certification/exam-content/advanced-programmer.pdf)
 
 Summarizing Data with By-Group
 

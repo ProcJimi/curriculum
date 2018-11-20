@@ -1,20 +1,14 @@
-The George Washington University
-
-Department of Statistics
-
-FUNDAMENTALS OF SAS PROGRAMMING FOR DATA MANAGEMENT
-
-STAT 6197 Section 10 CRN 25687
-
-Course Syllabus (Fall 2018)
-
-Class hours and location: Fridays 3:30-6:00 PM;
-[ROME](http://virtualtour.gwu.edu/#ROME) B104
-
-Instructor: Pradip K. Muhuri, PhD (<muhuri@gwu.edu>)
-
-Office hours and location: Fridays 6:00-7:00 PM;
-[ROME](http://virtualtour.gwu.edu/#ROME) B104 (Tentative)
+---
+author:
+  - The George Washington University
+  - Department of Statistics
+  - FUNDAMENTALS OF SAS PROGRAMMING FOR DATA MANAGEMENT
+  - STAT 6197 Section 10 CRN 25687
+  - Course Syllabus (Fall 2018)
+  - "Class hours and location: Fridays 3:30-6:00 PM; ROMEhttp://virtualtour.gwu.edu/#ROME B104"
+  - "Instructor: Pradip K. Muhuri, PhD (muhuri@gwu.edu)"
+  - "Office hours and location: Fridays 6:00-7:00 PM; ROMEhttp://virtualtour.gwu.edu/#ROME B104 (Tentative)"
+---
 
 **Course Description:**
 
@@ -70,11 +64,11 @@ Cody, R. Cody's Data Cleaning Techniques Using SAS®, Third Edition - March 2017
 SAS® 9.4 Language Reference: Concept, Sixth Edition (PDF document available
 online)
 
-http://support.sas.com/documentation/cdl/en/lrcon/69852/PDF/default/lrcon.pdf
+<http://support.sas.com/documentation/cdl/en/lrcon/69852/PDF/default/lrcon.pdf>
 
 Base SAS® 9.4 Procedures Guide, Sixth Edition (PDF document available online)
 
-https://support.sas.com/documentation/cdl/en/proc/69850/PDF/default/proc.pdf
+<https://support.sas.com/documentation/cdl/en/proc/69850/PDF/default/proc.pdf>
 
 SAS® 9.4 SQL Procedure User’s Guide Fourth Edition (PDF document available
 online)
@@ -122,17 +116,17 @@ assignment, which students can take and drop the lowest score in tests
 be reported in points. To compute their weighted average points with
 percentages, the following assessment category-specific weights will be used:
 
-Four quizzes/in-class assignments (100 points each) 20%
+-   Four quizzes/in-class assignments (100 points each) 20%
 
-Homework assignment 1 (100 points) 10%
+-   Homework assignment 1 (100 points) 10%
 
-Homework assignment 2 (100 points) 10%
+-   Homework assignment 2 (100 points) 10%
 
-Midterm exam (100 points) 30%
+-   Midterm exam (100 points) 30%
 
-Final exam (100 points) 30%
+-   Final exam (100 points) 30%
 
-**Total 100%**
+-   **Total 100%**
 
 Students should not assume that their overall weighted average points will be
 curved in the determination of their final grades. If the instructor decides to
@@ -153,36 +147,36 @@ determination of course grades.
 
 **Course Policies:**
 
--   Lecture handouts will be posted to Blackboard.
+Lecture handouts will be posted to Blackboard.
 
--   As per an agreement with SAS® Institute, the instructor will use SAS’
-    copyrighted course materials in class. Reproducing the materials by students
-    is prohibited by law.
+As per an agreement with SAS® Institute, the instructor will use SAS’
+copyrighted course materials in class. Reproducing the materials by students is
+prohibited by law.
 
--   Homework assignments submitted after the deadlines will not be accepted for
-    grading.
+Homework assignments submitted after the deadlines will not be accepted for
+grading.
 
--   The instructor’s response to students’ e-mails with out-of-class questions
-    may take up to 24 hours.
+The instructor’s response to students’ e-mails with out-of-class questions may
+take up to 24 hours.
 
--   There will be no make-up exams/tests or extra-credit assignments.
+There will be no make-up exams/tests or extra-credit assignments.
 
--   Incomplete: A grade of incomplete may only be given to students who are
-    *passing* the course and cannot complete the course due to well documented
-    circumstances beyond their control.
+Incomplete: A grade of incomplete may only be given to students who are
+*passing* the course and cannot complete the course due to well documented
+circumstances beyond their control.
 
 >   See
 >   <https://advising.columbian.gwu.edu/sites/advising.columbian.gwu.edu/files/downloads/Form%20-%20Incomplete%20Contract.pdf>
 >   for details.
 
--   There will be absolutely no tolerance of dishonest conduct during the exams.
-    Severe measures will be taken against dishonest conduct. All students must
-    be familiar with and abide by the provisions of the ["Code of Academic
-    Integrity"](../../Users/Pradip%20Muhuri/SASClassGWU/Syllabus/%22Code%20of%20Academic%20Integrity%22).
+There will be absolutely no tolerance of dishonest conduct during the exams.
+Severe measures will be taken against dishonest conduct. All students must be
+familiar with and abide by the provisions of the ["Code of Academic
+Integrity"](../../Users/Pradip%20Muhuri/SASClassGWU/Syllabus/%22Code%20of%20Academic%20Integrity%22).
 
 >   See <https://studentconduct.gwu.edu/code-academic-integrity> for details.
 
--   Students must turn off their mobile devices during class sessions and exams.
+Students must turn off their mobile devices during class sessions and exams.
 
 **Average Minimum Amount of Out-of-class or Independent Learning Expected Per
 Week:**
