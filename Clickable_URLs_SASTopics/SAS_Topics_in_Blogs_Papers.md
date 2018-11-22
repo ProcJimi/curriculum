@@ -363,6 +363,14 @@ SAS](https://blogs.sas.com/content/sastraining/2017/03/31/capturing-output-from-
 destinations](https://blogs.sas.com/content/sastraining/2014/01/03/sas-authors-tip-using-ods-to-send-output-to-alternate-destinations/)
 (Blogs)
 
+[SAS Regression Output Data
+Structure](https://stackoverflow.com/questions/44078623/sas-regression-output-data-structure/44079317#44079317)
+
+PROC Tabulate
+
+[Introduction to PROC
+TABULATE](https://www.lexjansen.com/nesug/nesug06/dm/da05.pdf)
+
 Simulating Data
 
 [Efficient DATA Step Random Sampling Out Of Thin
@@ -383,6 +391,37 @@ Efficiency
 
 >   [Essential SAS® Coding Techniques for Gaining
 >   Efficiency](https://www.mwsug.org/proceedings/2012/HW/MWSUG-2012-HW07.pdf)
+
+[Flexibility by Design: A Look at New and Update System Options in SAS(R)
+9.4](http://support.sas.com/resources/papers/Flexibility_by_Design.pdf)
+
+[Efficient Use of Disk Space in SAS® Application
+Programs](https://support.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2018/2362-2018.pdf)
+
+[Minimizing and Optimizing Resource Consumption (SAS
+Documentation)](https://go.documentation.sas.com/?docsetId=shrref&docsetTarget=n12hb74p7spe3fn1p0o6qhgrbxy8.htm&docsetVersion=9.4&locale=en)
+
+[Secrets of Efficient SAS® Coding
+Techniques](https://support.sas.com/resources/papers/proceedings16/11741-2016.pdf)
+
+[SAS ® PROGRAM EFFICIENCY FOR
+BEGINNERS](http://www2.sas.com/proceedings/sugi22/BEGTUTOR/PAPER69.PDF)
+
+[TOP 10 (OR MORE) WAYS TO OPTIMIZE YOUR SAS
+CODE](http://dasug.dartmouth.edu/wp-content/uploads/OptimizeSASCode_Long.pdf)
+
+[Leave Your Bad Code Behind: 50 Ways to Make Your SAS® Code Execute More
+Efficiently](http://support.sas.com/resources/papers/proceedings12/257-2012.pdf)
+
+[The Top 10 Head-Scratchers: SAS® Log Messages That Prompt a Call to SAS
+Technical
+Support](http://support.sas.com/resources/papers/proceedings11/262-2011.pdf)
+
+[Best Practices: PUT More Errors and Warnings in My Log,
+Please!](http://support.sas.com/resources/papers/proceedings13/350-2013.pdf)
+
+[Tips and Techniques for the SAS®
+Programmer](http://support.sas.com/resources/papers/proceedings11/272-2011.pdf)
 
 Macro Facility
 
@@ -448,6 +487,15 @@ expression](https://blogs.sas.com/content/iml/2015/01/20/elements-satisfy-logica
 
 [Finding observations that satisfy multiple conditions: The LOC-ELEMENT
 technique](https://blogs.sas.com/content/iml/2015/05/11/loc-element-trick.html)
+
+[Data tables: Nonmatrix data structures in
+SAS/IML](https://blogs.sas.com/content/iml/2017/03/22/data-tables-in-sasiml.html)
+
+[Lists: Nonmatrix data structures in
+SAS/IML](https://blogs.sas.com/content/iml/2017/03/29/lists-sasiml.html)
+
+[More Than Matrices: SAS/IML® Software Supports New Data
+Structures](https://support.sas.com/resources/papers/proceedings17/SAS0420-2017.pdf)
 
 Do Loops in SAS (including PROC IML)
 
