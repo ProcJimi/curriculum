@@ -17,7 +17,7 @@
  proc print data=have2 noobs; run;
  proc contents data=have2; run;
 
-* Program 2;
+* Date Program 1;
 data work.have;
 input date_time_ch $18.;  
 date_nu = input(substr(date_time_ch,1,9),date9.);
@@ -29,10 +29,25 @@ datalines4;
 proc print data=work.Have noobs;
 run;
 
-* Program 3;
+* Date Program 2;
 data _Null_;
 date_time='20DEC2017:00:00:00'DT;
 date2=datepart(date_time);
 format date2 date9.;
 put @10 date_time=datetime21. +1 date2 date9.;
 run;
+
+* Date Program 3;
+
+data have;
+  date_num=20180704; /*Calendar date as a numeric variable*/
+  date_var1=input(put(date_num,best8.),yymmdd8.);
+
+  date_char='20180704'; /*Calendar date as a character variable*/
+  date_var2=input(date_char,yymmdd8.);
+
+  format date_var: date9.;
+run;
+proc print data=have; run;
+proc contents data=have; run;
+

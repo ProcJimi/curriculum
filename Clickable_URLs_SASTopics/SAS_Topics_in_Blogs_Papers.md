@@ -64,6 +64,9 @@ operators](https://blogs.sas.com/content/sastraining/2013/08/02/sas-authors-tip-
 
 Format
 
+[Some Useful Techniques of Proc
+Format](https://www.pharmasug.org/proceedings/2011/CC/PharmaSUG-2011-CC19.pdf)
+
 [Controlling your
 formats](https://blogs.sas.com/content/sgf/2017/12/04/controlling-your-formats/)
 (Blogs)
@@ -136,6 +139,17 @@ function](https://communities.sas.com/t5/SAS-Communities-Library/How-to-concaten
 
 [SAS Functions
 Q&A](https://communities.sas.com/t5/Ask-the-Expert/Top-10-SAS-Functions/ta-p/391244)
+
+[Computing Ages in
+SAS®](https://support.sas.com/content/dam/SAS/support/en/books/the-little-sas-book-a-primer-fourth-edition/61860_update.pdf)
+
+[Age Is Just a Number: Accurately Calculating: Integer and Continuous
+Age](https://www.lexjansen.com/wuss/2009/cod/COD-Adams.pdf)
+
+[HOW OLD AM I?](http://www2.sas.com/proceedings/sugi30/060-30.pdf)
+
+[In SAS, how can I calculate age from the date-of-birth
+data?](https://kb.iu.edu/d/aczw)
 
 Filtering Data
 
@@ -287,6 +301,9 @@ Paper)](http://www2.sas.com/proceedings/sugi27/p057-27.pdf)
 clean](https://blogs.sas.com/content/sastraining/2017/06/26/keeping-your-data-set-clean-integrity-constraints/)
 (Blogs)
 
+[LET SAS® CLEANSE YOUR DIRTY
+DATA](https://www.mwsug.org/proceedings/2015/SA/MWSUG-2015-SA-06.pdf)
+
 Hash Tables
 
 [Five things you (probably) don’t know you can do with a hash
@@ -312,6 +329,9 @@ PROC SQL
 SQL](https://www.sas.com/content/dam/SAS/en_us/doc/other1/certification/exam-content/advanced-programmer.pdf)
 
 Summarizing Data with By-Group
+
+[How to use FIRST.variable and LAST.variable in a BY-group analysis in
+SAS](https://blogs.sas.com/content/iml/2018/02/26/how-to-use-first-variable-and-last-variable-in-a-by-group-analysis-in-sas.html)
 
 [New Ways and Means to Summarize
 Files](http://www2.sas.com/proceedings/sugi28/165-28.pdf)
@@ -367,6 +387,9 @@ destinations](https://blogs.sas.com/content/sastraining/2014/01/03/sas-authors-t
 Structure](https://stackoverflow.com/questions/44078623/sas-regression-output-data-structure/44079317#44079317)
 
 PROC Tabulate
+
+[How to use Proc
+Tabulate](https://www.lexjansen.com/wuss/2016/133_Final_Paper_PDF.pdf)
 
 [Introduction to PROC
 TABULATE](https://www.lexjansen.com/nesug/nesug06/dm/da05.pdf)
