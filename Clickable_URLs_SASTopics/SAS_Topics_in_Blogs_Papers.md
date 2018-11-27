@@ -52,6 +52,9 @@ Missing Values
 [Ways to represent missing values for numeric variables in
 SAS](https://blogs.sas.com/content/sastraining/2017/02/21/27-sas-numeric-missing-values/)
 
+[Call Missing Routine (SAS(R) 9.4
+Documentation)](https://documentation.sas.com/?docsetId=lefunctionsref&docsetTarget=p1iq436yh8838rn1ud38om45n99k.htm&docsetVersion=9.4&locale=en#p0087dtt88wel6n15ffj2o4kmxx8)
+
 Filtering Data
 
 [Using informats to filter invalid
@@ -61,6 +64,20 @@ values](https://blogs.sas.com/content/sastraining/2012/11/02/sas-authors-tip-usi
 [Some useful WHERE
 operators](https://blogs.sas.com/content/sastraining/2013/08/02/sas-authors-tip-some-useful-where-operators/)
 (Blogs)
+
+[Use the CONTAINS Operator as an Alternative to the INDEX
+Function](https://communities.sas.com/t5/SAS-Tips-from-the-Community/SAS-Tip-Use-the-CONTAINS-Operator-as-an-Alternative-to-the-INDEX/m-p/475750#M174)
+
+Sorting Data
+
+[Base SAS® 9.4 Procedures Guide - SORT
+Procedure](https://documentation.sas.com/?docsetId=proc&docsetTarget=p02bhn81rn4u64n1b6l00ftdnxge.htm&docsetVersion=9.4&locale=en#p1vkld5nbc46lgn166zqz7k87aka)
+
+[The SORT Procedure: Beyond the
+Basics](http://www2.sas.com/proceedings/sugi31/030-31.pdf)
+
+[Horizontal Data Sorting and Insightful Reporting: A Useful SAS®
+Technique](Horizontal%20Data%20Sorting%20and%20Insightful%20Reporting:%20A%20Useful%20SAS®%20Technique)
 
 Format
 
@@ -151,10 +168,16 @@ Age](https://www.lexjansen.com/wuss/2009/cod/COD-Adams.pdf)
 [In SAS, how can I calculate age from the date-of-birth
 data?](https://kb.iu.edu/d/aczw)
 
-Filtering Data
+Summarizing Data with By-Group
 
-[Use the CONTAINS Operator as an Alternative to the INDEX
-Function](https://communities.sas.com/t5/SAS-Tips-from-the-Community/SAS-Tip-Use-the-CONTAINS-Operator-as-an-Alternative-to-the-INDEX/m-p/475750#M174)
+[How to use FIRST.variable and LAST.variable in a BY-group analysis in
+SAS](https://blogs.sas.com/content/iml/2018/02/26/how-to-use-first-variable-and-last-variable-in-a-by-group-analysis-in-sas.html)
+
+[New Ways and Means to Summarize
+Files](http://www2.sas.com/proceedings/sugi28/165-28.pdf)
+
+[PROC SQL for PROC SUMMARY
+Stalwarts](https://support.sas.com/resources/papers/proceedings15/3154-2015.pdf)
 
 Do Loop
 
@@ -328,17 +351,6 @@ PROC SQL
 [Accessing Data Using
 SQL](https://www.sas.com/content/dam/SAS/en_us/doc/other1/certification/exam-content/advanced-programmer.pdf)
 
-Summarizing Data with By-Group
-
-[How to use FIRST.variable and LAST.variable in a BY-group analysis in
-SAS](https://blogs.sas.com/content/iml/2018/02/26/how-to-use-first-variable-and-last-variable-in-a-by-group-analysis-in-sas.html)
-
-[New Ways and Means to Summarize
-Files](http://www2.sas.com/proceedings/sugi28/165-28.pdf)
-
-[PROC SQL for PROC SUMMARY
-Stalwarts](https://support.sas.com/resources/papers/proceedings15/3154-2015.pdf)
-
 Summarizing Data with PROC’s
 
 [PROC TABULATE: Doing
@@ -401,6 +413,12 @@ Air](https://www.lexjansen.com/sesug/2018/SESUG2018_Paper-276_Final_PDF.pdf)
 
 [Data-driven
 simulation](https://blogs.sas.com/content/iml/2017/09/27/data-driven-simulation.html)
+
+[Simulation in SAS with Comparisons to
+R](https://www.lexjansen.com/wuss/2013/128_Paper.pdf)
+
+[Four essential functions for statistical programmers
+(Blogs)](https://blogs.sas.com/content/iml/2011/10/19/four-essential-functions-for-statistical-programmers.html)
 
 Data View
 
