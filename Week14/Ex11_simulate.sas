@@ -1,4 +1,4 @@
-*Example_simulate3.sas;
+*Ex11_simulate.sas;
 data have;
 call streaminit(123);
   LENGTH grp $13.;

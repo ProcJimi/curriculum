@@ -1,4 +1,5 @@
 /*** SAS 9.3 Documentation ***/
+*Ex19_count_repeated_rows.sas;
 data Duplicates;
    input LastName $ FirstName $ City $ State $;
    datalines;

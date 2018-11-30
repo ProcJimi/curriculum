@@ -1,4 +1,4 @@
-
+*Ex13_simulate.sas;
 data temp;
   allowed="123456789abcdefghijklmnopqrstuvwxyz";
   num_ids=100;

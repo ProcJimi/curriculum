@@ -1,5 +1,5 @@
 *Author: Rick Wicklin - SAS-L - 6/30/2018;
-
+*Ex18_collapse_multiple_cols.sas;
 /*Collapse multiple boolean columns into single 
 attribute column with new rows for each combination*/
 

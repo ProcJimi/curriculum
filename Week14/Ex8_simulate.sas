@@ -1,5 +1,5 @@
 /*Simulation in SAS: The slow way or the BY way - Rick Wicklin */
-
+*Ex8_simulate.sas;
 %let N = 10;
 %let NumSamples = 5;
 data Uniform(keep=SampleID x); 

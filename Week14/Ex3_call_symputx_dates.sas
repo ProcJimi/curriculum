@@ -1,4 +1,4 @@
-*** Example_call_symputx_date.sas;
+*** Ex3_call_symputx_date.sas;
 *** Adapted from KurtBremser (SAS Communities)
    - 5/24/2017;
 %let start=01/01/1999;

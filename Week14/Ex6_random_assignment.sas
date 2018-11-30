@@ -1,4 +1,4 @@
-*Example_random_assignment.sas;
+*Ex6_random_assignment.sas;
 data dp;
 CALL STREAMINIT(12345);
 LENGTH Group $ 7;

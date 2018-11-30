@@ -1,5 +1,4 @@
-
-*Example_DoLoop_Mod_Func.sas;
+*Ex2_DoLoop_Mod_Func.sas;
 data YearData (drop=i);
 do i = 1 to 10 ;
    do Dates =  '01JAN2012'D to '31DEC2012'D;

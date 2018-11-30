@@ -1,4 +1,4 @@
-
+*Ex5_generate_SSN_dates_other_vars.sas;
 title;
 data have (drop=rownum date_a date_b);
 call streaminit(123);

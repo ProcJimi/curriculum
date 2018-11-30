@@ -1,6 +1,6 @@
 
 *Getting Your Random Sample in Proc SQL Richard Severino;
-
+*Ex10_simulate.sas;
 data pop_dataset;
 format rec_no 7.0 age 4.0 sex $6. icd9_code $13. ;
   label rec_no = "Record Number / ID"

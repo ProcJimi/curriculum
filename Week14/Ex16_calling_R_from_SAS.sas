@@ -1,4 +1,4 @@
-
+*Ex16_calling_R_from_SAS.sas;
 data have;
 input A$ S1 S2 S3 S4;
 datalines;

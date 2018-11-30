@@ -1,4 +1,4 @@
-* Example_simulate1.sas;
+* Ex9_simulate.sas;
 %LET Path=C:\SASCourse\Week14;
 LIBNAME NEW "&Path";
 %MACRO generate_state(state=, nstores=);

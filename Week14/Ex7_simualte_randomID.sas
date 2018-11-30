@@ -1,4 +1,5 @@
 ** Adapted from Sample 24722: 
+*Ex7_simualte_randomID;
    Simple random sample without replacement;
 data Have;
   format GPA 3.1;

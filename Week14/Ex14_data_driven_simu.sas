@@ -1,4 +1,4 @@
-*Example_data_driven_simu.sas;
+*Ex14_data_driven_simu.sas;
 *Acknowledgement: Rick Wicklin;
 /* Static simulation: Parameters embedded in the simulation program */
 data AnovaStatic;
