@@ -1,8 +1,11 @@
-*** Ex1_Percentage_Weighted_Score.sas (Stat6197);
+*** Ex2_Stat6197_Percentage_Weighted_Score.sas;
 data Have;
 input id $ TEST1-TEST5 ASSIGNMENT1 ASSIGNMENT2  MIDTERM FINAL;
 datalines;
-A1 90 80 100 95 90 91 89 84 84
+A1 90 80 95 90 100 94 89 84 80
+A2 60	70	80	100		90	94	89	84	80
+
+A3 75 65 75 55  95 94 89 84 88
 ;
 data have2;
  set have;
@@ -21,5 +24,5 @@ data have2;
  run;
 proc print data=work.have2 noobs; 
 var id P_: wpt; 
-Format wpt 5.0;
+Format wpt 6.2;
 run;

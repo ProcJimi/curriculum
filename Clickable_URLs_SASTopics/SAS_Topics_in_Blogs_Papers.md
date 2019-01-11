@@ -77,7 +77,11 @@ Procedure](https://documentation.sas.com/?docsetId=proc&docsetTarget=p02bhn81rn4
 Basics](http://www2.sas.com/proceedings/sugi31/030-31.pdf)
 
 [Horizontal Data Sorting and Insightful Reporting: A Useful SAS®
-Technique](Horizontal%20Data%20Sorting%20and%20Insightful%20Reporting:%20A%20Useful%20SAS®%20Technique)
+Technique](http://support.sas.com/resources/papers/proceedings13/376-2013.pdf)
+
+[Using CALL SORTN to save
+coding](https://blogs.sas.com/content/sastraining/2018/10/01/three-of-my-favorite-programming-tips/)
+(Blogs)
 
 Format
 
@@ -113,10 +117,6 @@ SAS](https://blogs.sas.com/content/iml/2011/10/03/rounding-up-rounding-down.html
 
 [Three of My Favorite Programming
 Tips](https://blogs.sas.com/content/sastraining/2018/10/01/three-of-my-favorite-programming-tips/)
-(Blogs)
-
-[Using CALL SORTN to save
-coding](https://blogs.sas.com/content/sastraining/2018/10/01/three-of-my-favorite-programming-tips/)
 (Blogs)
 
 [Character-to-numeric conversion in
