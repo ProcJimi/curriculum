@@ -5,6 +5,24 @@ SAS Knowledge Resources
 [How to share your SAS knowledge with your professional
 network](https://blogs.sas.com/content/sasdummy/2017/12/14/sas-professional-sharing/)
 
+[SAS Help
+Center](https://documentation.sas.com/?docsetId=helpcenterdefault&docsetVersion=1.0&docsetTarget=surfedin.htm&locale=en)
+(SAS Documentation for starters)
+
+SAS Help Menu in Display Manager (when you invoke SAS). This is not a link!
+
+[Free e-learning SAS
+courses](https://support.sas.com/edu/elearning.html?ctry=us&productType=library)
+
+[SAS Blogs](https://blogs.sas.com/content/tag/sas-programming/)
+
+[SAS Support
+Communities](https://communities.sas.com/t5/SAS-Analytics-U/SAS-University-Edition-JupyterLab-Error-Message-quot-Invalid/m-p/524361)
+
+[SAS-L](http://www.sascommunity.org/wiki/SAS-L)
+
+[SAS Global Forum Papers](https://lexjansen.com/)
+
 DATA Step
 
 [THE SAS SUPERVISOR](https://www.lexjansen.com/nesug/nesug88/SAS_supervisor.pdf)
