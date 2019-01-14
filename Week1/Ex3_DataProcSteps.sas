@@ -1,4 +1,4 @@
-* DataProcSteps.sas;
+* Ex3_DataProcSteps.sas;
 OPTIONS nocenter nodate nonumber;
 %LET DateRun=%sysfunc(today(), worddate);
 DATA work.HAVE2;

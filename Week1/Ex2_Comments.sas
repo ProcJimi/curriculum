@@ -1,4 +1,4 @@
-* Comments.sas;
+*Ex2_Comments.sas;
 *This is a statement-style comment;
 /*This is a delimited comment. */
 /**This is a block-type comment*********

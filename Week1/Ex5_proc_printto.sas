@@ -1,4 +1,4 @@
-*Proc_Printto.sas;
+*Ex5_Proc_Printto.sas;
 options symbolgen nocenter nodate nonumber;
 DM 'log;clear;output;clear odsresults; clear';
 FILENAME MYLOG 'C:\SASCourse\Week1\PP_log.TXT';
