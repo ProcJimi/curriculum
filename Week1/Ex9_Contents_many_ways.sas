@@ -15,12 +15,12 @@ Proc contents data=sashelp.heart varnum;
 Run;
 
 ** With the POSITION option, the CONTENTS procedure generates 
-   variable attributes are listed by  position thn the data set;
+   variable attributes are listed by  position in the data set;
 
 Proc contents data=sashelp.heart position;
 Run;
 
-Proc contents data=sashelp.class p;
+Proc contents data=sashelp.heart p;
 ods select position;
 Run;
 

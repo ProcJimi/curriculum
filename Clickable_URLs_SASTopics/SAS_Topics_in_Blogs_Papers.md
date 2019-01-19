@@ -46,6 +46,9 @@ Statement](https://go.documentation.sas.com/?docsetId=lrcon&docsetTarget=n1w749t
 Basics](https://documentation.sas.com/?docsetId=basess&docsetTarget=n1c9xsnpl22dd5n16pozcii2jtln.htm&docsetVersion=9.4&locale=en)
 (SAS Documentation, 2018)
 
+[Some Rules for Reading Numeric and Character Data (SAS
+Documentation)](https://documentation.sas.com/?docsetId=lrcon&docsetTarget=n0mv35tgvon6nln13rrovh657luv.htm&docsetVersion=9.4&locale=en)
+
 [Six ways to list variables in
 SAS](https://blogs.sas.com/content/iml/2018/05/29/6-easy-ways-to-specify-a-list-of-variables-in-sas.html)
 (Blogs)
