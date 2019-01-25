@@ -23,6 +23,9 @@ Communities](https://communities.sas.com/t5/SAS-Analytics-U/SAS-University-Editi
 
 [SAS Global Forum Papers](https://lexjansen.com/)
 
+[Secrets from a SAS
+Expert](https://blogs.sas.com/content/sastraining/2019/01/22/interview-with-leonid-batkhan/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+TheSasTrainingPost+%28The+SAS+Learning+Post%29)
+
 DATA Step
 
 [THE SAS SUPERVISOR](https://www.lexjansen.com/nesug/nesug88/SAS_supervisor.pdf)
@@ -595,3 +598,13 @@ order](https://blogs.sas.com/content/iml/2018/10/15/unique-values-data-order.htm
 [Calling Functions in the R
 Language](https://documentation.sas.com/?docsetId=imlug&docsetTarget=imlug_r_toc.htm&docsetVersion=14.3&locale=en)
 (SAS Documentation)
+
+Machine Learning
+
+[Create training, validation, and test data sets in
+SAS](https://blogs.sas.com/content/iml/2019/01/21/training-validation-test-data-sas.html)
+
+Git
+
+[Using built-in Git operations in SAS (SAS 9.4
+M6)](https://blogs.sas.com/content/sasdummy/2019/01/17/git-in-sas/)
