@@ -2,7 +2,7 @@
 options nocenter nonumber nodate;
 * No INFILE statement; 
 data work.HAVE1;
- input id 1-3 name $ 5-16 
+ input id $ 1-3 name $ 5-16 
        score1 18-19 score2 21-22;
 datalines;
 001 Tim Dyson    74 87 
@@ -16,7 +16,7 @@ run;
 * FISTOBS= option on the INFILE statement; 
 data work.HAVE2;
  infile datalines firstobs=2;
- input id 1-3 name $ 5-16 
+ input id $ 1-3 name $ 5-16 
        score1 18-19 score2 21-22;
 datalines;
 1234567890123456789012
