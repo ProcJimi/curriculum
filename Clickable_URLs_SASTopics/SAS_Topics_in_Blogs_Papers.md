@@ -9,6 +9,9 @@ network](https://blogs.sas.com/content/sasdummy/2017/12/14/sas-professional-shar
 Center](https://documentation.sas.com/?docsetId=helpcenterdefault&docsetVersion=1.0&docsetTarget=surfedin.htm&locale=en)
 (SAS Documentation for starters)
 
+[Navigating SAS documentation to find out about new, modified, and updated
+features](https://blogs.sas.com/content/sgf/2019/01/18/navigating-sas-documentation-to-find-out-about-new-modified-and-updated-features/)
+
 SAS Help Menu in Display Manager (when you invoke SAS). This is not a link!
 
 [Free e-learning SAS
@@ -25,6 +28,9 @@ Communities](https://communities.sas.com/t5/SAS-Analytics-U/SAS-University-Editi
 
 [Secrets from a SAS
 Expert](https://blogs.sas.com/content/sastraining/2019/01/22/interview-with-leonid-batkhan/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+TheSasTrainingPost+%28The+SAS+Learning+Post%29)
+
+[Rhymes, mnemonics and tips in learning
+SAS](https://blogs.sas.com/content/sastraining/2013/02/26/rhymes-mnemonics-and-tips-in-learning-sas/)
 
 DATA Step
 
@@ -191,6 +197,9 @@ Age](https://www.lexjansen.com/wuss/2009/cod/COD-Adams.pdf)
 
 [In SAS, how can I calculate age from the date-of-birth
 data?](https://kb.iu.edu/d/aczw)
+
+[Finding the Position of the First Non-Digit in a
+String](http://www.sascommunity.org/wiki/Tips:Finding_the_Position_of_the_First_Non-Digit_in_a_String)
 
 Summarizing Data with By-Group
 
@@ -599,12 +608,58 @@ order](https://blogs.sas.com/content/iml/2018/10/15/unique-values-data-order.htm
 Language](https://documentation.sas.com/?docsetId=imlug&docsetTarget=imlug_r_toc.htm&docsetVersion=14.3&locale=en)
 (SAS Documentation)
 
+Statistical Analyses
+
+[10 posts from 2018 that deserve a second
+look](https://blogs.sas.com/content/iml/2019/01/09/posts-2018-second-look.html)
+
 Machine Learning
 
 [Create training, validation, and test data sets in
 SAS](https://blogs.sas.com/content/iml/2019/01/21/training-validation-test-data-sas.html)
 
+[Top 10 data for good articles of
+2018](https://blogs.sas.com/content/sascom/2019/01/04/top-10-data-for-good-articles-of-2018/)
+
 Git
 
 [Using built-in Git operations in SAS (SAS 9.4
 M6)](https://blogs.sas.com/content/sasdummy/2019/01/17/git-in-sas/)
+
+SAS Viya
+
+[Authentication to SAS Viya: a couple of
+approaches](https://blogs.sas.com/content/sgf/2019/01/25/authentication-to-sas-viya/)
+
+[Introducing Python-based command-line tools for SAS
+Viya](https://blogs.sas.com/content/sgf/2018/12/18/python-based-command-line-tools/)
+
+[Great tip for dynamic data selection using SAS Viya and
+Python](https://blogs.sas.com/content/sgf/2018/11/06/great-tip-for-dynamic-data-selection-using-sas-viya-and-python/)
+
+[How to use SAS® Viya® and R for dynamic data
+selection](https://blogs.sas.com/content/sgf/2018/11/02/how-to-use-sas-viya-and-r-for-dynamic-data-selection/)
+
+SASPy
+
+[A Basic Introduction to SASPy and Jupyter
+Notebooks](https://support.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2018/2822-2018.pdf)
+(SAS Global Forum, 2018)
+
+[Introducing SASPy: Use Python code to access
+SAS](https://blogs.sas.com/content/sasdummy/2017/04/08/python-to-sas-saspy/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+ASasBlogForTheRestOfUs+%2528The+SAS+Dummy%2529)
+
+[A Basic Introduction to SASPy and Jupyter
+Notebooks](https://support.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2018/2822-2018.pdf)
+(SAS Global Forum, 2018)
+
+[Coding in Python with SAS University
+Edition](https://blogs.sas.com/content/sasdummy/2018/02/05/python-sas-university-edition/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+ASasBlogForTheRestOfUs+%28The+SAS+Dummy%29)
+(SAS Blogs, February 5, 2018)
+
+[How to code in Python with SAS
+9.4](https://blogs.sas.com/content/sgf/2018/01/10/come-on-in-were-open-the-openness-of-sas-94/)
+
+[Open Your Mind: Use Cases for SAS® and Open-Source
+Analytics](https://support.sas.com/resources/papers/proceedings17/SAS0747-2017.pdf)
+(SAS Global Forum, 2017)
