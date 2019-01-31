@@ -649,10 +649,6 @@ Notebooks](https://support.sas.com/content/dam/SAS/support/en/sas-global-forum-p
 [Introducing SASPy: Use Python code to access
 SAS](https://blogs.sas.com/content/sasdummy/2017/04/08/python-to-sas-saspy/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+ASasBlogForTheRestOfUs+%2528The+SAS+Dummy%2529)
 
-[A Basic Introduction to SASPy and Jupyter
-Notebooks](https://support.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2018/2822-2018.pdf)
-(SAS Global Forum, 2018)
-
 [Coding in Python with SAS University
 Edition](https://blogs.sas.com/content/sasdummy/2018/02/05/python-sas-university-edition/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+ASasBlogForTheRestOfUs+%28The+SAS+Dummy%29)
 (SAS Blogs, February 5, 2018)
@@ -663,3 +659,8 @@ Edition](https://blogs.sas.com/content/sasdummy/2018/02/05/python-sas-university
 [Open Your Mind: Use Cases for SAS® and Open-Source
 Analytics](https://support.sas.com/resources/papers/proceedings17/SAS0747-2017.pdf)
 (SAS Global Forum, 2017)
+
+SAS® and Python: The Perfect Partners in Crime (SAS Global Forum Paper, 2018)
+
+[SAS vs. Python - How Do They Compare (SESUG,
+2017)](http://www.scsug.org/wp-content/uploads/2017/10/db55.pdf)
