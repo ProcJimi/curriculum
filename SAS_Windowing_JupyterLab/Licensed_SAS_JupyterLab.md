@@ -29,3 +29,6 @@ File](https://communities.sas.com/t5/SAS-Communities-Library/Installing-SASpy-Ke
 
 [Connect to SAS using Python saspy - By Chris
 Hemedinger](https://communities.sas.com/t5/SAS-Programming/Connect-to-SAS-using-Python-saspy/td-p/400730)
+
+[Revolutionizing Statistical Computing in
+SAS®](https://support.sas.com/resources/papers/proceedings17/0838-2017.pdf)

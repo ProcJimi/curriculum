@@ -1,4 +1,4 @@
-SAS Studio/Jupyter Installations
+SAS Studio/JupyterLab Installations
 
 [SAS University Edition December 2018 Update (JupyterLab now included in SAS
 University
@@ -17,3 +17,6 @@ Error](https://communities.sas.com/t5/SAS-Analytics-U/SAS-University-Edition-Jup
 
 [Using Jupyter and SAS together with SAS University Edition,
 2016](https://blogs.sas.com/content/sasdummy/2016/08/06/jupyter-and-sas-university-edition-for-free/)
+
+[Revolutionizing Statistical Computing in
+SAS®](https://support.sas.com/resources/papers/proceedings17/0838-2017.pdf)
