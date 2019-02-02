@@ -699,5 +699,12 @@ Analytics](https://support.sas.com/resources/papers/proceedings17/SAS0747-2017.p
 
 SAS® and Python: The Perfect Partners in Crime (SAS Global Forum Paper, 2018)
 
+[SAS® and Python: The Perfect Partners in
+Crime](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2018/2597-2018.pdf)
+
 [SAS vs. Python - How Do They Compare (SESUG,
 2017)](http://www.scsug.org/wp-content/uploads/2017/10/db55.pdf)
+
+[Revolutionizing Statistical Computing in
+SAS®](https://support.sas.com/resources/papers/proceedings17/0838-2017.pdf) with
+the Jupyter Notebook

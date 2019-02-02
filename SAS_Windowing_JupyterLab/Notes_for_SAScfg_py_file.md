@@ -1,4 +1,4 @@
-**SAScfg_personal.py (configuration file) that resides in SASPy folder**
+**SAScfg_personal.py (configuration file) that resides in the SASPy folder**
 
 Below are some notes taken from Pradip Muhuri’s email communication with Chevell
 Parker (SAS Institute) to edit the above configuration file.
