@@ -22,6 +22,10 @@ courses](https://support.sas.com/edu/elearning.html?ctry=us&productType=library)
 [SAS Support
 Communities](https://communities.sas.com/t5/SAS-Analytics-U/SAS-University-Edition-JupyterLab-Error-Message-quot-Invalid/m-p/524361)
 
+[Learning Resources for
+Students](https://crdcn.org/sites/default/files/sas_academic_program_-_resources_for_crdcn_workshop.pdf)
+(SAS Canada Statistics Program)
+
 [SAS-L](http://www.sascommunity.org/wiki/SAS-L)
 
 [SAS Global Forum Papers](https://lexjansen.com/)
@@ -31,6 +35,11 @@ Expert](https://blogs.sas.com/content/sastraining/2019/01/22/interview-with-leon
 
 [Rhymes, mnemonics and tips in learning
 SAS](https://blogs.sas.com/content/sastraining/2013/02/26/rhymes-mnemonics-and-tips-in-learning-sas/)
+
+SAS University Edition
+
+[Helpful hints and a useful tip for SAS University
+Edition](https://blogs.sas.com/content/sastraining/2019/01/30/helpful-hints-and-a-useful-tip-for-sas-university-edition/)
 
 DATA Step
 
@@ -172,6 +181,10 @@ Informat](https://go.documentation.sas.com/?docsetId=leforinforref&docsetTarget=
 [How to convert a SAS character "date" variable to a SAS
 date?](https://communities.sas.com/t5/SAS-Programming/how-to-convert-char-var-to-sas-date/td-p/45067)
 
+[FAQs about SAS dates, arrays and managing local PC files (Kim Wilson, December
+13,
+2018)](https://blogs.sas.com/content/sgf/2018/12/13/faqs-about-sas-dates-arrays-and-managing-local-pc-files/)
+
 [How to remove leading zeros from a character
 variable](https://communities.sas.com/t5/SAS-Procedures/How-to-remove-leading-zeroes-from-character-variable/td-p/51703)
 
@@ -238,6 +251,10 @@ SAS](https://blogs.sas.com/content/sastraining/2016/12/27/sas-temporary-arrays-n
 
 [Array, Hurray, Array; Consolidate or Expand Your Input Data Stream Using
 Arrays](http://support.sas.com/resources/papers/proceedings13/330-2013.pdf)
+
+[FAQs about SAS dates, arrays and managing local PC files (Kim Wilson, December
+13,
+2018)](https://blogs.sas.com/content/sgf/2018/12/13/faqs-about-sas-dates-arrays-and-managing-local-pc-files/)
 
 Reshaping Data
 
@@ -603,6 +620,15 @@ Call](http://go.documentation.sas.com/?docsetId=imlug&docsetTarget=imlug_langref
 
 [Get the unique values of a variable in data
 order](https://blogs.sas.com/content/iml/2018/10/15/unique-values-data-order.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+TheDoLoop+%28The+DO+Loop%29)
+
+[SAS & Open
+Source](http://cinsug.org/uploads/3/6/2/9/36298586/winand_sas_and_open_source.pdf)
+
+-   Send IML matrices and SAS data sets to R
+
+-   Submit R code in the IML script
+
+-   Return R results as IML matrices or SAS data sets
 
 [Calling Functions in the R
 Language](https://documentation.sas.com/?docsetId=imlug&docsetTarget=imlug_r_toc.htm&docsetVersion=14.3&locale=en)
