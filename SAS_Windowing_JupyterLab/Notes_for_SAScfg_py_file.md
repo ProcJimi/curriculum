@@ -1,3 +1,8 @@
+[How to configure Python and SASPy - by Michael
+McCarthy](http://www.scsug.org/wp-content/uploads/2018/10/McCarthy-How-to-configure-Python-and-SASPy.pdf)
+
+The following are notes from communication with Chevell Parker (SAS Institute)
+
 In the SAScfg_personal.py configuration file, you need all these files.
 
 sas.svc.connection.jar
@@ -8,29 +13,17 @@ sas.svc.connection.jar
 
  sas.core.jar
 
- 
-
 1.  Verify the path below where the saspyiom.jar file resides.
-
- 
 
      cpW +=
 ";C:\\\\Anaconda\\\\Lib\\\\site-packages\\\\saspy\\\\java\\\\saspyiom.jar"
-
- 
 
 1.  Make sure that the path below points to the Java.exe rather than the folder
     of the JVM. You can verify this running the below command.
 
      where java
 
- 
-
- 
-
 1.  Add the path of the Java.exe to the below location.
-
- 
 
    winlocal = {'java'      : 'C:\\Program
 Files\\Java\\jdk1.8.0_131\\bin\\java.exe',

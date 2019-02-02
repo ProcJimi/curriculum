@@ -618,6 +618,17 @@ Machine Learning
 [Create training, validation, and test data sets in
 SAS](https://blogs.sas.com/content/iml/2019/01/21/training-validation-test-data-sas.html)
 
+[Machine Learning with SAS, Special Edition,
+2018](https://support.sas.com/content/dam/SAS/support/en/books/free-books/machine-learning-with-sas-special-collection.pdf)
+(Compilation of Papers)
+
+[Artificial Intelligence with
+SAS](https://support.sas.com/content/dam/SAS/support/en/books/free-books/artificial-intelligence-with-sas.pdf),
+2018
+
+[How does SAS® Support Machine Learning? (DASUG
+Presentation)](http://dasug.dartmouth.edu/wp-content/uploads/DASUG-MachineLearning.pdf)
+
 [Top 10 data for good articles of
 2018](https://blogs.sas.com/content/sascom/2019/01/04/top-10-data-for-good-articles-of-2018/)
 
