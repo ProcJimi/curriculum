@@ -60,6 +60,9 @@ Programming](http://support.sas.com/resources/papers/proceedings11/269-2011.pdf)
 Statement](https://go.documentation.sas.com/?docsetId=lrcon&docsetTarget=n1w749t788cgi2n1txpuccsuqtro.htm&docsetVersion=9.4&locale=en)
 (SAS Documentation, 2018)
 
+[How Modified List Input and Formatted Input
+Differ](https://v8doc.sas.com/sashtml/lgref/z0144370.htm)
+
 [Starting with Raw Data: Beyond the
 Basics](https://documentation.sas.com/?docsetId=basess&docsetTarget=n1c9xsnpl22dd5n16pozcii2jtln.htm&docsetVersion=9.4&locale=en)
 (SAS Documentation, 2018)
