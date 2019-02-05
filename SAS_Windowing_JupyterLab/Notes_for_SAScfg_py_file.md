@@ -36,5 +36,19 @@ Files\\Java\\jdk1.8.0_131\\bin\\java.exe',
 
              }
 
+jupyter kernelspec list
+
+C:\\Users\\pmuhuri\>jupyter kernelspec list
+
+Available kernels:
+
+sas C:\\Users\\pmuhuri\\AppData\\Roaming\\jupyter\\kernels\\sas
+
+python3 c:\\program files\\python37\\share\\jupyter\\kernels\\python3
+
+pip list
+
+pip show jupyter
+
 [How to configure Python and SASPy - by Michael
 McCarthy](http://www.scsug.org/wp-content/uploads/2018/10/McCarthy-How-to-configure-Python-and-SASPy.pdf)

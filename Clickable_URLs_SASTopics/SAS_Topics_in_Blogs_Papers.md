@@ -60,8 +60,10 @@ Programming](http://support.sas.com/resources/papers/proceedings11/269-2011.pdf)
 Statement](https://go.documentation.sas.com/?docsetId=lrcon&docsetTarget=n1w749t788cgi2n1txpuccsuqtro.htm&docsetVersion=9.4&locale=en)
 (SAS Documentation, 2018)
 
-[How Modified List Input and Formatted Input
-Differ](https://v8doc.sas.com/sashtml/lgref/z0144370.htm)
+[Simplify data preparation using SAS data
+templates](https://blogs.sas.com/content/sgf/2019/01/09/simplify-data-preparation-using-sas-data-templates/)
+
+How Modified List Input and Formatted Input Differ
 
 [Starting with Raw Data: Beyond the
 Basics](https://documentation.sas.com/?docsetId=basess&docsetTarget=n1c9xsnpl22dd5n16pozcii2jtln.htm&docsetVersion=9.4&locale=en)
@@ -660,6 +662,15 @@ Presentation)](http://dasug.dartmouth.edu/wp-content/uploads/DASUG-MachineLearni
 
 [Top 10 data for good articles of
 2018](https://blogs.sas.com/content/sascom/2019/01/04/top-10-data-for-good-articles-of-2018/)
+
+[SAS® Visual Data Mining and Machine
+Learning](https://support.sas.com/en/software/sas-visual-data-mining-and-machine-learning.html)
+
+[Machine Learning using SAS
+Viya](https://documentation.sas.com/?cdcId=vdmmlcdc&cdcVersion=8.11&docsetId=mlgs&docsetTarget=p0ygt6xwfjn5nen19yub177wmxj5.htm&locale=en)
+
+[Getting Started with the Python Interface of SAS
+Viya](https://video.sas.com/detail/video/5430217787001/getting-started-with-the-python-interface-of-sas-viya?autoStart=true&q=python)
 
 Git
 
