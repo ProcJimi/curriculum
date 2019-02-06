@@ -205,6 +205,16 @@ function](https://communities.sas.com/t5/SAS-Communities-Library/How-to-concaten
 [SAS Functions
 Q&A](https://communities.sas.com/t5/Ask-the-Expert/Top-10-SAS-Functions/ta-p/391244)
 
+[SAS Interview Questions - Functions,
+etc.](http://sasinterview.blogspot.com/2014/03/sasfunctions.html)
+
+[INTCK and INTNX: Two essential functions for computing intervals between dates
+in
+SAS](https://blogs.sas.com/content/iml/2017/05/15/intck-intnx-intervals-sas.html)
+
+[The COALESCE function: PROC SQL compared with PROC
+IML](https://blogs.sas.com/content/iml/2011/05/11/the-coalesce-function-proc-sql-compared-with-proc-iml.html)
+
 [Computing Ages in
 SAS®](https://support.sas.com/content/dam/SAS/support/en/books/the-little-sas-book-a-primer-fourth-edition/61860_update.pdf)
 
@@ -218,6 +228,10 @@ data?](https://kb.iu.edu/d/aczw)
 
 [Finding the Position of the First Non-Digit in a
 String](http://www.sascommunity.org/wiki/Tips:Finding_the_Position_of_the_First_Non-Digit_in_a_String)
+
+[Name that Function: Punny Function Names with Multiple MEANings and Why You Do
+Not Want to be MISSING
+Out](https://support.sas.com/resources/papers/proceedings17/0770-2017.pdf)
 
 Summarizing Data with By-Group
 

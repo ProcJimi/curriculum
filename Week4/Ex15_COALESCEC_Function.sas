@@ -21,16 +21,15 @@ proc print data=have; run;
   run;
 proc print data=want; run;
 
-
-/*
- 1) The COALESCE function can replace missing values with 0.  
-    It keeps the value if it's anything but a missing.  Otherwise the result will be 0. 
-
- 2)  The other option is using the CASE escorepression.
-
- 3) The COALSCE function returns the first nonmissing value in a list of variables.
-  https://blogs.sas.com/content/iml/2011/05/11/the-coalesce-function-proc-sql-compared-with-proc-iml.html
+/* See Messinio, Martha. 2017. Practical Guide and Efficient SAS(R) Programming: The Insider's Guide. 
+Cary, NC: SAS Institute Inc.
+The following is the exact quote from the above source.
+Page 11: "If you are coalescing character values in a DATA step, you must use the 
+COALESCEC() function; the COALESCE() function is only for numeric values.
+However, you can use COALESCE() for either numeric or character values."
 */
+
+/*Create a data set for COALESCE() with PROC SQL below.*/
 
 data Have;
 input score1 score2;
@@ -45,15 +44,6 @@ datalines;
 run; 
 
 
-/*
- 1) The COALESCE function can replace missing values with 0.  
-    It keeps the value if it's anything but a missing.  Otherwise the result will be 0. 
-
- 2)  The other option is using the CASE escorepression.
-
- 3) The COALSCE function returns the first nonmissing value in a list of variables.
-  https://blogs.sas.com/content/iml/2011/05/11/the-coalesce-function-proc-sql-compared-with-proc-iml.html
-*/
 proc sql; 
 title 'Coalesce() replaces column values';
 select Monotonic() as obs, 
