@@ -3,14 +3,14 @@
 
 *** Task 1: Download a particular ZIP SAS transport file from the MEPS web site;
 
-Filename GoThere "C:\MEPS\Zip_Files\h181ssp.zip";
+Filename GoThere "C:\Data\h181ssp.zip";
 proc http 
    url="https://meps.ahrq.gov/data_files/pufs/h181ssp.zip" 
    out=GoThere;
 run;
 
 *** Task 2:  Read the "members" (files) from the ZIP file;
-filename inzip2 ZIP "C:\MEPS\Zip_Files\h181ssp.zip";
+filename inzip2 ZIP "C:\Data\h181ssp.zip";
 data contents(keep=memname isFolder);
  length memname $200 isFolder 8;
  fid=dopen("inzip2");
@@ -43,7 +43,7 @@ data _null_;
 run;
 
 *** Task 4: Create a SAS data set from the SAS transport file;
-LIBNAME sasdata 'C:\MEPS';
+LIBNAME sasdata 'C:\Data';
 FILENAME in1 "%sysfunc(getoption(work))/&memname";;
 proc xcopy in = in1 out = sasdata IMPORT;
 run;
