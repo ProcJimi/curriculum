@@ -16,6 +16,9 @@ c) Make Necessary Changes to Configuration File (SAScfg_personal.py).
 
 d) Add sspiauth.dll To Your System PATH Environment Variable.
 
+[Connecting to SAS using Python SASPy - by
+ChrisHemedinger](https://communities.sas.com/t5/SAS-Programming/Connect-to-SAS-using-Python-saspy/td-p/400730)
+
 Copy and run the SASPy code from this link: [Introducing SASPy: Use Python code
 to access
 SAS](https://blogs.sas.com/content/sasdummy/2017/04/08/python-to-sas-saspy/)

@@ -660,6 +660,9 @@ look](https://blogs.sas.com/content/iml/2019/01/09/posts-2018-second-look.html)
 
 Machine Learning
 
+[Artificial Intelligence (Machine Learning) - for
+Beginners](https://medium.com/@ageitgey/machine-learning-is-fun-80ea3ec3c471)
+
 [Create training, validation, and test data sets in
 SAS](https://blogs.sas.com/content/iml/2019/01/21/training-validation-test-data-sas.html)
 
