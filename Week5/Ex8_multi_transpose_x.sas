@@ -17,7 +17,9 @@ proc transpose data= have
    var Ins_paid copay;
 run;
 proc print data=have_t noobs; run;
-proc contents data=have_t varnum; run;
+proc contents data=have_t position; 
+ods select variables;
+run;
 
 proc transpose data=have_t out=have_tt(drop=_NAME_);
 by family_id;
