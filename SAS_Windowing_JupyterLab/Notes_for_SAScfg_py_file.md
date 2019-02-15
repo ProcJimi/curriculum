@@ -5,6 +5,10 @@ Jupyter
 Lab)](https://communities.sas.com/t5/SAS-Communities-Library/Installing-SASpy-Kernel-on-Jupyter-Notebooks/ta-p/464873) –
 Pradip Muhuri’s communication with Tom at SAS Support Communities
 
+See this saspy-examples
+repo: <https://github.com/sassoftware/saspy-examples/blob/master/SAS_contrib/autocfg.ipynb>
+(insightful)
+
 jupyter kernelspec list
 
 C:\\Users\\pmuhuri\>jupyter kernelspec list

@@ -175,6 +175,14 @@ types](https://blogs.sas.com/content/sgf/2015/05/01/converting-variable-types-do
 SAS](https://blogs.sas.com/content/sastraining/2017/05/26/standardizing-phone-numbers-using-sas/)
 (Blogs)
 
+Working with dates in SAS
+
+SAS can perform calculations on dates ranging from A.D. November 1582 to A.D.
+19,900.
+
+[About SAS Date, Time, and Datetime
+Values](https://go.documentation.sas.com/?cdcId=pgmsascdc&cdcVersion=9.4_3.4&docsetId=lrcon&docsetTarget=p1wj0wt2ebe2a0n1lv4lem9hdc0v.htm&locale=en)
+
 [One informat to rule them all: Read any date into
 SAS](https://blogs.sas.com/content/iml/2016/11/11/anydtdte-informat-read-any-date-sas.html)
 (Blogs)
@@ -189,24 +197,6 @@ date?](https://communities.sas.com/t5/SAS-Programming/how-to-convert-char-var-to
 [FAQs about SAS dates, arrays and managing local PC files (Kim Wilson, December
 13,
 2018)](https://blogs.sas.com/content/sgf/2018/12/13/faqs-about-sas-dates-arrays-and-managing-local-pc-files/)
-
-[How to remove leading zeros from a character
-variable](https://communities.sas.com/t5/SAS-Procedures/How-to-remove-leading-zeroes-from-character-variable/td-p/51703)
-
-[Drop leading zeros from character
-variable](https://communities.sas.com/t5/SAS-Enterprise-Guide/Drop-leading-zeros-from-character-variable/td-p/444199)
-
-[Finding the Position of the First Non-Digit in a
-String](http://www.sascommunity.org/wiki/Tips:Finding_the_Position_of_the_First_Non-Digit_in_a_String)
-
-[Concatenate simple trimmed values with the CATS
-function](https://communities.sas.com/t5/SAS-Communities-Library/How-to-concatenate-values-in-SAS/ta-p/494125)
-
-[SAS Functions
-Q&A](https://communities.sas.com/t5/Ask-the-Expert/Top-10-SAS-Functions/ta-p/391244)
-
-[SAS Interview Questions - Functions,
-etc.](http://sasinterview.blogspot.com/2014/03/sasfunctions.html)
 
 [INTCK and INTNX: Two essential functions for computing intervals between dates
 in
@@ -225,6 +215,26 @@ Age](https://www.lexjansen.com/wuss/2009/cod/COD-Adams.pdf)
 
 [In SAS, how can I calculate age from the date-of-birth
 data?](https://kb.iu.edu/d/aczw)
+
+Working with character variables
+
+[How to remove leading zeros from a character
+variable](https://communities.sas.com/t5/SAS-Procedures/How-to-remove-leading-zeroes-from-character-variable/td-p/51703)
+
+[Drop leading zeros from character
+variable](https://communities.sas.com/t5/SAS-Enterprise-Guide/Drop-leading-zeros-from-character-variable/td-p/444199)
+
+[Finding the Position of the First Non-Digit in a
+String](http://www.sascommunity.org/wiki/Tips:Finding_the_Position_of_the_First_Non-Digit_in_a_String)
+
+[Concatenate simple trimmed values with the CATS
+function](https://communities.sas.com/t5/SAS-Communities-Library/How-to-concatenate-values-in-SAS/ta-p/494125)
+
+[SAS Functions
+Q&A](https://communities.sas.com/t5/Ask-the-Expert/Top-10-SAS-Functions/ta-p/391244)
+
+[SAS Interview Questions - Functions,
+etc.](http://sasinterview.blogspot.com/2014/03/sasfunctions.html)
 
 [Finding the Position of the First Non-Digit in a
 String](http://www.sascommunity.org/wiki/Tips:Finding_the_Position_of_the_First_Non-Digit_in_a_String)
