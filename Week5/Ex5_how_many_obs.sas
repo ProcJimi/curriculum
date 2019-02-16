@@ -1,5 +1,5 @@
 *Ex5_how_many_obs.sas;
-options leftmargin=10cm;
+options nonotes nosource nodate nonumber leftmargin=1cm;
 DATA  _NULL_;
  SET sashelp.heart NOBS=numobs;
  if numobs then PUT @7 "Number of cases =" numobs comma7.;
@@ -14,15 +14,20 @@ run;
 
 DATA  _NULL_;
  if 0 then SET sashelp.heart NOBS=N;
-   CALL SYMPUTX("total", N);
-   %PUT Number of cases = %SYSFUNC(left(&total));
+   CALL SYMPUTX('total', N);
  stop;
 run;
+/* Below are 3 ways to display the value of the macro variable (&total) */
+%PUT &total;
+%PUT Number of cases = %SYSFUNC(left(&total));
+%PUT Number of cases = %SYSFUNC(left(%qsysfunc(putn(&total, comma7.))));
 
 
 PROC SQL noprint;
 select count(*)into :OBSCOUNT
  from sashelp.heart;
-%PUT Number of cases = %SYSFUNC(left(&OBSCOUNT));
 quit;
+%PUT Number of cases = %SYSFUNC(left(%qsysfunc(putn(&total, comma7.))));
+
+
 
