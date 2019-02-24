@@ -63,6 +63,11 @@ Statement](https://go.documentation.sas.com/?docsetId=lrcon&docsetTarget=n1w749t
 [Simplify data preparation using SAS data
 templates](https://blogs.sas.com/content/sgf/2019/01/09/simplify-data-preparation-using-sas-data-templates/)
 
+Extracting metadata from SAS datasets
+
+[A Simple Macro to Select Various Variables
+Lists](https://www.pharmasug.org/proceedings/2015/QT/PharmaSUG-2015-QT10.pdf)
+
 How Modified List Input and Formatted Input Differ
 
 [Starting with Raw Data: Beyond the
@@ -264,6 +269,8 @@ Loop](https://blogs.sas.com/content/iml/2017/03/15/leave-continue-sas.html?utm_s
 Do-Loops](https://analytics.ncsu.edu/sesug/2010/FF01.Woodruff.pdf)
 
 Array
+
+[Loop-Do-Loop Around Arrays](https://www.lexjansen.com/nesug/nesug05/pm/pm8.pdf)
 
 >   [Fun with Fancy Arrays](http://www2.sas.com/proceedings/sugi29/158-29.pdf)
 
