@@ -117,6 +117,10 @@ operators](https://blogs.sas.com/content/sastraining/2013/08/02/sas-authors-tip-
 [Use the CONTAINS Operator as an Alternative to the INDEX
 Function](https://communities.sas.com/t5/SAS-Tips-from-the-Community/SAS-Tip-Use-the-CONTAINS-Operator-as-an-Alternative-to-the-INDEX/m-p/475750#M174)
 
+[How to split a raw file or a data set into many external raw
+files](https://blogs.sas.com/content/sgf/2019/02/06/how-to-split-a-raw-file/)
+(Blogs)
+
 Sorting Data
 
 [Base SAS® 9.4 Procedures Guide - SORT
@@ -180,6 +184,10 @@ types](https://blogs.sas.com/content/sgf/2015/05/01/converting-variable-types-do
 SAS](https://blogs.sas.com/content/sastraining/2017/05/26/standardizing-phone-numbers-using-sas/)
 (Blogs)
 
+[novinosrin](http://sems.sas.com/bess/get?id=386193.-1:-jskgr6kn:rzzb.1erfcbafrf0&RZNVY=zhuhev@tjh.rqh&nccvq=68767): [While
+loop,
+right?](http://sems.sas.com/bess/get?id=386238.-1:-jskgr6kn:rzzb.1erfcbafrf0&RZNVY=zhuhev@tjh.rqh&nccvq=68767)
+
 Working with dates in SAS
 
 SAS can perform calculations on dates ranging from A.D. November 1582 to A.D.
@@ -220,6 +228,14 @@ Age](https://www.lexjansen.com/wuss/2009/cod/COD-Adams.pdf)
 
 [In SAS, how can I calculate age from the date-of-birth
 data?](https://kb.iu.edu/d/aczw)
+
+[KurtBremser](http://sems.sas.com/bess/get?id=257123.-1:-jskgr6kn:rzzb.1erfcbafrf0&RZNVY=zhuhev@tjh.rqh&nccvq=68767): [Many
+dates
+comparison](http://sems.sas.com/bess/get?id=386239.-1:-jskgr6kn:rzzb.1erfcbafrf0&RZNVY=zhuhev@tjh.rqh&nccvq=68767)
+
+[Tom](http://sems.sas.com/bess/get?id=247616.-1:-jskgr6kn:rzzb.1erfcbafrf0&RZNVY=zhuhev@tjh.rqh&nccvq=68767): [How
+to combine year and month columns into one
+column](http://sems.sas.com/bess/get?id=386241.-1:-jskgr6kn:rzzb.1erfcbafrf0&RZNVY=zhuhev@tjh.rqh&nccvq=68767)
 
 Working with character variables
 
@@ -505,6 +521,10 @@ R](https://www.lexjansen.com/wuss/2013/128_Paper.pdf)
 
 [Four essential functions for statistical programmers
 (Blogs)](https://blogs.sas.com/content/iml/2011/10/19/four-essential-functions-for-statistical-programmers.html)
+
+[Simulate data for a regression model with categorical and continuous
+variables](https://blogs.sas.com/content/iml/2019/01/28/simulate-data-regression-categorical-continuous.html)
+(Blogs)
 
 Data View
 
