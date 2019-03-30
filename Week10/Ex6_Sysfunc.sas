@@ -10,7 +10,7 @@ Advanced Macro Topics: Utilities and Examples*/
 %mend exist; 
 %exist(sashelp.cars)
 
-Example _SAS-L.sas;
+*Example _SAS-L.sas;
 data _Null_; x1=today(); x2=intnx('year',x1,-2,'s');
 format x1 x2 date9.; PUT @4  x1= x2=; run;
 
@@ -50,8 +50,8 @@ format x1 x2 date9.; PUT @4  x1= x2=; run;
 Title "Date Geneated on %sysfunc(left(%qsysfunc(today(), worddate.)))";
 
 **************************;
-SAS Code (Adapted from SAS Listserve)
-/*Example _SAS-L.sas; Adapted from SAS-L */
+/*SAS Code (Adapted from SAS Listserve)
+Example _SAS-L.sas; Adapted from SAS-L */
 data _Null_; x1=today(); x2=intnx('year',x1,-2,'s');
 format x1 x2 date9.; PUT @4  x1= x2=; run;
 %let x1=%sysfunc(today(),date9.);
@@ -79,7 +79,7 @@ format x1 x2 date9.; PUT @4  x1= x2=; run;
 %let x16=%sysfunc(putn(%eval(&x15-1),year.));
 %let x17=%sysfunc(putn(&x15,monname3.));
 %put &x15 &x16 &x17;
-SAS-L Examples end above.
+/*SAS-L Examples end above.*/
 %let x18=%sysfunc(left(%qsysfunc(today(), worddate.)));
 %put &x18;
 
