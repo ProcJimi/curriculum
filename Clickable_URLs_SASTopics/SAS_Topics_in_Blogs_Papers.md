@@ -145,6 +145,9 @@ Format](https://www.pharmasug.org/proceedings/2011/CC/PharmaSUG-2011-CC19.pdf)
 formats](https://blogs.sas.com/content/sgf/2017/12/04/controlling-your-formats/)
 (Blogs)
 
+[Lengths and formats: the long and short of it
+(Blogs)](https://blogs.sas.com/content/sasdummy/2007/11/20/lengths-and-formats-the-long-and-short-of-it/)
+
 Creating New Variables
 
 [Using the SELECT Statement in the SAS DATA
@@ -184,9 +187,21 @@ types](https://blogs.sas.com/content/sgf/2015/05/01/converting-variable-types-do
 SAS](https://blogs.sas.com/content/sastraining/2017/05/26/standardizing-phone-numbers-using-sas/)
 (Blogs)
 
-[novinosrin](http://sems.sas.com/bess/get?id=386193.-1:-jskgr6kn:rzzb.1erfcbafrf0&RZNVY=zhuhev@tjh.rqh&nccvq=68767): [While
-loop,
-right?](http://sems.sas.com/bess/get?id=386238.-1:-jskgr6kn:rzzb.1erfcbafrf0&RZNVY=zhuhev@tjh.rqh&nccvq=68767)
+[Difference between strip, compress and
+trim](https://communities.sas.com/t5/General-SAS-Programming/Difference-between-strip-compress-and-trim/td-p/323286)
+
+[SAS Functions
+Q&A](https://communities.sas.com/t5/Ask-the-Expert/Top-10-SAS-Functions/ta-p/391244)
+
+[SAS Interview Questions - Functions,
+etc.](http://sasinterview.blogspot.com/2014/03/sasfunctions.html)
+
+[Finding the Position of the First Non-Digit in a
+String](http://www.sascommunity.org/wiki/Tips:Finding_the_Position_of_the_First_Non-Digit_in_a_String)
+
+[Name that Function: Punny Function Names with Multiple MEANings and Why You Do
+Not Want to be MISSING
+Out](https://support.sas.com/resources/papers/proceedings17/0770-2017.pdf)
 
 Working with dates in SAS
 
@@ -251,19 +266,6 @@ String](http://www.sascommunity.org/wiki/Tips:Finding_the_Position_of_the_First_
 [Concatenate simple trimmed values with the CATS
 function](https://communities.sas.com/t5/SAS-Communities-Library/How-to-concatenate-values-in-SAS/ta-p/494125)
 
-[SAS Functions
-Q&A](https://communities.sas.com/t5/Ask-the-Expert/Top-10-SAS-Functions/ta-p/391244)
-
-[SAS Interview Questions - Functions,
-etc.](http://sasinterview.blogspot.com/2014/03/sasfunctions.html)
-
-[Finding the Position of the First Non-Digit in a
-String](http://www.sascommunity.org/wiki/Tips:Finding_the_Position_of_the_First_Non-Digit_in_a_String)
-
-[Name that Function: Punny Function Names with Multiple MEANings and Why You Do
-Not Want to be MISSING
-Out](https://support.sas.com/resources/papers/proceedings17/0770-2017.pdf)
-
 Summarizing Data with By-Group
 
 [How to use FIRST.variable and LAST.variable in a BY-group analysis in
@@ -283,6 +285,10 @@ Loop](https://blogs.sas.com/content/iml/2017/03/15/leave-continue-sas.html?utm_s
 
 [Take Control: Understanding and Controlling Your
 Do-Loops](https://analytics.ncsu.edu/sesug/2010/FF01.Woodruff.pdf)
+
+[novinosrin](http://sems.sas.com/bess/get?id=386193.-1:-jskgr6kn:rzzb.1erfcbafrf0&RZNVY=zhuhev@tjh.rqh&nccvq=68767): [While
+loop,
+right?](http://sems.sas.com/bess/get?id=386238.-1:-jskgr6kn:rzzb.1erfcbafrf0&RZNVY=zhuhev@tjh.rqh&nccvq=68767)
 
 Array
 

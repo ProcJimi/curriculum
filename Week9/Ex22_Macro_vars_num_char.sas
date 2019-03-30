@@ -11,5 +11,8 @@ data test;
  x=&year;
  y="&year";
 run;
-proc contents data=test;
-run;
+proc sql; 
+ select varnum, name, type 
+	from dictionary.columns 
+	where libname = 'WORK' and memname = 'TEST'; 
+quit; 
