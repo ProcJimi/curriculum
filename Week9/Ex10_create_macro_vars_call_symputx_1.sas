@@ -96,4 +96,5 @@ DATA _NULL_;
  set sashelp.class;
  call symputx('Name' || STRIP(put( _N_, 2.)), Name);
 run;
-%put &Name1 &Name2 &Name3;
+%put &Name1 &Name10 &Name13;
+
