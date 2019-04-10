@@ -266,7 +266,15 @@ String](http://www.sascommunity.org/wiki/Tips:Finding_the_Position_of_the_First_
 [Concatenate simple trimmed values with the CATS
 function](https://communities.sas.com/t5/SAS-Communities-Library/How-to-concatenate-values-in-SAS/ta-p/494125)
 
+SET Statement
+
+[What happens when the SET statement misbehaves—and how you can fix
+it!](https://blogs.sas.com/content/sgf/2014/02/21/what-happens-when-the-set-statement-misbehaves-and-how-you-can-fix-it/)
+
 Summarizing Data with By-Group
+
+[Group processing in SAS: The NOTSORTED
+option](https://blogs.sas.com/content/iml/2016/02/01/notsorted-by-group.html)
 
 [How to use FIRST.variable and LAST.variable in a BY-group analysis in
 SAS](https://blogs.sas.com/content/iml/2018/02/26/how-to-use-first-variable-and-last-variable-in-a-by-group-analysis-in-sas.html)
@@ -315,6 +323,9 @@ Arrays](http://support.sas.com/resources/papers/proceedings13/330-2013.pdf)
 2018)](https://blogs.sas.com/content/sgf/2018/12/13/faqs-about-sas-dates-arrays-and-managing-local-pc-files/)
 
 Reshaping Data
+
+[New year refresher on reshaping data
+(Blog)](https://blogs.sas.com/content/sgf/2016/01/15/new-year-refresher-on-reshaping-data-2/)
 
 [Transposing Data for Statistical
 Analysis](https://documentation.sas.com/?docsetId=proc&docsetTarget=p0gbnq9zulpwe5n1s5of0eb6m82b.htm&docsetVersion=9.4&locale=en)
