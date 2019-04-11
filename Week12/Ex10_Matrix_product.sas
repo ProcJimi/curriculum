@@ -8,7 +8,7 @@ proc iml;
 	print M1; print M2; print  M1_M2_Product;
 quit;
 
-/*4 ways to compute an SSCP matrix -  by Rick Wicklin
+/* Adapted from "4 ways to compute an SSCP matrix" -  by Rick Wicklin
  only 1 way shown below */
 
 /* remove any rows that contain a missing value:
