@@ -16,9 +16,9 @@ materials.
 
 The repository also includes the following:
 
-1.  Clickable URLs for selected papers and blog posts on topics including
+1.  clickable URLs for selected papers and blog posts on topics including
 
--   DATA and PROC steps
+-   Base SAS
 
 -   Hash table operations
 
@@ -30,7 +30,7 @@ The repository also includes the following:
 
 -   Machine learning
 
-1.  Instructions on how to install
+1.  instructions on how to install
 
 -   SAS University Edition
 
