@@ -16,7 +16,7 @@ materials.
 
 The repository also includes the following:
 
-1.  clickable URLs for selected papers and blog posts on topics including
+>   Clickable URLs for selected papers and blog posts on topics including
 
 -   Base SAS
 
@@ -30,7 +30,7 @@ The repository also includes the following:
 
 -   Machine learning
 
-1.  instructions on how to install
+>   Instructions on how to install
 
 -   SAS University Edition
 
