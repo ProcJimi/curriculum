@@ -661,6 +661,9 @@ SAS/IML](https://blogs.sas.com/content/iml/2017/03/29/lists-sasiml.html)
 [More Than Matrices: SAS/IML® Software Supports New Data
 Structures](https://support.sas.com/resources/papers/proceedings17/SAS0420-2017.pdf)
 
+[Use the FLOOR-MOD trick to allocate items to
+groups](https://blogs.sas.com/content/iml/2019/04/08/floor-mod-trick-items-to-groups.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+TheDoLoop+%28The+DO+Loop%29)
+
 Do Loops in SAS (including PROC IML)
 
 [Never End PROC IML with a RUN

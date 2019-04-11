@@ -1,4 +1,4 @@
-﻿SASCourse - GitHub Organization Account
+SASCourse - GitHub Organization Account
 =======================================
 
 This repository contains sample programs that are used by the instructor to
@@ -9,7 +9,33 @@ sample programs will supplement weekly class handouts that are posted to
 Blackboard. Students are encouraged to use these programs as practice exercises
 to enhance their comprehension of the materials being discussed in class. The
 programs were written by the course instructor or adapted from various sources
-including SAS® Documentation, SUGI/SGF papers, Blogs, SAS-L, and
-SAS Support Communities (communities.sas.com). 
-Please let the instructor know of any errors if you have found
-in the code snippets posted here. Don't circulate the materials.
+including SAS® Documentation, SUGI/SGF papers, Blogs, SAS-L, and SAS Support
+Communities (communities.sas.com). Please let the instructor know of any errors
+if you have found in the code snippets posted here. Don't circulate the
+materials.
+
+The repository also includes the following:
+
+1.  Clickable URLs for selected papers and blog posts covering topics including
+
+-   DATA and PROC steps
+
+-   Hash table operations
+
+-   Macro facility
+
+-   SAS/IML
+
+-   SAS Viya
+
+-   Machine learning
+
+1.  Instructions on how to install
+
+-   SAS University Edition
+
+-   Jupyter Lab
+
+-   SAS kernel
+
+-   Python
