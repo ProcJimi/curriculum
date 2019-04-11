@@ -16,7 +16,7 @@ materials.
 
 The repository also includes the following:
 
-1.  Clickable URLs for selected papers and blog posts covering topics including
+1.  Clickable URLs for selected papers and blog posts on topics including
 
 -   DATA and PROC steps
 
@@ -38,4 +38,4 @@ The repository also includes the following:
 
 -   SAS kernel
 
--   Python
+-   SASPy kernel
