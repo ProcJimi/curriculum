@@ -203,6 +203,9 @@ String](http://www.sascommunity.org/wiki/Tips:Finding_the_Position_of_the_First_
 Not Want to be MISSING
 Out](https://support.sas.com/resources/papers/proceedings17/0770-2017.pdf)
 
+[The Top 10
+Head-Scratchers](http://www.scsug.org/SCSUGProceedings/2011/wilson1/The%20Top%2010%20Head-Scratchers.pdf)
+
 Working with dates in SAS
 
 SAS can perform calculations on dates ranging from A.D. November 1582 to A.D.
@@ -371,6 +374,9 @@ Combining Data
 file](https://blogs.sas.com/content/sastraining/2013/03/01/sas-authors-tip-using-a-modify-statement-to-update-a-master-file-from-a-transaction-file/)
 (Blog)
 
+[Why Does SAS® Say
+That?](https://www.pharmasug.org/proceedings/2012/TA/PharmaSUG-2012-TA11-SAS.pdf)
+
 Distinct/Unique Values
 
 [Get the unique values of a variable in data
@@ -505,6 +511,9 @@ Destination](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-pro
 [Five reasons to use ODS EXCLUDE to suppress SAS
 output](https://blogs.sas.com/content/iml/2015/05/28/five-reasons-ods-exclude.html)
 (Blogs)
+
+[How to view or create ODS output ...
+(Blogs)](https://blogs.sas.com/content/sgf/2019/03/15/how-to-view-or-create-ods-output-without-causing-sas-to-stop-responding-or-run-slowly/)
 
 [Using ODS OUTPUT to capture PROC output results in
 SAS](https://blogs.sas.com/content/sastraining/2017/03/31/capturing-output-from-any-procedure-with-an-ods-output-statement/)
@@ -766,6 +775,9 @@ Python](https://blogs.sas.com/content/sgf/2018/11/06/great-tip-for-dynamic-data-
 selection](https://blogs.sas.com/content/sgf/2018/11/02/how-to-use-sas-viya-and-r-for-dynamic-data-selection/)
 
 SASPy
+
+[Utilization of Python in clinical study by
+SASPy](https://www.lexjansen.com/phuse/2018/tt/TT10.pdf) (PhUSE Connect 2018)
 
 [A Basic Introduction to SASPy and Jupyter
 Notebooks](https://support.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2018/2822-2018.pdf)
