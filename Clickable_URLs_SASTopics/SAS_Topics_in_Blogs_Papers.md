@@ -104,6 +104,9 @@ SAS](https://blogs.sas.com/content/sastraining/2017/02/21/27-sas-numeric-missing
 [Call Missing Routine (SAS(R) 9.4
 Documentation)](https://documentation.sas.com/?docsetId=lefunctionsref&docsetTarget=p1iq436yh8838rn1ud38om45n99k.htm&docsetVersion=9.4&locale=en#p0087dtt88wel6n15ffj2o4kmxx8)
 
+[MISSING Function (SAS
+Documentation)](https://go.documentation.sas.com/?docsetId=lefunctionsref&docsetTarget=p06ybg84o0asa4n17l9ieauk58hb.htm&docsetVersion=9.4&locale=en)
+
 Filtering Data
 
 [Using informats to filter invalid
@@ -140,6 +143,9 @@ Format
 
 [Some Useful Techniques of Proc
 Format](https://www.pharmasug.org/proceedings/2011/CC/PharmaSUG-2011-CC19.pdf)
+
+[PROC FORMAT – Not Just Another Pretty Face (SUGI,
+2005)](https://support.sas.com/resources/papers/proceedings/proceedings/sugi30/001-30.pdf)
 
 [Controlling your
 formats](https://blogs.sas.com/content/sgf/2017/12/04/controlling-your-formats/)
@@ -232,6 +238,9 @@ date?](https://communities.sas.com/t5/SAS-Programming/how-to-convert-char-var-to
 [INTCK and INTNX: Two essential functions for computing intervals between dates
 in
 SAS](https://blogs.sas.com/content/iml/2017/05/15/intck-intnx-intervals-sas.html)
+
+[Calculating the number of weekends until
+Easter](https://communities.sas.com/t5/SAS-Communities-Library/3-ways-to-consider-movable-holidays-in-SAS/tac-p/555738#M3709)
 
 [The COALESCE function: PROC SQL compared with PROC
 IML](https://blogs.sas.com/content/iml/2011/05/11/the-coalesce-function-proc-sql-compared-with-proc-iml.html)
@@ -490,6 +499,9 @@ Started](http://support.sas.com/resources/papers/proceedings10/135-2010.pdf)
 [Basic Differences Between Proc MEANS and Proc
 SUMMARY](https://amadeus.co.uk/sas-tips/basic-differences-between-proc-means-and-proc-summary/)
 
+[Customizing output from PROC MEANS (Blogs,
+2015)](https://blogs.sas.com/content/sgf/2015/07/17/customizing-output-from-proc-means/)
+
 SAS Data Sets from PROC Step
 
 [Creating summary data
@@ -598,6 +610,17 @@ Programmer](http://support.sas.com/resources/papers/proceedings11/272-2011.pdf)
 
 Macro Facility
 
+[Surviving the SAS® Macro Jungle by Using Your Own Programming Toolkit
+(PharmaSUG,
+2018)](http://support.sas.com/resources/papers/387699_macro-programming-tools.pdf)
+
+[Protecting Macros and Macro Variables (MWSUG,
+2011)](https://www.mwsug.org/proceedings/2011/appdev/MWSUG-2011-AD13.pdf)
+
+[SAS® Macros: Beyond the
+Basics](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3511-2019.pdf)
+(SGF, 2019)
+
 [Introduction to the Macro
 Facility](https://documentation.sas.com/?activeCdc=pgmsascdc&cdcId=sasstudiocdc&cdcVersion=3.71&docsetId=mcrolref&docsetTarget=p14qac7nd7n0s1n1rfte5bwrpfcy.htm&locale=en)
 (SAS Documentation, 2018)
@@ -690,6 +713,9 @@ LOC](https://blogs.sas.com/content/iml/2012/11/19/beware-the-naked-loc.html)
 [Data-driven
 simulation](https://blogs.sas.com/content/iml/2017/09/27/data-driven-simulation.html)
 
+[How to simulate data from a generalized linear mode (May 6,
+2019)](https://blogs.sas.com/content/iml/2019/05/06/simulate-glim.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+TheDoLoop+%28The+DO+Loop%29)
+
 [Lists: Nonmatrix data structures in
 SAS/IML](https://blogs.sas.com/content/iml/2017/03/29/lists-sasiml.html)
 
@@ -723,6 +749,26 @@ Statistical Analyses
 
 [10 posts from 2018 that deserve a second
 look](https://blogs.sas.com/content/iml/2019/01/09/posts-2018-second-look.html)
+
+Model Selection
+
+[Discrimination, accuracy, and stability in binary classifiers (May 8,
+2019)](https://blogs.sas.com/content/iml/2019/05/08/stability-binary-classifier.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+TheDoLoop+%28The+DO+Loop%29)
+
+[Create and compare ROC curves for any predictive model (Nov 14,
+2018)](https://blogs.sas.com/content/iml/2018/11/14/compare-roc-curves-sas.html)
+
+[The essential guide to bootstrapping in SAS (Dec 12,
+2018)](https://blogs.sas.com/content/iml/2018/12/12/essential-guide-bootstrapping-sas.html)
+
+Sample Selection
+
+[Sample with replacement in SAS (Jan 29,
+2014)](https://blogs.sas.com/content/iml/2014/01/29/sample-with-replacement-in-sas.html)
+
+[Sample without replacement in
+SAS](https://blogs.sas.com/content/iml/2014/02/03/sample-without-replacement.html)
+(Feb 3, 2014)
 
 Machine Learning
 
@@ -760,10 +806,13 @@ Git
 [Using built-in Git operations in SAS (SAS 9.4
 M6)](https://blogs.sas.com/content/sasdummy/2019/01/17/git-in-sas/)
 
-SAS Viya
+SAS Viya/CASL
 
 [Authentication to SAS Viya: a couple of
 approaches](https://blogs.sas.com/content/sgf/2019/01/25/authentication-to-sas-viya/)
+
+[What is CASL? (SGF,
+2019)](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3040-2019.pdf)
 
 [Introducing Python-based command-line tools for SAS
 Viya](https://blogs.sas.com/content/sgf/2018/12/18/python-based-command-line-tools/)
@@ -774,7 +823,30 @@ Python](https://blogs.sas.com/content/sgf/2018/11/06/great-tip-for-dynamic-data-
 [How to use SAS® Viya® and R for dynamic data
 selection](https://blogs.sas.com/content/sgf/2018/11/02/how-to-use-sas-viya-and-r-for-dynamic-data-selection/)
 
+R
+
+[Using the R interface in SAS ® to Call R Functions and Transfer Data (SGF,
+2019)](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3556-2019.pdf)
+
+[A Gentle Introduction to R From A SAS Programmer's Perspective (PharmaSUG,
+2018)](https://www.pharmasug.org/proceedings/2018/HT/PharmaSUG-2018-HT04.pdf)
+
+SAS University Edition
+
+[Learning Data Science with SAS® University Edition and JupyterLab (SGF,
+2019)](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3133-2019.pdf)
+
+[STEPPING UP YOUR SAS® GAME WITH JUPYTER NOTEBOOKS (SGF,
+2019)](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3262-2019.pdf)
+
 SASPy
+
+[Everything is better with friends: Executing SAS® code in Python scripts with
+SASPy (SGF,
+2019)](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3189-2019.pdf)
+
+[Why SAS Programmers Should Learn Python Too (PharmaSUG,
+2018)](https://www.pharmasug.org/proceedings/2018/AD/PharmaSUG-2018-AD12.pdf)
 
 [Utilization of Python in clinical study by
 SASPy](https://www.lexjansen.com/phuse/2018/tt/TT10.pdf) (PhUSE Connect 2018)
