@@ -283,6 +283,10 @@ SET Statement
 [What happens when the SET statement misbehaves—and how you can fix
 it!](https://blogs.sas.com/content/sgf/2014/02/21/what-happens-when-the-set-statement-misbehaves-and-how-you-can-fix-it/)
 
+[Exploring techniques of using multiple SET statements in a DATA step
+(PharmaSUG,
+2018)](https://www.lexjansen.com/pharmasug/2018/BB/PharmaSUG-2018-BB10.pdf)
+
 Summarizing Data with By-Group
 
 [Group processing in SAS: The NOTSORTED
@@ -814,6 +818,9 @@ approaches](https://blogs.sas.com/content/sgf/2019/01/25/authentication-to-sas-v
 [What is CASL? (SGF,
 2019)](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3040-2019.pdf)
 
+[Come On, Baby, Light my SAS® Viya®: Programming for CAS (SGF,
+2018)](https://support.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2018/2622-2018.pdf)
+
 [Introducing Python-based command-line tools for SAS
 Viya](https://blogs.sas.com/content/sgf/2018/12/18/python-based-command-line-tools/)
 
@@ -830,6 +837,13 @@ R
 
 [A Gentle Introduction to R From A SAS Programmer's Perspective (PharmaSUG,
 2018)](https://www.pharmasug.org/proceedings/2018/HT/PharmaSUG-2018-HT04.pdf)
+
+[Expand Your Skills from SAS® to R with No
+Complications](https://www.pharmasug.org/proceedings/2018/BB/PharmaSUG-2018-BB22.pdf)
+(PharmaSUG, 2018)
+
+[Exploring Use of R for Clinical
+Trials](https://www.pharmasug.org/proceedings/2018/SI/PharmaSUG-2018-SI12.pdf)
 
 SAS University Edition
 
@@ -850,6 +864,10 @@ SASPy (SGF,
 
 [Utilization of Python in clinical study by
 SASPy](https://www.lexjansen.com/phuse/2018/tt/TT10.pdf) (PhUSE Connect 2018)
+
+[A Method for Independent Program Validation utilising SAS®, R and Python
+(PharmSUG,
+2018)](https://www.pharmasug.org/proceedings/2018/AD/PharmaSUG-2018-AD10.pdf)
 
 [A Basic Introduction to SASPy and Jupyter
 Notebooks](https://support.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2018/2822-2018.pdf)
@@ -874,6 +892,11 @@ SAS® and Python: The Perfect Partners in Crime
 [SAS vs. Python - How Do They Compare (SESUG,
 2017)](http://www.scsug.org/wp-content/uploads/2017/10/db55.pdf)
 
+Jupyter Notebook
+
 [Revolutionizing Statistical Computing in
 SAS®](https://support.sas.com/resources/papers/proceedings17/0838-2017.pdf) with
 the Jupyter Notebook
+
+[Telling Stories with Jupyter notebook (PharmaSUG,
+2018)](https://www.pharmasug.org/proceedings/2018/DV/PharmaSUG-2018-DV21.pdf)
