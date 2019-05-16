@@ -32,6 +32,34 @@ quit;
 %mend reveal;
 %reveal
 
+*More examples;
+
+*Create a macro variable containing a single value that equals the
+number of distinct value of a DATA step variable;
+
+proc sql;
+    select count(distinct Sex) into :sex_value
+    from sashelp.class;
+ quit;
+ %put &sex_value;
+
+
+ *Create multiple macro variables, each containing a distinct 
+  value of a DATA step variable;
+
+ proc sql;
+    select distinct Sex into :sex1-
+    from sashelp.class;
+ %put Number of Rows: &sqlobs;
+ quit;
+ %macro reveal;
+ %put &Put_title;
+ %Do i=1 %TO &Sqlobs;
+    %put &&makes&i;
+  %end;
+%mend reveal;
+%reveal
+
 
 
 

@@ -1,8 +1,8 @@
 *Ex10_Freq_ods_output_crosstabs.sas;
 *The following code was obtained from SAS_L
 ods output crosstabfreqs=summary;
-proc freq data=sashelp.class  noprint;
-table sex*(_all_) /out=summary;
+proc freq data=sashelp.class;
+table sex*(_all_);
 run;
 
 data long;

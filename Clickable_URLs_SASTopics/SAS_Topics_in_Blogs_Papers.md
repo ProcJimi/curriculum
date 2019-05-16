@@ -581,6 +581,9 @@ Efficiency
 >   [Essential SAS® Coding Techniques for Gaining
 >   Efficiency](https://www.mwsug.org/proceedings/2012/HW/MWSUG-2012-HW07.pdf)
 
+[Quickish Performance Techniques for Biggish Data (SGF,
+2017)](http://support.sas.com/resources/papers/proceedings17/1401-2017.pdf)
+
 [Flexibility by Design: A Look at New and Update System Options in SAS(R)
 9.4](http://support.sas.com/resources/papers/Flexibility_by_Design.pdf)
 
@@ -652,6 +655,9 @@ Variables](http://support.sas.com/resources/papers/proceedings17/1516-2017.pdf)
 >   [Before You Get Started: A Macro Language Preview in Three
 >   Parts](http://support.sas.com/resources/papers/proceedings14/1444-2014.pdf)
 >   (SAS Global Forum, 2012)
+
+[DOSUBL and the Function Style Macro (PharmaSUG,
+2016)](https://www.pharmasug.org/proceedings/2016/BB/PharmaSUG-2016-BB05.pdf)
 
 PROC IML
 
@@ -820,6 +826,24 @@ approaches](https://blogs.sas.com/content/sgf/2019/01/25/authentication-to-sas-v
 
 [Come On, Baby, Light my SAS® Viya®: Programming for CAS (SGF,
 2018)](https://support.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2018/2622-2018.pdf)
+
+[Management and Usage of User-Defined Formats in the SAS® Cloud Analytic
+Services Server (SGF,
+2018)](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2018/2032-2018.pdf)
+
+[Five Approaches for High-Performance Data Loading to the SAS® Cloud Analytic
+Services Server (SGF,
+2018)](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2018/1854-2018.pdf)
+
+[A Need For Speed: Loading Data via the
+Cloud](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2018/1733-2018.pdf)
+
+[How to Load Relational Data into SAS® Cloud Analytic Services Using Java (SGF,
+2018)](https://support.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2018/1906-2018.pdf)
+
+[Just Enough SAS® Cloud Analytic Services: CAS Actions for SAS® Visual Analytics
+Report Developers (SGF,
+2018)](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2018/2000-2018.pdf)
 
 [Introducing Python-based command-line tools for SAS
 Viya](https://blogs.sas.com/content/sgf/2018/12/18/python-based-command-line-tools/)
