@@ -760,6 +760,12 @@ Statistical Analyses
 [10 posts from 2018 that deserve a second
 look](https://blogs.sas.com/content/iml/2019/01/09/posts-2018-second-look.html)
 
+[What is Kolmogorov's D statistic? (Blogs -, May 15,
+2019)](https://blogs.sas.com/content/iml/2019/05/15/kolmogorov-d-statistic.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+TheDoLoop+%28The+DO+Loop%29)
+
+[Critical values of the Kolmogorov-Smirnov test (Blogs - May 20,
+2019)](https://blogs.sas.com/content/iml/2019/05/20/critical-values-kolmogorov-test.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+TheDoLoop+%28The+DO+Loop%29)
+
 Model Selection
 
 [Discrimination, accuracy, and stability in binary classifiers (May 8,
