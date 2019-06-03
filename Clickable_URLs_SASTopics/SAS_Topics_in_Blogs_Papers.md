@@ -930,3 +930,11 @@ the Jupyter Notebook
 
 [Telling Stories with Jupyter notebook (PharmaSUG,
 2018)](https://www.pharmasug.org/proceedings/2018/DV/PharmaSUG-2018-DV21.pdf)
+
+Running SAS in the Public Cloud
+
+[Important Performance Considerations When Moving SAS® to a Public Cloud (SGF,
+2019)](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3363-2019.pdf)
+
+[Implementing SAS®9.4 Software in Cloud
+Infrastructures](http://support.sas.com/resources/papers/Implementing-SAS9-4-Software-Cloud-Infrastructures.pdf)
