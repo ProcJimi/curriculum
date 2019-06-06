@@ -41,6 +41,11 @@ SAS University Edition
 [Helpful hints and a useful tip for SAS University
 Edition](https://blogs.sas.com/content/sastraining/2019/01/30/helpful-hints-and-a-useful-tip-for-sas-university-edition/)
 
+Base SAS
+
+[It’s All about the Base—Procedures (SGF,
+2019)](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3068-2019.pdf)
+
 DATA Step
 
 [THE SAS SUPERVISOR](https://www.lexjansen.com/nesug/nesug88/SAS_supervisor.pdf)
@@ -467,6 +472,9 @@ DATA](https://www.mwsug.org/proceedings/2015/SA/MWSUG-2015-SA-06.pdf)
 
 Hash Tables
 
+[SAS®-Coin: Understanding Blockchains Through Simple Data Step Examples (SGF,
+2019)](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3153-2019.pdf)
+
 [Five things you (probably) don’t know you can do with a hash
 table](https://blogs.sas.com/content/sastraining/2018/08/09/five-things-you-probably-dont-know-you-can-do-with-a-hash-table/)
 (Blogs)
@@ -824,6 +832,10 @@ M6)](https://blogs.sas.com/content/sasdummy/2019/01/17/git-in-sas/)
 
 SAS Viya/CASL
 
+[Multi-tenancy in SAS® Viya®: Considerations and
+Implementation](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3322-2019.pdf)
+(SGF, 2019)
+
 [Authentication to SAS Viya: a couple of
 approaches](https://blogs.sas.com/content/sgf/2019/01/25/authentication-to-sas-viya/)
 
@@ -885,6 +897,19 @@ SAS University Edition
 
 SASPy
 
+[SAS® and Open Source: Two Integrated
+Worlds](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3415-2019.pdf)
+
+[A Complete Introduction to SASPy and Jupyter
+Notebooks](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3238-2019.pdf)
+(SGF, 2019)
+
+[Deploying Models Using SAS® and Open Source (SGF,
+2019)](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3368-2019.pdf)
+
+[STEPPING UP YOUR SAS® GAME WITH JUPYTER NOTEBOOKS (SGF,
+2019)](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3262-2019.pdf)
+
 [Everything is better with friends: Executing SAS® code in Python scripts with
 SASPy (SGF,
 2019)](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3189-2019.pdf)
@@ -938,3 +963,9 @@ Running SAS in the Public Cloud
 
 [Implementing SAS®9.4 Software in Cloud
 Infrastructures](http://support.sas.com/resources/papers/Implementing-SAS9-4-Software-Cloud-Infrastructures.pdf)
+
+AWS
+
+[Your Data Is in Amazon Web Services (AWS): How Do You Access It with SAS®?
+(SGF,
+2019)](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3391-2019.pdf)
