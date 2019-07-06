@@ -863,6 +863,9 @@ Cloud](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedin
 Report Developers (SGF,
 2018)](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2018/2000-2018.pdf)
 
+[How SAS Viya uses REST APIs to integrate with Python (Blogs,
+2018)](https://blogs.sas.com/content/sgf/2018/08/02/sas-viya-rest-apis-python/)
+
 [Introducing Python-based command-line tools for SAS
 Viya](https://blogs.sas.com/content/sgf/2018/12/18/python-based-command-line-tools/)
 
