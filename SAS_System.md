@@ -60,7 +60,7 @@
           
       * Calculating statistics (e.g., N, sum, mean, minimum, maximum, standard error, etc.)
               
-      * Reporting Procedures for creating detailed and summary reports (e.g., PROC PRINT, 
+  * Reporting Procedures for creating detailed and summary reports (e.g., PROC PRINT, 
                 PROC REPORT, PROC TABULATE)
                 
 ### <font color='green'>2.3 SAS Output Delivery System (ODS)</font>               
