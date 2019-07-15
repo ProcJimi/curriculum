@@ -5,8 +5,7 @@ infile datalines firstobs=2;
 input id $1.        @3 x1 5. 
       @9 x2 dollar7.   @9 a_x2 comma7.
       @17 x3 dollarx7. @17 a_x3 commax7. 
-      @25 x4 6.        @32 x5 percent7. 
-;
+      @25 x4 6.        @32 x5 percent7.;
 format x2 dollar7.  a_x2 comma7. 
        x3 dollarx7. a_x3 commax7. 
        x5 percent7.;
@@ -15,6 +14,7 @@ datalines;
 1234567890123456789012345678901234
 A 12909 $12,909 $12.909 12.909 12%
 ;
+title 'Use of absolute pointer control';
 proc print data=work.apc noobs; run;
 
 data work.rpc;
@@ -32,6 +32,7 @@ datalines;
 1234567890123456789012345678901234
 A 12909 $12,909 $12.909 12.909 12%
 ;
+title 'Use of relative pointer control';
 proc print data=work.rpc noobs; run;
 
 /* The +n (relative pointer control) moves the input pointer

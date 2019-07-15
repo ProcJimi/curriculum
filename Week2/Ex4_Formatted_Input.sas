@@ -17,7 +17,8 @@ http://r4stats.com/articles/popularity/
  SPSS 339 07/01/2015
     R 240 08/01/2015
 Stata  62 09/01/2015
-;                                                                                                      
+;  
+title 'Formatted Input';  
 proc print data=Have1 noobs ; run;
 proc contents data=Have1 p; 
 ods select position;
@@ -42,7 +43,7 @@ http://r4stats.com/articles/popularity/
     R 240 08/01/2015
 Stata  62 09/01/2015
 ;   
-                                                                                           
+title 'Formatted Input';                                                                                            
 proc print data=Have2 noobs ; run;
 
 /*

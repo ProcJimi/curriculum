@@ -1,9 +1,25 @@
+* Ex14_Pathname_Library.sas;
+/* HOW DO I  LOCATE THE SAS TEMPORARY WORK DIRECTORY?
+https://stats.idre.ucla.edu/sas/faq/how-do-i-locate-the-sas-temporary-work-directory/
+*/
 
-* Retrive the folder names;
+* Method 1 - Point-and-click in Windows Environment;
+ods exclude all;  /* This statement suspends all open destinations */
+options nonumber nodate pagesize=100;
 
-%put %sysfunc(pathname(sashelp));
-%put %sysfunc(pathname(sasuser));
-%put %sysfunc(pathname(work));
+* Method 2;
+proc options option = work;
+run;
+
+*Method 3;
+%put WORK Library Folder Location -> %sysfunc(getoption(work));
+
+* Method 4;
+%let a = %sysfunc(getoption(work));
+%put WORK Library Folder Location -> &a;
+
+* Method 5 by Art Carpenter;
+%put WORK Library Folder Location ->  %sysfunc(pathname(work));
 
 /*
 SASHELP - permanent library that contains sample data and 
@@ -19,3 +35,11 @@ Source: SAS Certification Prep Guide, Base Programming
         for SAS(R)9 Third Edition (page 31). 
 
 */
+
+* Retrive the folder names;
+
+%put %sysfunc(pathname(sashelp));
+%put %sysfunc(pathname(sasuser));
+%put %sysfunc(pathname(work));
+
+

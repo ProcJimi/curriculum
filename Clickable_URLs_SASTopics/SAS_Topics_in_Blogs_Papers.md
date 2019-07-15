@@ -41,7 +41,7 @@ SAS University Edition
 [Helpful hints and a useful tip for SAS University
 Edition](https://blogs.sas.com/content/sastraining/2019/01/30/helpful-hints-and-a-useful-tip-for-sas-university-edition/)
 
-Base SAS
+Base SAS Procedures
 
 [It’s All about the Base—Procedures (SGF,
 2019)](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3068-2019.pdf)
@@ -874,6 +874,34 @@ Python](https://blogs.sas.com/content/sgf/2018/11/06/great-tip-for-dynamic-data-
 
 [How to use SAS® Viya® and R for dynamic data
 selection](https://blogs.sas.com/content/sgf/2018/11/02/how-to-use-sas-viya-and-r-for-dynamic-data-selection/)
+
+[The Architecture of the SAS(R) Cloud Analytic Services in SAS(R)
+Viya](https://support.sas.com/resources/papers/proceedings17/SAS0309-2017.pdf)
+
+[Differences in the SAS® and SAS® Viya™
+Platforms](https://documentation.sas.com/api/docsets/whatsdiff/3.2/content/whatsdiff.pdf?locale=en)
+
+[SAS(R) 9.4 and SAS(R) Viya(TM) Functional
+Comparison](http://support.sas.com/resources/papers/sas-94-sas-viya-functional-comparison.pdf),
+2019
+
+[My Experiences in Adopting SAS® Cloud Analytic Services into Base SAS®
+Processes,
+2018](https://www.google.com/search?q=My+Experiences+in+Adopting+SAS%C2%AE+Cloud+Analytic+Services+into+Base+SAS%C2%AE+Processes+Steven+Sober%2C+SAS+Institute+Inc.%2C+Cary%2C+NC&rlz=1C1GCEV_en&oq=My+Experiences+in+Adopting+SAS%C2%AE+Cloud+Analytic+Services+into+Base+SAS%C2%AE+Processes+Steven+Sober%2C+SAS+Institute+Inc.%2C+Cary%2C+NC&aqs=chrome..69i57.417j0j8&sourceid=chrome&ie=UTF-8)
+
+[SAS Language Elements for
+CAS](https://documentation.sas.com/?docsetId=lrcon&docsetTarget=p0pif2pul9tj5on0znm7bup6xlwl.htm&docsetVersion=9.4&locale=en)
+
+[A quick introduction to CAS in SAS
+Viya](https://blogs.sas.com/content/sgf/2018/08/13/intro-cas-sas-viya/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+SasGlobalForumBlog+%28SAS+Users%29)
+
+[Let’s Start Something New! A Beginner’s Guide to Programming in the SAS® Cloud
+Analytic Services
+Environment](https://www.pharmasug.org/proceedings/2018/AD/PharmaSUG-2018-AD23.pdf),
+PharmaSUG, 2018
+
+[Learn the three easiest ways to load data into CAS tables, June 21,
+2019](https://blogs.sas.com/content/sgf/2019/06/21/learn-the-three-easiest-ways-to-load-data-into-cas-tables/)
 
 R
 

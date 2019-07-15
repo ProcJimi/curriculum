@@ -1,4 +1,4 @@
-*Example_Conpilation_Execution.sas;
+*Ex6_Conpilation_Execution.sas;
 DATA work.HAVE;
 PUT 'After Compilation, Before Execution:' _ALL_;
  INPUT Name $ quiz1 quiz2 quiz3;
