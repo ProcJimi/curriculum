@@ -17,4 +17,4 @@ datalines;
 75 4,144	12,314	768	    5,149	4,910	1,422	  832	4,844
 ;
 run;
-proc print noobs; run;
+proc print data=annual_exp2013 noobs; run;

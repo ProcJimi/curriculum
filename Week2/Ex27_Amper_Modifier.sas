@@ -5,4 +5,5 @@ DATA Work.Have;
 	DATALINES;		
     Washington DC,  01/01/2013  
     ;
-  PROC PRINT noobs; run;
+PROC PRINT data=work.Have noobs; 
+run;

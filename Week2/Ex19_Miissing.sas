@@ -1,4 +1,4 @@
-*Ex19_Missing.sas;
+*Ex19_Missing.sas (Part 1);
 *Instream data include dot(.) as a missing value;
 options nocenter nodate nonumber MISSING='X' ;
 data Example_M_Equal;
@@ -17,6 +17,7 @@ proc print data=Example_M_Equal;
   sum x y z c;
 run;
 
+*Ex19_Missing.sas (Part 2);
 * Instream data include ._, .a., and .z, as special missing values;
 options nocenter nodate nonumber;
 data Example_M_S;
@@ -34,7 +35,7 @@ proc print data=Example_M_S noobs;
   var name;
   sum x y z c;
 run;
-
+*Ex19_Missing.sas (Part 3);
 * Instream data include a character value in a numeric field; 
 options nocenter nodate nonumber  ;
 data Example_M_C;

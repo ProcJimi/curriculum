@@ -8,7 +8,7 @@ DATA Work.Have1;
   PROC PRINT data=work.Have1 noobs; run;
   
   * Use the $ option to read in character data
-    and the LENGTH statement to avoud unwanted
+    and the LENGTH statement to avoid unwanted
     truncation of the values of character variables 
     that are more than  8 chracters long;
 
@@ -78,7 +78,7 @@ DATA Work.Have1;
   PROC PRINT data =work.Have6 noobs; run;
 
 
- /* Use the LABEL OR FORMAT statement (or both)
+ /* Use the LABEL and FORMAT statements
  in a DATA step to apply the labels and formats
  to the data table. */
 
@@ -93,10 +93,13 @@ DATA Work.Have7;
     Alabama 4833722  77
     California 38332521 76.1
   ;
+  proc print data=work.Have7 noobs label; run;
+  proc contents data=work.Have7 varnum;
+  ods select position;
+  run;
 
-  /* Use a LABEL option with PROC PRINT to display
-    descriptive column headings instead of 
-    variable names. */
+  /* Use a LABEL option (required) with PROC PRINT to display
+    descriptive column heading */
 
   PROC PRINT data=work.Have7 noobs label; 
   run;
@@ -109,19 +112,18 @@ DATA Work.Have7;
     California 38332521 76.1
   ;
   /* 
-  1) Use the LABEL OR FORMAT statement (or both)
+  1) Use the LABEL and FORMAT statement 
   in the PROC step to apply the labels and formats
   to the data table
 
-   2) You must use a LABEL option with PROC PRINT 
-    to display descriptive column headings 
-    instead of   variable names.
+   2) You must use a SPLIT= option with PROC PRINT 
+    to display descriptive column headings with split text.
   */
-  PROC PRINT data=work.Have8 noobs label;
+  PROC PRINT data=work.Have8 noobs split='*';
     FORMAT pop comma10. percent_pop18p 5.1;
 	LABEL st_name='State Name'
           pop='Population Size'
-	      percent_pop18p='Percentage of Population Aged 18 Years and Older';
+	      percent_pop18p='Percentage*of Population* Aged 18 Years* and Older';
      
   run;
 

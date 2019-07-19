@@ -9,4 +9,5 @@ format x2 dollar7. x3 dollarx7. x5 percent7.;
 datalines;
 A 12909 $12,909 $12.909 12.909 12%
 ;
-proc print noobs; run;
+proc print data=Example_formatted_column_input noobs;
+run;

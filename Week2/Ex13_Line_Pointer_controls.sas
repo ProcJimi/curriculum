@@ -1,4 +1,4 @@
-*Ex13_Line_Pointer_controls.sas;
+*Ex13_Line_Pointer_controls.sas (Part 1);
 options nocenter ls=132 nodate nonumber;
 data address1;
       input name  & $ 30.
@@ -19,6 +19,7 @@ Millington, TN 38055
 901-874-4885
 ;
 proc print data= address1 noobs; run;
+*Ex13_Line_Pointer_controls.sas (Part 2);
 *Multiple records per observation using the pound (#) sign;
 data address2;
    infile datalines ;

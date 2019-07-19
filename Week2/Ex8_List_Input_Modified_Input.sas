@@ -1,4 +1,4 @@
-*Ex8_List_Input_Modified_Input.sas;
+*Ex8_List_Input_Modified_Input.sas (Part 1);
 OPTIONS nodate nonumber ps=58 ls=98;
 
 *List input style with LENGTH and INFORMAT statements; 
@@ -15,6 +15,7 @@ G008765, Rubi Tyson,6504 Spring St, Philadelphia,PA,19104,08/13/2016
 PROC PRINT data=students_x noobs; 
 RUN;
 
+*Ex8_List_Input_Modified_Input.sas (Part 2);
 *List input style with INFORMAT statement; 
 data students_y; 
 informat Id $6. Name $14. Address $16. City $20. State $2. zip $5. 
@@ -29,20 +30,7 @@ G008765, Rubi Tyson,6504 Spring St, Philadelphia,PA,19104,08/13/2016
 PROC PRINT data=students_y noobs;  
 RUN;
 
-* List input style with colon modifier;
-data students_z; 
-infile datalines dlm=',';
-input Id :$6. Name :$14. Address :$16. City :$20. 
-      State :$2. zip :$5. Reg_date :mmddyy.;
-format Reg_date mmddyy10.;
-datalines;
-G009876, Ann Miller,2219 Pine St, Rockville,MD,28057, 08/20/2016
-G008765, Rubi Tyson,6504 Spring St, Philadelphia,PA,19104,08/13/2016
-;
-PROC PRINT data=students_z noobs;  
-RUN;
-
-/* Code Explnation: 
+/* Code Explnation (Part 3): 
   The CITY variable is read in as a character variable using 
   the $20.  ($w. ) Informat.   This informat tells SAS that the variable 
   is character with a length of 22.  
@@ -58,6 +46,22 @@ or the end of the data line, whichever comes first.
 
 */
 
+*Ex8_List_Input_Modified_Input.sas (Part 3);
+* List input style with colon modifier;
+data students_z; 
+infile datalines dlm=',';
+input Id :$6. Name :$14. Address :$16. City :$20. 
+      State :$2. zip :$5. Reg_date :mmddyy.;
+format Reg_date mmddyy10.;
+datalines;
+G009876, Ann Miller,2219 Pine St, Rockville,MD,28057, 08/20/2016
+G008765, Rubi Tyson,6504 Spring St, Philadelphia,PA,19104,08/13/2016
+;
+PROC PRINT data=students_z noobs;  
+RUN;
+
+
+*Ex8_List_Input_Modified_Input.sas (Part 4);
   DATA work.Have1; 
     INFORMAT visit_date mmddyy10. amount comma7.; 
     INPUT visit_date amount ;
@@ -69,19 +73,7 @@ or the end of the data line, whichever comes first.
   ;
   PROC PRINT data=Have1 noobs; RUN;
 
-
-
-  DATA Work.Have2; 
-    INPUT visit_date :mmddyy. amount :comma.;
-	FORMAT visit_date mmddyy10. amount comma7.;
-	DATALINES;		
-    01/01/2013      125,000
-    03/02/2014      38,000	
-    12/18/2015     145,000
-  ;
-  PROC PRINT data=Have2 noobs; run;
-
- /* Notice that the mmddyyw.d informat does not specify a w value 
+  /* Notice that the mmddyyw.d informat does not specify a w value 
    and that the commaw.d informat does also not specify a w value.
    Here, we have used use the MMDDYY. INORMAT    instead of the 
    mmddyy10. INFORMAT. and the COMMA. INFORMAT instead of COMMA6.
@@ -98,8 +90,21 @@ or the end of the data line, whichever comes first.
   This is different from using a numeric informat with formatted input.  
   In that case, you must specify a w value in order to indicate the 
   number of columns to be read."
-
+*/
     
+*Ex8_List_Input_Modified_Input.sas (Part 5);
+
+  DATA Work.Have2; 
+    INPUT visit_date :mmddyy. amount :comma.;
+	FORMAT visit_date mmddyy10. amount comma7.;
+	DATALINES;		
+    01/01/2013      125,000
+    03/02/2014      38,000	
+    12/18/2015     145,000
+  ;
+  PROC PRINT data=Have2 noobs; run;
+
+ 
  
 
 

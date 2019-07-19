@@ -17,7 +17,7 @@ proc freq data=sashelp.demographics;
   tables region; 
   format region $regionfmt.;
 run;
-
+title ' ';
 
 
 *Ranges on the left side of the = sign in PROC FORMAT VALUE statement;
@@ -25,16 +25,16 @@ run;
 
 proc format;
   value numfmt
-           Low - <0  = "Low - <0: Nonresponse"
-		   0="0: Never"
-           1-5 = "1-5: Within past 5 years"
-           Other = "Other: More than 5 years ago"
+           Low - <0  = "Nonresponse"
+		   0="Never"
+           1-5 = "Within past 5 years"
+           6-High = "More than 5 years ago"
 		   . ="Missing" ;
    value $charfmt
-           Low-<'0'  = "Low-<'0': Nonresponse (Missing values included)"
-		   '0' = "'0': Never"
-           '1'-'5' = "'1'-'5': Within past 5 years"
-		   Other = "Other: More than 5 years ago" ; 
+           Low-<'0'  = "Nonresponse"
+		   '0' = "Never"
+           '1'-'5' = "Within past 5 years"
+		   '6'-High = "More than 5 years ago" ; 
  run;
 data work.have;
 input id $ 1 Colonoscopy 3-4 c_Colonoscopy $6-7;
@@ -49,7 +49,8 @@ H 6  6
 I .   
 J 7  7
 ;
-proc print data=work.have noobs;
+proc freq data=work.have;
+tables colonoscopy c_colonoscopy /nopercent nocum missing;
 Format colonoscopy numfmt. c_colonoscopy $charfmt.;
 run;
 
@@ -68,8 +69,8 @@ proc format;
                  100 - high = '100+ lbs'; 
 run;
 Title 'User-Defined Formats Used';
-proc print data=sashelp.class (obs=5) noobs ;
-   var name weight;
+proc freq data=sashelp.class;
+   tables weight;
    format weight wtfmt.;
 run;
 

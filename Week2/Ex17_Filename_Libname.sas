@@ -15,13 +15,21 @@ DATA SDS.Pop;
          pop18p :comma12.  p_pop18p; 
   LABEL region ='Region'     
         FIPS ='State FIPS'
-	    name ='State Name'  
+        name ='State Name'  
         pop ='Population*(All Ages)'
-	    pop18p ='Population*(Aged 18+)'
+        pop18p ='Population*(Aged 18+)'
         p_pop18p = 'Percent*Population*(Aged 18+)'; 
   FORMAT pop pop18p comma12. FIPS z2.;
 run;
-proc print data=SDS.pop (obs=5) split='*';
-var FIPS name pop pop18p;
+proc sort data=SDS.pop out=pop; by descending pop; run;
+title '8 most populaous states - United States of America, 2013';
+proc print data=pop (obs=8) noobs split='*';
+var name pop pop18p;
 run;
-  
+title "United States Total Population, 2013";
+LIBNAME SDS "C:\SASCourse\Week2";
+proc sql;
+ select sum(pop) format=comma12. as TotalPopulation
+  from sds.pop
+   quit;
+title ' '; 

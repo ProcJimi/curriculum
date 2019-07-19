@@ -1,8 +1,7 @@
-*Length.sas;
+*Ex23_Length.sas;
 data temp;
 length x 4 y 3 ;
      do x=9006 to 9010;
-        y=x;
        output;
 	 end;
 proc print data=temp noobs; run;

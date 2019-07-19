@@ -1,4 +1,4 @@
-*Ex6_Formated_Input_Dates.sas;
+*Ex6_Formated_Input_Dates.sas (Part 1);
 DATA work.Have1;
 INPUT            
             @1  date1 date11. 
@@ -20,9 +20,11 @@ INPUT
 DATALINES;
 14/JAN/2015 140115 01-14-2015 15 01 14 14.01.2015 01/14/15
 ;
+title "Using the original permanent formats (originally added to the variables in the DATA step)";
 proc print data=work.have1; 
 run;
 
+title "Using the temporary formats in the PROC step";
 proc print data=have1;
 Format date1 date9. 
       date2 WORDDATE. 
@@ -37,11 +39,12 @@ run;
 
 /*Reading Dates Using ANYDATE Informat 
 
-You can use an ANYDTDTE informat to read in a
- mix of date forms including: 
-a.	DATE, DATETIME, TIME, DDMMYY, 
-b.	MMDDYY, and YYMMDD 
-c.	JULIAN, MONYY, and YYQ 
+ You can use an ANYDTDTE informat to read in dates
+ of different structures including: 
+
+	• DATE, DATETIME, TIME, DDMMYY, 
+	• MMDDYY, and YYMMDD 
+	• JULIAN, MONYY, and YYQ 
 
 You can also use the following INFORMATs to extract parts of dates:
 
@@ -50,8 +53,11 @@ You can also use the following INFORMATs to extract parts of dates:
 • ANYDTTME. Extracts the time portion
 Adapted from Venky Chakraborty's PharmaSUG2010 paper
 */
+
+*Ex6_Formated_Input_Dates.sas (Part 2);
+title ' ';
 data work.date_data;
-input @1 mix_dates anydtdte.;
+input @1 mix_dates anydtdte19.;
 format mix_dates date9.;
 datalines;
 27Aug2018
@@ -65,6 +71,7 @@ SEP2018
 proc print data=date_data;
 run;
 
+*Ex6_Formated_Input_Dates.sas (Part 3);
 * Use of Colon Modifier;
 data Modified_List_input_date;
    infile datalines DLM = ',';
@@ -75,9 +82,11 @@ datalines;
 10/05/2004,25
 11/5/2004,25
 ;
-proc print noobs; run;
+proc print data=Modified_List_input_date noobs;
+run;
 
-data temp;
+*Ex6_Formated_Input_Dates.sas (Part 4);
+data Modified_List_input_x;
 	input ID $ Date_Time :DATETIME.   In_out $ ;
 	date = datepart(Date_Time);
 	time = timepart(Date_Time);
@@ -89,8 +98,10 @@ E3 28FEB05:19:05 Out
 E4 01MAR05:17:28 Out 
 ;
 run;
-proc print noobs ; run;
+proc print data=Modified_List_input_x noobs ;
+run;
 
+*Ex6_Formated_Input_Dates.sas (Part 5);
 * Date Constatnt, and DHMS and DATEPART Functions;
 data _null_;
   d='13JAN2016'd;
@@ -116,6 +127,7 @@ data temp1;
 ;
 proc print data=temp1 noobs; run;
 
+*Ex6_Formated_Input_Dates.sas (Part 6);
 data temp2;
    INFILE datalines DLM=',';
    INPUT state_name  : $ 22. dayOfweek : $ 10. 
@@ -129,29 +141,12 @@ data temp2;
 ;
 proc print data=temp2 noobs; run;
 
-/* Read dates that fall in 18th century 
-using the YEARCUTOFF option.
-
-The YEARCUTOFF= system option defines the biginning 
+/* Scenario: Read dates that fall in the 18th century 
+using the YEARCUTOFF option, which defines the beginning 
 of the 100-year period for those digit year.
 In SAS 9.4, the SAS default value for this option
-id 1926.
-*/
+is 1926.
 
-options yearcutoff=1720;
-data yc;
-   INPUT state_name  & $22. date_entry :mmddyy.; 
-   FORMAT date_entry :mmddyy10.;
-DATALINES;
-Delaware  12/07/87
-Pennsylvania  12/12/87
-New Jersey  12/18/87
-South Carolina  05/23/88
-;
-proc print data=yc noobs; run;
-
-/*
-This is regarding the YEARCUTOFF option used above.
 You use this option when your date variable contains
 a 2-digit year value (e.g., 78 instead of 1778) and 
 the year values are outside of the 100-year span from
@@ -163,3 +158,18 @@ Since these dates are outside of the default 100-year span
 using the option YEARCUTOFF=1720 to ensure that all the
 dates we are reading range from years 1720 to 1820.
 */
+
+*Ex6_Formated_Input_Dates.sas (Part 7);
+options yearcutoff=1720;
+data yc;
+   INPUT state_name  & $22. date_entry :mmddyy.; 
+   FORMAT date_entry :mmddyy10.;
+DATALINES;
+Delaware  12/07/87
+Pennsylvania  12/12/87
+New Jersey  12/18/87
+South Carolina  05/23/88
+;
+proc print data=yc noobs; 
+run;
+

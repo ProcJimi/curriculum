@@ -7,4 +7,5 @@ SAS     06jan1976   2,345
 Stata 	05jan1998   1,560  
 R       07jun1996   4,567  
 ;                                                                                                      
-proc print nobs; run; 
+proc print data=Mix_column_Formatted noobs; 
+run; 

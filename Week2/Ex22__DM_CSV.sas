@@ -1,37 +1,23 @@
-*Ex22_DM_CSV_report.sas;
+*Ex22_DM_CSV_report.sas (Part 1);
  * create a csv file from a SAS data set using the DM DEXPORT Command;
-  dm "dexport sashelp.class 
-      'C:\SASCourse\Week2\class.csv' replace"; 
+  dm "dexport sashelp.class (obs=5)
+      'C:\SASCourse\Week2\class_22_1.csv' replace"; 
 
-  
+  *Ex22_DM_CSV_report.sas (Part 2);
  * Create a csv file using DATA _NULL_ , and file, put statements; 
   data _null_;
-    set sashelp.class;
-    file 'C:\SASCourse\Week2\class2.csv' dlm=',';
+    set sashelp.class (obs=5);
+    file 'C:\SASCourse\Week2\class_22_2.csv' dlm=',';
     If _n_=1 then put 'Name, Sex, Age, Height, Weight';
 	put Name Sex Age Height Weight;
   run;
 
-
-   DATA _NULL_;
-        File 'C:\SASCourse\Week2\class3.csv';
-        SET sashelp.class;
-        PUT (_all_) (',');
-    RUN;
-
-    ODS CSV FILE='C:\SASCourse\Week2\class4.csv';
-    PROC PRINT DATA = sashelp.class NOOBS;
-    RUN;
-    ODS CSV CLOSE;
-
-
-
-
+*Ex22_DM_CSV_report.sas (Part 3);
  * Create a report using DATA _NULL_ , and file print, put statements; 
   data _null_;
-    set sashelp.class end=eof;
+    set sashelp.class (obs=5) end=eof;
     file print notitles; 
-	*File 'C:\SASCourse\Week2\class5.csv'; 
+	*File 'C:\SASCourse\Week2\class_22_3.csv'; 
 	If _n_=1 then put @5 "Children's Demographic Characteristics";
 	if _n_=1 then put @5 38*'-';
     If _n_=1 then put 

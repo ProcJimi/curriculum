@@ -1,14 +1,4 @@
-*Ex11_Question_marks.sas;
- data temp1;
-   infile datalines DLM = ',';
-   input date :mmddyy. copay_amount;
-      format date mmddyy10.;
-datalines;
-10/05/2004,25
-02/29/2015,25
-;
-proc print data=temp1; run;
-
+*Ex11_Question_marks.sas (Part 1);
 /*
 The single question mark (?) format modifier 
 in the INPUT statement below suppresses the invalid data message.
@@ -31,6 +21,7 @@ in addition, prevents the automatic variable _ERROR_
 from being set to 1 when invalid data are read.
 [See SAS® Documentation for details]
 */
+*Ex11_Question_marks.sas (Part 2);
 data temp3;
    infile datalines DLM = ',';
    input date ?? :mmddyy.  copay_amount;

@@ -1,5 +1,11 @@
 *Ex22_Retain_Sum_Statement.sas;
-
+/*
+Overriding the Default Behavior of the Sum Variable
+By default, the sum variable is automatically set to 0
+before the first observation is read. 
+To reset the sum variable to a different number, 
+you need to use the RETAIN statement.  
+*/
 
 proc sort data = sashelp.cars; by make; run;
 data cars;

@@ -17,5 +17,6 @@ city_zip= Millington, TN 38055 /
 phone= 901-874-4885 /
 Num_employees=3987 
 ;
-proc print noobs; run; 
+proc print data=TEST noobs; 
+run; 
 

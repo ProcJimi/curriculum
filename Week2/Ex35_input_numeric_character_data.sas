@@ -1,5 +1,6 @@
 *Adapted from SAS Documentation ;
-*Exa35_input_numeric_character_data.sas;
+*Exa35_input_numeric_character_data.sas (Part 1);
+options nocenter nodate nonumber nosource;
 data Have1;
  input some_numbers 1-6;
  datalines;
@@ -12,21 +13,27 @@ data Have1;
 230E-1   /*in E notation, 230x10*/ 
 -23
 ;
-proc print data=Have1; run;
+title 'Have1 Data Set';
+proc print data=Have1 noobs; run;
 /*
 The BZw.d informat reads numeric values, converts 
     any trailing or embedded blanks to 0s, and ignores leading blanks.
  The BZw.d informat ignores blanks between a minus sign and 
   a numeric value in an input field.
 */
+*Exa35_input_numeric_character_data.sas (Part 2);
+options nocenter nodate nonumber nosource;
 data Have2;
  input @1 some_numbers bz4.;
  datalines;
 2 3      /*embedded blank in the data - COMMA. or BZ. informat*/
 - 23     /*embedded blank in the data - COMMA. or BZ. informat*/
 ;
-proc print data=Have2; run;
+title 'Have2 Data Set';
+proc print data=Have2 noobs; run;
 
+*Exa35_input_numeric_character_data.sas (Part 3);
+options nocenter nodate nonumber nosource;
 data Have3;
  input @1 some_numbers comma6.;
  /*comma in the data - COMMA. informat*/
@@ -35,14 +42,7 @@ data Have3;
 2,341
 (23)  
 ;
-proc print data=Have3; run;
+title 'Have3 Data Set';
+proc print data=Have3 noobs; run;
 
-data Have4;
- input @1 date date9. ; /*date value - DATE. informat*/
- datalines;
-1MAR90  
-;
-proc print data=Have4; run;
-proc print data=Have4; 
-format date date9.;
-run;
+

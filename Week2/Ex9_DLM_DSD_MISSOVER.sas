@@ -1,5 +1,5 @@
 dm 'log; clear; output; clear; results; clear';
-
+*Ex9_DLM_DSD_MISSOVER.sas (Part 1);
 data DLM_data;
 infile datalines DLM=',';
 input airport :$3. departures:8. airlines:8. date:mmddyy10.; 
@@ -10,6 +10,7 @@ DCA,617,16,05/18/2018
 proc print data=DLM_data;
 run;
 
+*Ex9_DLM_DSD_MISSOVER.sas (Part 2);
 *Use of the DLM= and DSD options;
 data DSD_data;
 infile datalines  DLM='/' DSD;
@@ -21,8 +22,16 @@ DCA/617//"05/18/2018"
 proc print data=DSD_data;
 run;
 /* For the code chunk below, the DLM option is not needed,
- because we are using a comma-delimited file. */
+ because we are using a comma-delimited file. 
 
+Use the DSD Option on the INFILE statement, and 
+the ampersand (&) and tilde modifiers (~) 
+in the INPUT Statement for the following 
+kinds of data values
+*/
+
+
+*Ex9_DLM_DSD_MISSOVER.sas (Part 3);
 data DSD_data_X;
 infile datalines  DSD;
 input airport: $3. departures :8. airlines :8. date :mmddyy10.; 
@@ -34,12 +43,15 @@ proc print data=DSD_data_X;
 run;
 
 
-/*
-Use the DSD Option on the INFILE statement, and 
-the ampersand (&) and tilde modifiers (~) 
-in the INPUT Statement for the following 
-kinds of data values
+
+ /* The ~ (tilde) format modifier enables to read delimiter-embedded 
+    numeric/character values within double quotation marks and 
+    retain this kind of data values. 
+
+   The DSD option on the INFILE statement must be used to get the 
+   desired effect of this format modifier.
 */
+*Ex9_DLM_DSD_MISSOVER.sas (Part 4);
   DATA Work.Quotation_Surrounded_Values;   
     INFILE DATALINES DSD;
     INPUT st_name ~ $33. percent_pop18p ;
@@ -49,14 +61,12 @@ kinds of data values
  ;
  PROC PRINT;RUN;
 
- /* The ~ (tilde) format modifier enables to read delimiter-embedded 
-    numeric/character values within double quotation marks and 
-    retain this kind of data values. 
+ /* In the example-code below, the DSD option is not required because the missing data 
+   is not marked by consecutive delimiters. The MISSOVER option, which is required,
+   prevents from SAS from loading new record when the end of the 
+   current record is reached. */
 
-   The DSD option on the INFILE statement must be used to get the 
-   desired effect of this format modifier.
-*/
-
+*Ex9_DLM_DSD_MISSOVER.sas (Part5);
 * MISSOVER option on the INFILE statement;
 data M_data;
    infile datalines missover;
@@ -69,7 +79,4 @@ data M_data;
    ;
 proc print data=M_data;
 run;
-/* The DSD option is not appropriate because the missing data 
-   is not marked by consecutive delimiters. The MISSOVER option
-   prevents from SAS from loading new record when the end of the 
-   current record is reached */
+

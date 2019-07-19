@@ -1,5 +1,7 @@
 *Ex21_put.sas;
 * List all DATA step variables and their values;
+options nosource nodate nonumber;
+
 data _null_;
   set sashelp.class(obs=2);
   put _all_;
@@ -72,7 +74,7 @@ run;
 
 
 proc export data=sashelp.class
-    outfile='c:\test\sashelp class1.csv'
+    outfile='c:\test\sashelp_class1.csv'
     dbms=csv
     replace;
 run;
@@ -102,14 +104,14 @@ ods excel options(sheet_name="class" sheet_interval="none" start_at="B1");
 proc print data=sashelp.class;
 run;
 
-ods csv file= 'C:\test\class3.csv ';
+ods csv file= 'C:\test\class7.csv ';
 proc print data = sashelp.class noobs;
 run;
 
 ods trace on; 
 ods csv close;
 
-ods Excel file= 'C:\test\class3.xlsx';
+ods Excel file= 'C:\test\class8.xlsx';
 proc print data = sashelp.class noobs;
 run;
 ods trace on; 

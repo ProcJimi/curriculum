@@ -15,14 +15,13 @@ data step but before the lines of data, 4 consecutive
 terminating semicolons on a new line and the RUN statement.
 
 */
-
-
+*Ex31_Datalines4;
 data Have;
-   input state $50. ;
+   input state_data $50. ;
    datalines4;
 Alabama;  4833722; 77.0
     California;  38332521; 76.1
 ;;;;
 
-  proc print data=work.HAVE;
+  proc print data=work.HAVE noobs;
    run;
