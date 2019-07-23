@@ -1,5 +1,5 @@
-dm 'log; clear; output; clear; results; clear';
 *Ex9_DLM_DSD_MISSOVER.sas (Part 1);
+dm 'log; clear; output; clear; results; clear';
 data DLM_data;
 infile datalines DLM=',';
 input airport :$3. departures:8. airlines:8. date:mmddyy10.; 

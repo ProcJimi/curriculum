@@ -50,7 +50,7 @@ datalines;
 ; 
 proc print data=have2; run;
 
-/*
+/*CNTLIN= Option
 Creating a User-Defined Format from a SAS Data Set
 If there is a long list of variable values and if the values and 
 their labels are available in an electronic file 

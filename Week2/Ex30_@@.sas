@@ -1,4 +1,5 @@
 *Ex30_@@.sas;
+
 data work.HAVE;
  input date: Anydtdte. name $ study_hours @@;
 datalines;

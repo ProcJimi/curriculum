@@ -1,4 +1,5 @@
 *Ex21_put.sas;
+
 * List all DATA step variables and their values;
 options nosource nodate nonumber;
 

@@ -1,4 +1,5 @@
 *Ex7_Simple_List_Input.sas;
+
 OPTIONS nodate nonumber ps=58 ls=98;
 DATA Work.Have1;
     INPUT  st_name $ pop percent_pop18p ;

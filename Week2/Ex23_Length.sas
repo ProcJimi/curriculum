@@ -6,6 +6,7 @@ length x 4 y 3 ;
 	 end;
 proc print data=temp noobs; run;
 
+
 /*
 A variable's length (the number of bytes used to store it) is 
 related to its type

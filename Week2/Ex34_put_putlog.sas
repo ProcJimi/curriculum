@@ -1,6 +1,6 @@
 *Ex34_put_putlog.sas (Part 1);
 /*Use the PUT statement to write to an external file that is
-specified in the FILE statement. */
+specified in the FILE statement (DATA Step). */
 
 data _null_;
   input;

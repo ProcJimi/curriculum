@@ -1,4 +1,5 @@
 *Ex5_formatted_column_input.sas;
+
 * Use of absolute pointer control;
 data work.apc;
 infile datalines firstobs=2;

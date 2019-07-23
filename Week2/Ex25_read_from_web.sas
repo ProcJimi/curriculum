@@ -14,5 +14,6 @@ data have2;
    input country $ setting  effort  change ;
    put _all_;
  run;
-proc print data=have2; run;
+proc print data=have2; 
+run;
 

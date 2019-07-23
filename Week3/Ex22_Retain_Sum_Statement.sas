@@ -1,4 +1,4 @@
-*Ex22_Retain_Sum_Statement.sas;
+*Ex22_Retain_Sum_Statement.sas  (Part 1);
 /*
 Overriding the Default Behavior of the Sum Variable
 By default, the sum variable is automatically set to 0
@@ -43,7 +43,7 @@ PROC PRINT data=temp1;
 run;
 
 
-*Ex22_Retain_Sum_Statement.sas;
+*Ex22_Retain_Sum_Statement.sas (Part 2);
 DATA temp;
    RETAIN Total_sales 1000;
    INPUT month sales @@;

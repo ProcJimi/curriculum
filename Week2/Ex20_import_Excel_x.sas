@@ -1,4 +1,5 @@
 *Ex20_Import_Excel_x.sas (Part 1);
+
 * Method 1: Importing an Excel Spreadsheet into a SAS data set;
  options nodate nonumber nodate;
   PROC IMPORT DATAFILE= "C:\SASCourse\Week2\class.xlsx"

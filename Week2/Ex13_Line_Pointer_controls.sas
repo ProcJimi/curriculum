@@ -1,4 +1,5 @@
 *Ex13_Line_Pointer_controls.sas (Part 1);
+
 options nocenter ls=132 nodate nonumber;
 data address1;
       input name  & $ 30.

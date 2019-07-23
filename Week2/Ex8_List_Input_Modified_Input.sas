@@ -1,4 +1,5 @@
 *Ex8_List_Input_Modified_Input.sas (Part 1);
+
 OPTIONS nodate nonumber ps=58 ls=98;
 
 *List input style with LENGTH and INFORMAT statements; 

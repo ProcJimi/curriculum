@@ -1,7 +1,7 @@
-*Ex1_Numeric_Character_Formats.sas'
+*Ex1_Numeric_Character_Formats.sas;
 
 * Single value on the left side of the = sign 
-  in PROC FORMAT VALUE statement;
+  in the PROC FORMAT VALUE statement;
 
 options nocenter nodate ps=58 ls=78;
 proc format;

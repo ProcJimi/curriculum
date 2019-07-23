@@ -1,4 +1,5 @@
 *Ex11_Question_marks.sas (Part 1);
+
 /*
 The single question mark (?) format modifier 
 in the INPUT statement below suppresses the invalid data message.

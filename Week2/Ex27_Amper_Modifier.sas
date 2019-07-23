@@ -1,4 +1,5 @@
 *Ex27_Amper_Modifier.sas;
+
 DATA Work.Have; 
     INPUT st_name & $ 22. visit_date :mmddyy. ;
 	FORMAT visit_date mmddyy10.;

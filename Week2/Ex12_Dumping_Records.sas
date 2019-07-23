@@ -1,4 +1,5 @@
 *Ex12_Dumping_Records.sas;
+
 options nocenter;
 FILENAME raw 'C:\SASCourse\Week2\pop2013_no_headers.txt';
 DATA _NULL_;

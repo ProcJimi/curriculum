@@ -1,4 +1,5 @@
 *Ex14_Column_Formatted_Input.sas;
+
 data Mix_column_Formatted;    
 input software $1-5 @9 date date9. @21 amount comma5.;     
 format date date9. amount comma5.;      

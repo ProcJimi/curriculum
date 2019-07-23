@@ -1,4 +1,5 @@
 *Ex29_Multiple_Input_Statements.sas;
+
 data work.HAVE(drop=i);
  input date: Anydtdte9. @;
  do i = 1 to 4;

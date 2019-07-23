@@ -2,7 +2,7 @@
 https://communities.sas.com/t5/SAS-Data-Management/Splitting-variables-based-on-variable-values/m-p/511956#M15903
 Splitting data based on the values of the variables:  Author: novinosrin
 */
-*Ex33_Split_data_based_on_values;
+*Ex33_Split_data_based_on_values.sas;
 data work.have;
 format date date9.;
 infile cards;

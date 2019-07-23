@@ -1,4 +1,5 @@
 *Ex4_Formatted_Input.sas;
+
 OPTIONS nocenter nonumber nodate;
 /*Formatted input - 
   Column pointer control that moves the pointer COLUMN n */

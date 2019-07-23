@@ -1,4 +1,5 @@
 *Ex17_Filename_Libname.sas ;
+
 OPTIONS nocenter nodate nonumber;
 %LET Path=C:\SASCourse\Week2;
 FILENAME raw "&Path\pop2013_no_headers.txt";

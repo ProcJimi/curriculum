@@ -1,4 +1,5 @@
 *Ex19_Missing.sas (Part 1);
+
 *Instream data include dot(.) as a missing value;
 options nocenter nodate nonumber MISSING='X' ;
 data Example_M_Equal;

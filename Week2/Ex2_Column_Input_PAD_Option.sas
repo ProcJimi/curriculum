@@ -1,5 +1,4 @@
 *Ex2_column_Input_PAD_Option.sas;
-
 *** To clean up the "work" library used;
 proc datasets lib=work nolist kill; quit;
 

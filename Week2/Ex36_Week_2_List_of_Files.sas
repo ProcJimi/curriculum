@@ -1,4 +1,4 @@
-*** Ex36_Week_2_List_of_Files.sas;
+** Ex36_Week_2_List_of_Files.sas;
 PROC IML;
 SUBMIT / R;
 setwd ("C:/SASCourse/Week2")

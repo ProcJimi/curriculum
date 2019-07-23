@@ -1,4 +1,5 @@
 *Ex15_Absolute_Relative_Pointer_controls.sas;
+
 data Example_formatted_column_input;
 input id $ 1 x1 3-7
      @9 x2 dollar7. 

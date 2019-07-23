@@ -1,4 +1,5 @@
 *Ex16_Named_Input.sas;
+
 options nocenter nodate nonumber ls=132;
 DATA TEST;
 input name = & $ 30. address = & $ 30.

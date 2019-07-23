@@ -3,6 +3,7 @@
   dm "dexport sashelp.class (obs=5)
       'C:\SASCourse\Week2\class_22_1.csv' replace"; 
 
+
   *Ex22_DM_CSV_report.sas (Part 2);
  * Create a csv file using DATA _NULL_ , and file, put statements; 
   data _null_;

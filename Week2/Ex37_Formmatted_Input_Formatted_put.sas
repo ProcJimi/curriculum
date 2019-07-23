@@ -1,4 +1,4 @@
-*Ex37_Formmatted_Input_Formatted_put (Part 1);
+*Ex37_Formmatted_Input_Formatted_put.sas (Part 1);
 options nocenter nodate nonumber nosource;
 data Have1;
 input @1 date1 date11.  +(-11) date2  date11. 
@@ -12,7 +12,7 @@ proc print data=Have1;
 var date:;
 run;
 
-*Ex37_Formmatted_Input_Formatted_put (Part 2);
+*Ex37_Formmatted_Input_Formatted_put.sas (Part 2);
 options nocenter nodate nonumber nosource;
 data _null_;
 date='29JAN2019'd;

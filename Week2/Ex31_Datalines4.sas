@@ -15,7 +15,7 @@ data step but before the lines of data, 4 consecutive
 terminating semicolons on a new line and the RUN statement.
 
 */
-*Ex31_Datalines4;
+*Ex31_Datalines4.sas;
 data Have;
    input state_data $50. ;
    datalines4;

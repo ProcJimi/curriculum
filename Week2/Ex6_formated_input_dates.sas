@@ -1,4 +1,5 @@
 *Ex6_Formated_Input_Dates.sas (Part 1);
+
 DATA work.Have1;
 INPUT            
             @1  date1 date11. 

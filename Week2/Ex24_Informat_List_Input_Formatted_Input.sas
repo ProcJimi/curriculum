@@ -1,4 +1,4 @@
-*Ex24_Informat_List_Input_Formatted_Input (Part 1);
+*Ex24_Informat_List_Input_Formatted_Input.sas (Part 1);
 Data MLI; 
 infile datalines firstobs=2;
 input Address & $50. income :comma.;
@@ -30,7 +30,7 @@ PROC contents data=MLI varnum;
 ods select position; 
 RUN;
 
-* Ex24_Informat_List_Input_Formatted_Input (Part 2);
+* Ex24_Informat_List_Input_Formatted_Input.sas (Part 2);
 Data FI; 
 infile datalines firstobs=2;
 input @1 Address $50. @51 income comma10.2;
