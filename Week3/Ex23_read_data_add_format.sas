@@ -21,7 +21,11 @@ DATA SDS.Pop;
         p_pop18p = 'Percent*Population*(Aged 18+)'; 
   FORMAT pop pop18p comma12. FIPS z2.;
 run;
-proc print data=SDS.pop (obs=5) split='*';
-var FIPS name pop pop18p;
+proc sort data=SDS.pop; by descending pop; run;
+title1 'Ex23_read_data_add_format.sas';
+title2 'U.S. Population, 2013 (Seven largest states)';
+proc print data=SDS.pop (obs=8) split='*' noobs;
+var name pop pop18p;
 run;
+title1; title2;
   

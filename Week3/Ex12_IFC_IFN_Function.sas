@@ -5,7 +5,6 @@ proc format;
        1 = 'TRUE'
        0 = 'FALSE'
 ;
-
  data IFC1_IFN1;
   length age 3 age_group_IFC1 $10;
   input age @@ ; 
@@ -16,7 +15,9 @@ proc format;
   datalines;
   0 5 10 17 40 48 50 59 62 81 99 100
   ; 
+ title1 'Ex12_IFC_IFN_Function.sas';
  proc print noobs; run;
+ title1;
 
  
 

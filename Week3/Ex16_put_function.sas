@@ -1,5 +1,4 @@
 *Ex16_put_function.sas;
-
 proc format;
  value $stypeF  U='Undergraduate'  G='Graduate' ;
 run;  
@@ -14,7 +13,10 @@ n_date = 1357;
 c_date = put(1357, Weekdate.);
 FORMAT n_date Weekdate.  n_amount dollar7.; 
 putlog (_ALL_) (=/ +2);
-proc contents data=put_function_data varnum; 
 run;
-
-
+*Ex16_put_function.sas (Part 2);
+title1 'Ex16_put_function.sas (Part 2)';
+proc contents data=put_function_data varnum; 
+ods select position;
+run;
+title1;

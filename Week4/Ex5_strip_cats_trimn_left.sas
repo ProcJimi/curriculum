@@ -17,22 +17,3 @@ Statistics
 proc print data=work.HAVE1 noobs; 
 run;
 
-*The Use of CATS and STRIP functions;
-data work.HAVE2;
-   INFILE datalines DLM=',';
-   INPUT state_name  : $ 22. dayOfweek : $ 10. 
-         Monthday : $15. year ;
-         date_entry=catx(',  ', (dayofweek),
-		                       (monthday),
-                               (year)
-                          );
-   DATALINES;
-     Delaware, Friday,  December 7, 1787
-     Pennsylvania, Wednesday,  December 12, 1787
-     New Jersey, Tuesday,  December 18, 1787
-     South Carolina, Friday,  May 23, 1788
-;
-proc print data=work.HAVE2 noobs; 
-run;
-
-

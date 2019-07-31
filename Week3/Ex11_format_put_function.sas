@@ -1,5 +1,6 @@
 *Ex11_Format_Put_Function.sas;
 options nocenter nonumber nodate;
+title1; title2;
 PROC FORMAT; 
      value regionfmt
         1='Northeast' 2='Midwest' 
@@ -18,3 +19,4 @@ proc print data=Have;
   var region region_char st_name;
   where st_name like 'A%';
 run;
+title1; title2;

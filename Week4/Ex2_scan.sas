@@ -1,4 +1,13 @@
-*Example_scan.sas;
+*Example_scan.sas (Part 1);
+/*
+In the code below, the use of the ‘Q’ modifier alone as the fourth 
+argument causes the SCAN function to ignore the word delimiters
+within quoted strings. The use of the ‘R’ modifier along with 
+the ‘Q’ modifier enables you to correctly separate the words 
+and removes the quotes from the two quoted words.  (Carpenter, 2012). 
+*/
+
+options nocenter nodate nonumber nonotes nosource;
 data _Null_;
    var1 = 'United States, Washington DC';
    var2 ='Tim Johnson';
@@ -10,16 +19,8 @@ data _Null_;
 putlog (_ALL_) (=//+2);
 run;
 
-/*
-In the abobe code, the use of the ‘Q’ modifier alone as the fourth 
-argument causes the SCAN function to ignore the word delimiters
-within quoted strings. The use of the ‘R’ modifier along with 
-the ‘Q’ modifier enables you to correctly separate the words 
-and removes the quotes from the two quoted words.  (Carpenter, 2012). 
-*/
-
-*Another Example;
-
+*Example_scan.sas (Part 2);
+options nocenter nodate nonumber;
 data in_a;
 input @1 string $char65.;
 dbegin=scan(string,2,'.');

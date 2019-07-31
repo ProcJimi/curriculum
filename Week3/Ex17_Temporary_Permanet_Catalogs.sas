@@ -1,4 +1,5 @@
 *Ex17_Temporary_Permanent_Catalogs.sas;
+options notes source;
 PROC FORMAT; 
      value regionfmt
         1='Northeast' 2='Midwest' 
@@ -22,6 +23,7 @@ PROC FORMAT LIBRARY=xsds.catalogpop;
         1='Northeast' 2='Midwest' 
         3='South'  4='West';
 run;
+
 
 
 

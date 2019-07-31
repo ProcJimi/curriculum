@@ -1,8 +1,10 @@
-*Ex1_Numeric_Character_Formats.sas;
+/* Ex1_Numeric_Character_Formats.sas (Part 1);
 
-* Single value on the left side of the = sign 
-  in the PROC FORMAT VALUE statement;
+  This code example below shows only single CHARACTER values (not multiple values) on the 
+  left side of the = sign  in the PROC FORMAT VALUE statement.
 
+*/
+Title 'Format for character values';
 options nocenter nodate ps=58 ls=78;
 proc format;
 value $regionfmt
@@ -17,12 +19,14 @@ proc freq data=sashelp.demographics;
   tables region; 
   format region $regionfmt.;
 run;
-title ' ';
+/*
+Ex1_Numeric_Character_Formats.sas (Part 2);
 
+In the example below, note the ranges on the left side of the = sign in PROC FORMAT VALUE statement 
+with keywordS: LOW, and HIGH.
+*/
 
-*Ranges on the left side of the = sign in PROC FORMAT VALUE statement;
-*KeywordS: LOW, OTHER;
-
+Title 'Format for numeric values';
 proc format;
   value numfmt
            Low - <0  = "Nonresponse"
@@ -54,21 +58,25 @@ tables colonoscopy c_colonoscopy /nopercent nocum missing;
 Format colonoscopy numfmt. c_colonoscopy $charfmt.;
 run;
 
+*Ex1_Numeric_Character_Formats.sas (Part 3);
+
 options nodate nonumber;
 /*
-The format values are ranges; the special keyword LOW is used 
-to define the lowest value.  Because it is a numeric format, 
-LOW does not format missing values. Note that, for character 
-formats, LOW includes missing values and blank values.
+Ex1_Numeric_Character_Formats.sas (Part 3);
+
+In the code snippet below, the format values are ranges; the special keyword LOW is used 
+to define the lowest value. 
+
+Because it is a numeric format, LOW does not format missing values. Note that, for character 
+formats, LOW includes missing or blank values.
+
+Important note: Here we are grouping data values sing formats in the PROC FREQ step.
 */
-
-*Grouping Data Values Using Formats;
-
+Title 'Grouping data values using formats in the PROC FREQ step';
 proc format;
      value wtfmt   low - <100 = 'Under 100 lbs'
                  100 - high = '100+ lbs'; 
 run;
-Title 'User-Defined Formats Used';
 proc freq data=sashelp.class;
    tables weight;
    format weight wtfmt.;

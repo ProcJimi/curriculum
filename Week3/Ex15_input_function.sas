@@ -1,5 +1,5 @@
-*Ex15_input_function.sas;
-
+*Ex15_input_function.sas (Part 1);
+options nocenter nonumber nodate nosource;
 data input_function_data;
   c_id = '12345678'; 
   n_id =input(c_id, 8.); 
@@ -11,9 +11,17 @@ data input_function_data;
   c_date = '13Sep1963'; 
   n_date = input(c_date, date9.);
 FORMAT n_date date9.  n_amount dollar7.; 
-putlog (_ALL_) ( =/ +2);    
-proc contents data=input_function_data varnum; 
+putlog (_ALL_) ( =/ +2);  
 run;
+
+*Ex15_input_function.sas (Part 2);
+title1 'Ex15_input_function.sas (Part 2)' ;
+proc contents data=input_function_data varnum; 
+ods select position;
+run;
+title1;
+
+*Ex15_input_function.sas (Part 3);
 ** ?? Modifier used in the INPUT function;
 data _null_;
 input c_date $; 

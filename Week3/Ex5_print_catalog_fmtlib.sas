@@ -1,5 +1,6 @@
-options center;
 *Ex5_print_catalog_fmtlib.sas;
+options nocenter nonumber nodate nosource;
+options FORMCHAR='1----1+1---+=1-1\<>*';
 libname sds 'C:\SASCourse\Week3';
 proc catalog catalog = sds.catalogpop;
 contents;

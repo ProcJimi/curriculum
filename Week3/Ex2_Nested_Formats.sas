@@ -10,6 +10,7 @@ value sales_fmt
   5000-9999 = '$5,000-<$10,000'
   10000-high = [dollar12.2];
   run;
+  title 'Nested formats';
   proc freq data=sashelp.mdv;
   tables shipdate sales93;
   format shipdate date_grp_fmt.

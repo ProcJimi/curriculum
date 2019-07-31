@@ -1,4 +1,5 @@
 *Ex10_INTCK_Function.sas;
+options nocenter nodate nonumber;
 data count_interval;
   years=intck('year','01jan2009'd,'01jan2010'd);
   SEMIYEAR=intck('SEMIYEAR','01jan2009'd,'01jan2010'd);

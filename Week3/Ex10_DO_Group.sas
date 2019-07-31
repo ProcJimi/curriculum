@@ -26,4 +26,7 @@
    datalines;
   0 5 10 17 40 48 50 59 62 81 99 100
   ; 
- proc print noobs; var age age_group xage_group; run;
+title1 'Listing of Multiple Variables Created with DO Group';
+title2;
+ proc print noobs; var age age_group xage_group; 
+run;

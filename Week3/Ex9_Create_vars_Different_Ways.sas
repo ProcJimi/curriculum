@@ -1,12 +1,12 @@
 *Ex9_Create_vars_Different_Ways.sas (part 1);
-
 data Have1;
  length age_group $11;
  input age @@ ;
 datalines;
   0 5 10 17 40 48 50 59 62 81 99 100
   ; 
-title 'Have1 Data';
+title1 'Frquency Table for a Variable with Discrete (Ungrouped) Data Values (Part 1)';
+title2;
 proc freq data=Have1;   
  table age; 
 run;
@@ -23,7 +23,8 @@ data Have2;
  datalines;
   0 5 10 17 40 48 50 59 62 81 99 100
   ; 
-title 'Have2 Data';
+title1 'Frequency Table by Grouping Data Values Using Formats in PROC FREQ (Part 2)';
+title2;
 proc freq data=Have2; 
  table age; format age agefmt.;
 run;
@@ -44,8 +45,10 @@ run;
   0 5 10 17 40 48 50 59 62 81 99 100
   ; 
  options center;
- title 'Have3 Data';
- proc freq data=Have3; 
+ title1 'Frequency Table for a Variable Created with an Assignment Statement';
+ title2 '(IF-THEN/ELSE-IF-THEN in DATA Step - Part 3)';
+
+proc freq data=Have3; 
  table age_group ; 
 run;
 
@@ -63,37 +66,10 @@ run;
   datalines;
   0 5 10 17 40 48 50 59 62 81 99 100
   ; 
- title 'Have4 Data';
- proc freq data=have4; 
- 	table age_group_x ; 
- run;
+ title1 'Frequency Table for a Variable Created with an Assignment Statement';
+ title2 'and the PUT Function in DATA Step (Part 4)';
+ proc freq data=Have4; 
+ table age_group_x ; 
+run;
 
-DATA new_class;
-infile datalines missover;
-input Name $ score ;
-*IF-THEN_ELSE statements to create new variables;
- if score =. then grade_x ='Missing';
- else if score <50 then grade_x= 'E';
- else if  50<=score<56 then grade_x= 'D';
- else if  56<=score<61 then grade_x= 'C-';
- else if  61<=score<71 then grade_x= 'C ';
- else if  71<=score<76 then grade_x= 'B-';
- else if  76<=score<85 then grade_x= 'B ';
- else if  85<=score<90 then grade_x= 'A-';
- else if  score >= 90 then grade_x= 'A';
  
- if 'A'<=grade_x<='D' then grade_xx='Passed';
- else grade_xx='Failed';
- datalines;
- Alfred 91 
- Alice 84 
- Barbara 70 
- Carol 75  
- Henry . 
- Philip 49 
- Ronald 76 
- ;
-proc freq DATA=new_class ;
-  table grade_x grade_xx;
-RUN;
-

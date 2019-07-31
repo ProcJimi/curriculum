@@ -17,6 +17,7 @@ format cause_dth_code $xcausesfmt.;
 datalines; 
 12345 A01.4 23456 A01.3 34567 A02.0
 ; 
+title1 "Format created using the PROC FORMAT VALUE statement";
 proc print data=have1 noobs; run;
 
 data causes_of_death;
@@ -34,7 +35,7 @@ A02	    Other salmonella infections
 A02.0	Salmonella enteritis 
 A02.1	Salmonella septicaemia 
 ;
-proc print data=causes_of_death; run;
+
 proc sort data=causes_of_death
   out=causes_of_death nodupkey;
   by START;
@@ -48,6 +49,7 @@ format cause_dth_code $causesfmt.;
 datalines; 
 12345 A01.4 23456 A01.3 34567 A02.0
 ; 
+title1 "Format created using the PROC FORMAT cntlin= optiion";
 proc print data=have2; run;
 
 /*CNTLIN= Option
@@ -55,7 +57,7 @@ Creating a User-Defined Format from a SAS Data Set
 If there is a long list of variable values and if the values and 
 their labels are available in an electronic file 
 (ASCII, EXCEL or data base mode), the file can be read into SAS to 
-create a SAS data set. There is no need to type this long list!  
+create a SAS data set. There is no need to type this long list under the PROC FORMAT VALUE statement!  
 Requirements: The data set must have three required columns–
 FMTNAME, START, and LABEL.  The data set can have the optional 
 column called the TYPE column with values of ‘C’ for the character variable 

@@ -5,8 +5,9 @@
     Age_13_dummy = whichn(13,age);
 	Gender_male_dummy= whichc('M',sex);
   run;
- title ' Listing from HAVE1 Data';
+ title1 'Ex14_in_whichn_whichc.sas';
  proc print data=have1 noobs;  run;
+ title1;
 
 
 

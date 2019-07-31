@@ -1,4 +1,5 @@
-*Ex9_Date_Function.sas;
+*Ex9_Date_Function.sas (Part 1);
+options nocenter nodate nonumber nonotes nosource;
 Data _Null_;
  date_time = '13Jan2016:23:15:30'dt;
 date_part=datepart(date_time);
@@ -21,7 +22,7 @@ format date_time datetime20.
 putlog (_ALL_)  (=/ +2);
 run;
 
-*Program 2;
+*Ex9_Date_Function.sas (Part 2);
 data work.have;
 input @1 date_time1 anydtdtm21.
       @1 date1 anydtdte15.

@@ -1,4 +1,5 @@
-*Ex11C_put_input_function.sas;
+*Ex11C_put_input_function.sas (Part 1);
+options nocenter nodate nonumber;
  data have1;
   do i=1 to 5;
     Num_in_words=put(i,words12.);
@@ -7,6 +8,7 @@
  run;
  proc print data=have1 noobs; run;
 
+ *Ex11C_put_input_function.sas (Part 2);
  data have2;
   do chars='1112.80', '112.81', '2.83', '0.84';
     Char_to_num = input(chars,F5.2);
@@ -15,8 +17,11 @@
   end;
  run;
  proc print data=have2 noobs; run;
- proc contents data=have2; run;
+ proc contents data=have2 varnum; 
+ ods select position;
+run;
 
+*Ex11C_put_input_function.sas (Part 3);
  data have3;
   do mon_day_yr =11318, 121018, 122418;
       mon_day_yr_SAS=input(put(mon_day_yr,6.),mmddyy6.);
@@ -25,8 +30,11 @@
   end;
  run;
  proc print data=have3 noobs; run;
- proc contents data=have3; run;
+ proc contents data=have3 varnum; 
+  ods select position;
+run;
 
+*Ex11C_put_input_function.sas (Part 4);
 data have4;
   do stored_sas_date_value =11318, 121018, 122418;
       format stored_sas_date_value date9.;
@@ -34,4 +42,6 @@ data have4;
   end;
  run;
  proc print data=have4 noobs; run;
- proc contents data=have4; run;
+ proc contents data=have4 varnum; 
+ ods select position;
+run;

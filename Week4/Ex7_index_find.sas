@@ -1,20 +1,22 @@
-* Example_index_find.sas;
-* Contributed by Nat Wooding and data_null at SAS-L;
-* Adapted below;
- Data Titles;
-input @1 Title $22.;
+* Ex7_index_find.sas;
+* Contributed by Nat Wooding and data_null to SAS-L;
+
+ Data Conditions;
+input @1 Condition $22.;
 datalines;
 heart failure 
 early heart failure
 failure of the heart
 ;
 data Have;
-	set titles;	
-	if index(UPCASE(Title), "HEART FAILURE") gt 0 then HF = 1; 
-       else HF =0;
-	HF1 = ( INDEX(UPCASE(Title), "HEART FAILURE") gt 0 ) ;
-	* one-lineR code;
-	HF2 = find(title,'heart failure','I') gt 0; 
+	set Conditions;	
+
+	if index(UPCASE(Condition), "HEART FAILURE") gt 0 then HF1 = 1; 
+       else HF1 =0;
+
+	HF2 = ( INDEX(UPCASE(Condition), "HEART FAILURE") gt 0 ) ;
+
+	HF3 = find(Condition,'heart failure','I') gt 0; 
 run;
 proc print data=Have noobs; run;
 
