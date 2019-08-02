@@ -1,4 +1,5 @@
 *Ex16_Array1.sas;
+options nocenter nonumber nodate;
 DATA testdata;
  INPUT id $ test1-test5;
 DATALINES;
@@ -15,6 +16,8 @@ DATA testdata_y (DROP=i);
      test[i] = test[i]*fweight[i];
      END;
   sum_test1_5= SUM(OF test1-test5);
+title1 'Ex16_Array1.sas';
 proc print data=testdata_y noobs;
 run;
+title1;
 

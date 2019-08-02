@@ -1,4 +1,5 @@
-*Example_YRDIFF.sas;
+*Ex14_YRDIFF.sas;
+options nocenter nonumber nodate;
  data _null_;
  SDATE= '10jan2013'd;
  EDATE='10jan2017'd;

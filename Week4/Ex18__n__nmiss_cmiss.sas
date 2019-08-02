@@ -11,7 +11,7 @@ datalines;
   1   Stata Epi 
 5 4 2       Stat
 ;
-proc print data=have; run; 
+ 
 data work.WANT;
 set work.HAVE;
 Is_Missing_A= missing(A);
@@ -20,6 +20,14 @@ Count_Missing_Num = nmiss(OF A--C);
 Count_Missing_Both_Num_Char = cmiss(A,B,C,D,E);
 Count_Nonmissing_Num = n(OF A--C);
 run;
-proc print data=WANT noobs; 
+title1 'Handling missing values';
+proc print data=WANT noobs split='*';
+label Is_Missing_A ='Whether*Variable A *Missing'
+      Is_Missing_D ='Whether*Variable D*Missing'
+Count_Missing_Num='Missing*Values*for*Numeric*Variables'
+Count_Missing_Both_Num_Char='Missing*Values*for*Num/Char*Variables'
+Count_Nonmissing_Num= 'Nonmissing*Values*for*Numeric*Variables'
+; 
 run;
+title;
 

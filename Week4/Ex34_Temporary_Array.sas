@@ -1,5 +1,6 @@
 *Ex34_Temporary_Array.sas;
 /*Loop-Do-Loop Around Arrays Wendi L. Wright*/
+options nocenter nodate nonumber;
 data temp;
  item1 = 'A';
  item2='C';
@@ -16,4 +17,6 @@ if raw{i} eq key{i} then score{i}=1;
 End;
 TotalCorrect = sum( of score1-score5 ); 
 run;
-proc print data=temp; run;
+title1 'Scoring multiple-choice questions using ARRAY statements';
+proc print data=temp noobs; run;
+title1;

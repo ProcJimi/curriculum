@@ -1,5 +1,6 @@
-*Ex20_do_loop_xtra.sas;
-data training;
+*Ex20_do_loop_xtra.sas (Part 1);
+options nocenter nonumber nodate;
+data training1;
 miles=30;
 do weeks = 1 to 6;
   miles+miles*0.04;
@@ -7,9 +8,10 @@ end;
 run;
 title1 'Training 1'; 
 title2 'Implicit OUTPUT statement before the RUN statement';
-proc print data=training noobs;
+proc print data=training1 noobs;
 run;
-
+*Ex20_do_loop_xtra.sas (Part 2);
+options nocenter nonumber nodate;
 data training2;
 miles=30;
 do weeks = 1 to 6;
@@ -21,7 +23,8 @@ title1 'Training 2';
 title2 'Explicit OUTPUT statement before the RUN statement';
 proc print data=training2 noobs;
 run;
-
+*Ex20_do_loop_xtra.sas (Part 3);
+options nocenter nonumber nodate;
 data training3;
 miles=30;
 do weeks = 1 to 6;
@@ -33,7 +36,8 @@ title1 'Training 3';
 title2 'OUTPUT statement before the END statement';
 proc print data=training3 noobs;
 run;
-
+*Ex20_do_loop_xtra.sas (Part 4);
+options nocenter nonumber nodate;
 data training4;
 miles=30;
 do weeks = 1 to 6;

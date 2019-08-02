@@ -1,4 +1,5 @@
 *Ex22_array_count_specific_value.sas;
+options nocenter nonumber nodate;
 Data work.Have(drop=i);                                                                                                                     input var1 var2 var3 var4;                                                                                                            
   array test(*) var1--var4;                                                                                                             
 /* initialize the counters to zero for 
@@ -17,6 +18,8 @@ Data work.Have(drop=i);                                                         
 1  1  1  1                                                                                                                              
 2  2  2  2                                                                                                                              
 ;                                                                                                                                       
-run;   
-proc print data=work.Have;
+run;  
+title1 'Count the instances of a certain value'; 
+proc print data=work.Have noobs;
 run;
+title1;

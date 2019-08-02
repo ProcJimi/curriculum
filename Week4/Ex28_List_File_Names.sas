@@ -1,4 +1,4 @@
-*** List_File_Names.sas;
+*** Ex28_List_File_Names.sas (Part 1);
 * List file names from a folder - Variant 1;
 PROC IML;
 SUBMIT / R;
@@ -7,6 +7,7 @@ list.files(pattern="^", full.names = TRUE, ignore.case = TRUE)
 ENDSUBMIT;
 QUIT;
 
+*** Ex28_List_File_Names.sas (Part 2);
 * List file names from a folder - Variant 2;
 PROC IML;
 SUBMIT / R;
@@ -16,6 +17,7 @@ list.files(pattern="txt", full.names = TRUE, ignore.case = TRUE)
 ENDSUBMIT;
 QUIT;
 
+*** Ex28_List_File_Names.sas (Part 3);
 * List file names from a folder - Variant 3;
 PROC IML;
 SUBMIT / R;

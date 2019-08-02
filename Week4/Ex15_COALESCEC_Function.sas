@@ -1,8 +1,10 @@
-*Ex15_COALESCEC_Function.sas;
+*Ex15_COALESCEC_Function.sas (Part 1);
+options nocenter nonumber nodate nosource;
+
 data have;
  infile datalines DSD;
  input var1:$10. var2 :$6. var3  :$8.;
- datalines;
+datalines;
  Ages 18-49,,
  Ages 50-64,,
  Ages 65+,,
@@ -12,8 +14,6 @@ data have;
  ,,Black
  ,,White
 ;
-proc print data=have; run;
-
  data want;
    set have;
    array var[3] $;
@@ -30,7 +30,7 @@ However, you can use COALESCE() for either numeric or character values."
 */
 
 /*Create a data set for COALESCE() with PROC SQL below.*/
-
+*Ex15_COALESCEC_Function.sas (Part 2);
 data Have;
 input score1 score2;
 datalines;

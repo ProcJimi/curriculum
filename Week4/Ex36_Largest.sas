@@ -1,11 +1,11 @@
-*** Example_largest.sas;
+*** Ex36_largest.sas (Part 1);
 LIBNAME NEW "C:\SASCourse";
 OPTIONS NOCENTER NODATE NONUMBER ;
 Data WORK.Have (drop= I J);
   call streaminit (123);
   array X[*] TEST1-TEST5 ASSIGNMENT1 ASSIGNMENT2
              MIDTERM FINAL;
-	DO I = 1 TO 24;
+	DO I = 1 TO 12;
 	  DO  J = 1 TO DIM(X);
         X[J] = RAND("Integer", 40, 100);
 	  END;
@@ -16,6 +16,8 @@ TITLE1 'Listing HAVE Data Set';
 PROC PRINT DATA=HAVE;
 run;
 
+*** Ex36_largest.sas (Part 2);
+OPTIONS NOCENTER NODATE NONUMBER ;
 DATA NEW.HAVE_X (DROP=T1-T4);
  SET WORK.HAVE (rename=(TEST1=T1 TEST2=T2 TEST3=T3 
                    TEST4=T4 TEST5=T5));

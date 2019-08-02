@@ -1,10 +1,12 @@
-*** Ex23_array_call_sortn.sas;
+*** Ex23_array_call_sortn.sas (Part 1);
 *** Simulating Students' Scores;
+options nocenter nonumber nodate;
 data have(drop= i j);
+retain id;
 call streaminit(123);
 array x[*] TEST1-TEST5 ASSIGNMENT1 ASSIGNMENT2
                MIDTERM FINAL;
-do i = 1 to 24;
+do i = 1 to 12;
    do j = 1 to dim(x);
       id = cats('GW',substr(compress(uuidgen(),'-'),1,6));
       x[j] = rand("Integer", 40, 100); 
@@ -12,9 +14,10 @@ do i = 1 to 24;
   output;
  end;
 run;
-title1 'Listing from HAVE Data Set';
-proc print data=HAVE; run;
+title1 'Listing from a simulated Data Set';
+proc print data=HAVE noobs; run;
 
+*** Ex23_array_call_sortn.sas (Part 2);
 *** Horizon Sorting of 5 Test Variables in Descending order 
 and Dropping the Testing Variable with Lowest Test Score;
 
@@ -35,8 +38,9 @@ data have2;
  run;
 proc sort data=work.Have2; by descending wpt; run;
 options nocenter nodate nonumber;
-title1 'Listing from HAVE2 Data Set';
+title1 'Calculations of weighted scores';
 proc print data=work.have2 noobs; 
 var id P_: wpt; 
 Format wpt 5.0;
 run;
+title1;

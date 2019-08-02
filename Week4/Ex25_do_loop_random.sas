@@ -1,5 +1,7 @@
+title1; title2;
 *Ex25_do_loop_random.sas;
 * Create 100 observations, 40 variables for each;
+options nocenter nonumber nodate;
 data have;
   call streaminit(1234);
   array vars[20] var1-Var20; /*array of 20 varianles*/
@@ -13,10 +15,10 @@ data have;
   end;
   drop i;
 run;
-proc print data=have;
+proc print data=have noobs;
 run;
 
-
+options nocenter nonumber nodate;
 * Create 25 observations, 20 character variables with ranging from A through E;
 data have2;
 retain obsnum;
@@ -35,6 +37,6 @@ call streaminit(1234);
   drop i v: _: ;   /* Drop these variables */
 run;
 proc contents; run;
-proc print data=have2;
+proc print data=have2 noobs;
 run;
 

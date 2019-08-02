@@ -1,5 +1,5 @@
-
-/*  Ksharp 
+*Ex30_regex.sas;
+/*  Code written by Ksharp 
 https://communities.sas.com/t5/New-SAS-User/remove-whitespace/m-p/511921#M2277
 */
 data _null_;
