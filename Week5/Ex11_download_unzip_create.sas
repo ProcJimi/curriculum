@@ -1,6 +1,4 @@
-
 *Ex11_download_unzip_create.sas;
-
 *** Task 1: Download a particular ZIP SAS transport file from the MEPS web site;
 
 Filename GoThere "C:\Data\h181ssp.zip";
@@ -9,26 +7,7 @@ proc http
    out=GoThere;
 run;
 
-*** Task 2:  Read the "members" (files) from the ZIP file;
-filename inzip2 ZIP "C:\Data\h181ssp.zip";
-data contents(keep=memname isFolder);
- length memname $200 isFolder 8;
- fid=dopen("inzip2");
- if fid=0 then
-  stop;
- memcount=dnum(fid);
- do i=1 to memcount;
-  memname=dread(fid,i);
-  /* check for trailing / in folder name */
-  isFolder = (first(reverse(trim(memname)))='/');
-  output;
- end;
- rc=dclose(fid);
- call symputx('memname', memname);
-run;
-%put &=memname;
-proc print data=contents noobs N;
-run;
+
 
 *** Task 3: Unzip the SAS transport data file into the work folder;
 filename sit "%sysfunc(getoption(work))/&memname";

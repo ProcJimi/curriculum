@@ -12,8 +12,6 @@ A02 02202015 Physician Office Visit
 A02 02202015 Emergency Room Visit
 A05 01122015 Outpatient Visit
 ;
-proc print data=work.HAVE noobs ; run;
-
 Title1 "Ex2A_SORT_nodupkey_noduprecs.sas";
 Title2 "Sort the data in ascending order by visit_date";
 proc sort data=work.Have
@@ -47,16 +45,17 @@ proc print data=work.nodupkey_2Bys noobs;
 run;
 
 *Ex2A_SORT_nodupkey_noduprecs.sas (Part 5);
-proc sort data = work.HAVE noduprecs
-  out=work.noduprec_obs 
+proc sort data = work.HAVE nodupkey
+  out=work.nodupkey_ALL_ 
   DUPOUT=work.dupoutobs ;
- BY ID ;
+ BY _ALL_ ;
 run;
 Title2 "Listing of duplicate observations";
 proc print data=work.dupoutobs noobs; 
 run;
-Title2 "Listing of nonduplicate observations";
-proc print data=work.noduprec_obs noobs; 
+
+Title2 "Listing of nonduplicate observations (nodupkey _ALL_)";
+proc print data=work.nodupkey_all_ noobs; 
 run;
 
 
@@ -68,6 +67,6 @@ proc sort data = have nouniquekeys
 by ID Visit_date visit_type;
 Title2 "NOUNIQUEKEYS and UNIQUEOUT OptionS with PROC SORT (Duplicates)";
 proc print data=duplicates noobs; run;
-Title2 "NOUNIQUEKEYS and UNIQUEOUT OptionS with PROC SORT (Singles)";
+Title2 "NOUNIQUEKEYS and UNIQUEOUT Options with PROC SORT (Singles)";
 proc print data=singles noobs; run;
 title1; title2;

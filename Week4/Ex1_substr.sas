@@ -1,5 +1,5 @@
 options nocenter nodate nonumber nonotes nosource;
-*Example_substr.sas (Part 1);
+*Ex1_substr.sas (Part 1);
 data _Null_;
    var1 = 'Geology';
    new_var1 = SUBSTR(var1,1,3);
@@ -8,7 +8,7 @@ data _Null_;
 putlog (_ALL_) (=// +2);
  run;
 
-*Example_substr.sas (Part 2);
+*Ex1_substr.sas (Part 2);
  data _Null_;
    var1 = 'Stat4197';
    new_var1 = SUBSTR(var1,5);

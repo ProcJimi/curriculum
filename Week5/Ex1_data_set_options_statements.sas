@@ -20,7 +20,7 @@ keep name age sex;
 rename name=Student_Name sex=Gender;
 where age >14;
 run;
-title1 'KEEP, RENAME, and WHERE Data Set Statements';
+title1 'KEEP, RENAME, and WHERE Statements';
 proc print data=work.class2;
 run;
 
@@ -36,6 +36,7 @@ data dsn2014 dsn2015 dsn2016 dsn2017 dsn2018;
    set dsn: INDSNAME=value;
    Year=substr(value,(length(value)-3));
  run;
+ title1 'INDSNAME= Data Set options';
  proc print data=want noobs;
  run;
 
@@ -44,7 +45,7 @@ data dsn2014 dsn2015 dsn2016 dsn2017 dsn2018;
 Data work.Class;
   set sashelp.class (FIRSTOBS=7 OBS=10);
 run;
-title1 'FIRSTOBS= OBS= Options';
+title1 'FIRSTOBS= and OBS= Options';
 proc print data=work.class;
 run;
 title1;

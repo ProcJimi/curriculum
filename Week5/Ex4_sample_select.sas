@@ -1,9 +1,12 @@
-*Ex4_sample_select.sas;
+*Ex4_sample_select.sas (Part 1);
+options nocenter nodate nonumber;
 proc surveyselect data=SASHELP.HEART
   method=srs n=100 out=WORK.HEART;
 run;
 
-*Example_Point_Sample.sas;
+
+*Ex4_sample_select.sas (Part 2);
+options nocenter nodate nonumber nosource;
 data MaleSamples FemaleSamples;
   drop  i SampleSize;
    SampleSize=100;

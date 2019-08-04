@@ -1,4 +1,4 @@
-*** List_File_Names.sas;
+*** Ex14_List_File_Names.sas;
 * List file names from a folder - Variant 1;
 PROC IML;
 SUBMIT / R;

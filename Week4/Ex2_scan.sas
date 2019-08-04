@@ -1,4 +1,4 @@
-*Example_scan.sas (Part 1);
+*Ex2_scan.sas (Part 1);
 /*
 In the code below, the use of the ‘Q’ modifier alone as the fourth 
 argument causes the SCAN function to ignore the word delimiters
@@ -19,7 +19,7 @@ data _Null_;
 putlog (_ALL_) (=//+2);
 run;
 
-*Example_scan.sas (Part 2);
+*Ex2_scan.sas (Part 2);
 options nocenter nodate nonumber;
 data in_a;
 input @1 string $char65.;
