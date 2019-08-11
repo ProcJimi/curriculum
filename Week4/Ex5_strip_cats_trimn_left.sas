@@ -1,4 +1,4 @@
-*Example_strip_cats_trimn_left.sas;
+*Ex5_strip_cats_trimn_left.sas;
 *SAS Code Adapted from SAS Documentation;
 data work.HAVE1;
    input string $char20.;

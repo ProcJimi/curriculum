@@ -1,4 +1,3 @@
-*Ex2_scan.sas (Part 1);
 /*
 In the code below, the use of the ‘Q’ modifier alone as the fourth 
 argument causes the SCAN function to ignore the word delimiters
@@ -7,6 +6,7 @@ the ‘Q’ modifier enables you to correctly separate the words
 and removes the quotes from the two quoted words.  (Carpenter, 2012). 
 */
 
+*Ex2_scan.sas (Part 1);
 options nocenter nodate nonumber nonotes nosource;
 data _Null_;
    var1 = 'United States, Washington DC';
