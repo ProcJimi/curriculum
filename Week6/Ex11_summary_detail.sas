@@ -1,4 +1,4 @@
-*Ex11_summary_detail.sas;
+*Ex11_summary_detail.sas (Part 1);
 /******************************************************
 *Combine summary value (average) to the detail dataset
 and calculate the deviation of the individual weight
@@ -7,36 +7,42 @@ from the mean
 ******************************************************/
 
 *** Summary value using PROC MEAMS;
+options nocenter nodate nonumber;
 proc means data=sashelp.class noprint;
          output out=summary_data_m(keep=avg_weight)
          mean(weight)=avg_weight;
 run;
+title1 'Summarized values from PROC MEANS output data set';
 proc print data=summary_data_m noobs; run;
 
+*Ex11_summary_detail.sas (Part 2);
+options nocenter nodate nonumber;
 *** Summary value using PROC SUMMARY;
 proc summary data=sashelp.class;
      var weight;
       output out=summary_data_s (drop=_TYPE_ _FREQ_)
       mean(weight)=avg_weight;
 run;
+title1 'Summarized values from PROC SUMMARY output data set';
 proc print data=summary_data_s noobs; 
 run;
 
-*** Solution 1: Two SET statements to combine the summary data 
-    with the detail data;
+*Ex11_summary_detail.sas (Part 3);
+options nocenter nodate nonumber;
 data class;
         if _n_=1 then  set summary_data_m;
 		set sashelp.class (keep=name weight);
 		weight_deviation=1-(weight/avg_weight);
 run;
-title1 ' Solution 1: DATA step using Two SET statements';
+title1 'Combine the summary data with the detail data using two SET statements';
 proc print data=class;
 var name weight avg_weight weight_deviation;
-format weight  5.1  weight_deviation percent8.2;
+format avg_weight weight  5.1  weight_deviation percent8.2;
 run;
 
-*PROC SQL approach - (Solution 2) ;
-title1 ' Solution 2: PROC SQL Approach';
+
+*Ex11_summary_detail.sas (Part 4);
+title1 'Combine the summary data with the detail data using PROC SQL';
 PROC SQL;
 select  name 
        ,weight format=5.1
@@ -48,7 +54,7 @@ select  name
 
 
 
-* DATA Step Approach - Solution 3 ;
+* DATA Step Approach  ;
 data detail_class;
  length new_var $1;
  set sashelp.class;

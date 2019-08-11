@@ -1,6 +1,6 @@
-*Ex4_merge_update_missing.sas;
+*Ex4_merge_update_missing.sas (Part 1);
+options nocenter nodate nonumber;
 proc datasets kill nolist nodetails; quit;
-options nodate nonumber;
 data work.MASTER; 
 infile datalines firstobs=2 truncover;
 input pt_id $ 1-4 Name $ 6-13 @16 visit_date mmddyy10.;
@@ -27,7 +27,8 @@ run;
 title 'LISTNG - WORK.TRANS';
 proc print data=work.TRANS; 
 run;
-
+*Ex4_merge_update_missing.sas (Part 2);
+options nocenter nodate nonumber;
 data work.Merged_NEW;
  MERGE work.MASTER 
        work.TRANS; by pt_id; 
@@ -37,6 +38,8 @@ proc print data=
       work.Merged_NEW; 
 run;
 
+*Ex4_merge_update_missing.sas (Part 3);
+options nocenter nodate nonumber;
 data work.Updated_NEW;
  UPDATE work.MASTER (IN=O) 
         work.TRANS (IN=T); 

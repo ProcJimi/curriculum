@@ -1,4 +1,4 @@
-*Ex6_sql_moreCode.sas;
+*Ex6_sql_moreCode.sas (Part 1);
 *** Acknowlegements: Some of the code idea  (INSERT, VALUE, SET,  
       and UPDATE clauses) is obtained from Martha Messineo (2017);
 
@@ -18,6 +18,8 @@ Create table have(ID varchar(6), stype varchar(13), Score float);
 		;
 quit;
 
+*Ex6_sql_moreCode.sas (Part 2);
+options nocenter nodate nonumber;
 ** The following code is eqivalent to PROC PRINT step 
    with a VAR statement in it. The results of the SELECT 
    statement are written to the deafult output destination;
@@ -27,6 +29,7 @@ proc sql;
   From have;
 quit;
 
+*Ex6_sql_moreCode.sas (Part 3);
 ***  Use the INSERT with the VALUE clause to add rows to a data table.
 The CREATE TABLE statement creates a daa table from the results of the
 query;
@@ -41,6 +44,7 @@ Insert into class
     from class;
 quit;
 
+*Ex6_sql_moreCode.sas (Part 4);
 *** Use the INSERT with the SET clause to add rows to a data table;
 proc sql;
  insert into class
@@ -49,6 +53,7 @@ proc sql;
     from class;
 quit;
 
+*Ex6_sql_moreCode.sas (Part 5);
 *** Use the DELETE clause to delete rows from a data table;
 proc sql;
  delete from class
@@ -57,6 +62,7 @@ proc sql;
     from class;
 quit;
 
+*Ex6_sql_moreCode.sas (Part 6);
 *** Use the UPDATE clause to conditionally set a value of a particular
 variable to another value;
 proc sql;
@@ -70,6 +76,7 @@ proc sql;
     from new_class;
 quit;
 
+*Ex6_sql_moreCode.sas (Part 7);
 *** The following two code blocks (PROC PRINT and PROC SQL) 
     provide the same results;
 title 'Listing from PROC PRINT';
@@ -78,6 +85,7 @@ proc print data=sashelp.cars noobs;
  where make='BMW';
 run;
 
+*Ex6_sql_moreCode.sas (Part 8);
 proc sql;
 title 'Query from from the SELECT clause with PROC SQL';
  select make, type
@@ -85,6 +93,7 @@ title 'Query from from the SELECT clause with PROC SQL';
  where make='BMW';
 quit;
 title;
+*Ex6_sql_moreCode.sas (Part 9);
 *** The following two code blocks (DATA Step and PROC SQL) 
     provide the same results -  there are other DATA step solutions
     (not shown here);
@@ -95,12 +104,13 @@ data _null_;
   if eof then putlog count=;
 run;
 
-
+*Ex6_sql_moreCode.sas (Part 10);
 proc sql;
  select count(*) as total_rows
  From sashelp.cars;
 quit;
 
+*Ex6_sql_moreCode.sas (Part 11);
 *** The following two code blocks (PROC SORT/PROC PRINT and PROC SQL) 
     provide the same results);
 
@@ -112,6 +122,7 @@ run;
 proc print data=distinct_make_type noobs;
 run;
 
+*Ex6_sql_moreCode.sas (Part 12);
 proc sql;
  select distinct make, type
  From sashelp.cars
@@ -119,6 +130,7 @@ proc sql;
  order by type;
 quit;
 
+*Ex6_sql_moreCode.sas (Part 13);
 *** The GROUP BY clause classifies the data based on the values 
 of the MAKE column and calculate the mean INVOICE price for each 
 unique value of the grouping column (i.e., MAKE). 
@@ -131,6 +143,8 @@ proc sql;
    group by make
    order by mean_invoice_price desc;
 quit;
+
+*Ex6_sql_moreCode.sas (Part 14);
 
 ** The HAVING clause subsets groups based om the expression value.
 Here we use a column alias to refer to a calculated value. and hence, use 

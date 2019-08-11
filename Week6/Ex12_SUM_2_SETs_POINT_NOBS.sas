@@ -1,4 +1,5 @@
 *Ex12_SUM_Statement_vs_2_SETs.sas;
+options nocenter nodate nonumber;
 DATA sale_by_mon ;
   INPUT mon $  sale @@;
   cum_sale+sale;
@@ -14,12 +15,12 @@ PROC PRINT DATA=sale_by_mon ;
   run;
 
 DATA xsale;
- /*if _n_=1 then */
   SET sale_by_mon(keep=cum_sale) 
        POINT=last nobs=last;
   SET sale_by_mon (drop=cum_sale);
   Percent_sale = sale/cum_sale;
 run;
+options nocenter nodate nonumber;
 PROC PRINT DATA=xsale; 
   VAR mon sale Percent_sale;
   SUM sale Percent_sale;

@@ -1,4 +1,5 @@
-*Ex8B_Collapse_multi_records.sas;
+*Ex8B_Collapse_multi_records.sas (Part 1);
+options nocenter nodate nonumber;
 data have;
  input id type value count;
  cards;
@@ -25,18 +26,28 @@ data have;
  ;
  ;run;quit;
 proc print noobs; run;
+
+*Ex8B_Collapse_multi_records.sas (Part 2);
+title1 'Agggregate the values of the numeric variable';
+options nocenter nodate nonumber;
  proc summary data=have nway missing;
    class id type;
    var value count;
    output out=sums(drop=_:) sum=;
  proc print data=sums noobs; run;
 
+ *Ex8B_Collapse_multi_records.sas (Part 3);
+options nocenter nodate nonumber;
+title1 'Transpose the Agggregated table';
  proc transpose data=sums out=trans
    prefix=type_;
    by id;
    id type;
  proc print data=trans noobs; run;
 
+ *Ex8B_Collapse_multi_records.sas (Part 4);
+options nocenter nodate nonumber;
+title1 'Merge the Transposed data using two SET statements';
  data want;
    set trans(where=(_name_='count'));
    count=sum(of type_:);

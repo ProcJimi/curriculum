@@ -1,6 +1,6 @@
-*Ex9_Dictionary_column.sas;
-OPTIONS nodate nonumber ;
-* Get column names, and type from a particular SAS Table;
+*Ex9_Dictionary_column.sas (Part 1);
+OPTIONS nocenter nodate nonumber ;
+Title1 'Get column names and column type from a particular SAS Table';
 proc sql;
  SELECT NAME, TYPE, LABEL  
   FROM DICTIONARY.COLUMNS  
@@ -8,8 +8,9 @@ proc sql;
          UPCASE(MEMNAME)="HEART";  
 QUIT;
 
-* Get the column names that are the same in all SAS tables
-  in the same library;
+*Ex9_Dictionary_column.sas (Part 2);
+Title 'Get the column names that are the same in all SAS tables in the same library';
+OPTIONS nocenter nodate nonumber ;
 proc sql;
  SELECT MEMNAME 'Table Names', NAME
   FROM DICTIONARY.COLUMNS  
@@ -17,13 +18,15 @@ proc sql;
          UPCASE(NAME)="WEIGHT";  
 QUIT;
 
-* Get a horizontal list of column names of a SAS table;
+*Ex9_Dictionary_column.sas (Part 3);
+OPTIONS nocenter nodate nonumber ;
 proc sql noprint; 
      select name into : COLNAMES separated by ' ' 
      from dictionary.columns 
      where LIBNAME='SASHELP' and memname = UPCASE('class');
  quit; 
- %put &COLNAMES;
+
+ %put  Get a horizontal list of column names of a SAS table: &COLNAMES;
 
  * Contributed by Reza to SAS-L - 9/25/2018;
 
@@ -31,9 +34,11 @@ proc sql noprint;
   numeric variables and the number of character variables
   for every SAS dataset: num_character, num_numeric.*/
 
-* Grt this information into macro variables and then extract;
+* Get this information into macro variables and then extract;
 
+ *Ex9_Dictionary_column.sas (Part 4);
 * Solution 1 - PROC SQL Approach;
+ 
 %let lref=SASHELP;
 %let dsn=CLASS;
 
@@ -46,11 +51,15 @@ quit;
 %put &=n_char_x;
 %put &n_num_x;
 
+
+
+ *Ex9_Dictionary_column.sas (Part 5);
+*** Solution 2 SUM function in PROC SQL;
+/* Query the SASHELP or DICTIONARY table*/
+
 %let lref=SASHELP;
 %let dsn=CARS;
 
-*** Solution 2 SUM function in PROC SQL;
-/* Query the SASHELP or DICTIONARY table*/
 proc sql noprint;
 select sum(type='char'), sum(Type='num') into :n_char, :n_num
 from sashelp.vcolumn
@@ -60,16 +69,24 @@ quit;
 %put &=n_char;
 %put &=n_num;
 
-*  Solution 3 -Data Step Approach;
+ *Ex9_Dictionary_column.sas (Part 6);
+*  Solution 3 - Data Step Approach;
 Data test;
-set sashelp.cars;
-array nums(*) _numeric_;
-array chrs(*) _character_;
-call symputx('nb1',dim(nums),'G');
-%put &=nb2;
-call symputx('nb2',dim(chrs),'G');
+  set sashelp.cars;
+  array nums(*) _numeric_;
+  array chrs(*) _character_;
+     call symputx('nb1',dim(nums),'G');
+      %put &=nb2;
+     call symputx('nb2',dim(chrs),'G');
 run;
 
 %put &=nb1;
 
+ *Ex9_Dictionary_column.sas (Part 6);
 
+proc sql noprint; 
+ select name into :varlist_status separated by ' '
+ from dictionary.columns
+ where libname='SASHELP' and memname='HEART' /* your library and data set name here in uppercase */
+ and name like '%_Status';
+ quit;

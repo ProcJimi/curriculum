@@ -1,4 +1,5 @@
-*Ex8C_id_multiple_groups.sas;
+*Ex8C_id_multiple_groups.sas (Part 1);
+options nocenter nodate nonumber;
 data HAVE;
 input pt_id $ vdate :$10.;
 cards;
@@ -9,11 +10,14 @@ cards;
 2      06/03/2017 
 ;
 run;
- 
+
 proc sort data=HAVE;
 by pt_id vdate;
 run;
  
+*Ex8C_id_multiple_groups.sas (Part 2);
+title1 'By-group processing (Method 1)';
+options nocenter nodate nonumber;
 data want;
   set HAVE ;
   by pt_id vdate;
@@ -21,8 +25,11 @@ data want;
   count_id+1;
   if last.vdate then output;
 run;
-proc print data=want; run;
+proc print data=want noobs; run;
 
+*Ex8C_id_multiple_groups.sas (Part 3);
+title1 'By-group processing (Method 2)';
+options nocenter nodate nonumber;
 * Alternatively;
 data want2;
   set HAVE;
@@ -31,4 +38,4 @@ data want2;
   if first.vdate then count = 1;
   if last.vdate then output;
 run;
-proc print data=want2; run;
+proc print data=want2 noobs; run;
