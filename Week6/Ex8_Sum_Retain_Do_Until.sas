@@ -1,6 +1,6 @@
 *Ex8_Sum_Retain_Do_Until.sas (Part 1);
 options nocenter nodate nonumber;
-* Accumulator variable - Created DATA Step vs. PROC Step;
+
 data have;
 infile datalines missover;
 input ID value;
@@ -24,7 +24,7 @@ data want1 (drop=value);
 	 CumValue+Value;
    if last.ID then output;
  run;
- proc print data=want1 noobs; run;
+  proc print data=want1 noobs; run;
 
  *Ex8_Sum_Retain_Do_Until.sas (Part 3);
 options nocenter nodate nonumber;
@@ -38,7 +38,7 @@ title1 'Sumarizing by Group -  using Retain and Assignment Statements';
   run;
  proc print data=want2 noobs; run;
 
- *Ex8_Sum_Retain_Do_Until.sas (Part 4);
+*Ex8_Sum_Retain_Do_Until.sas (Part 4);
 options nocenter nodate nonumber;
 title1 'Sumarizing by Group -  using PROC SQL';
 proc sql;
@@ -67,7 +67,7 @@ options nocenter nodate nonumber;
 proc means data=have noprint;
    class id;
    var value;
-output out=want2 (drop =_type_ _freq_)
+    output out=want2 (drop =_type_ _freq_)
        sum = sum_value;
 run;
 title1 'Sumarizing by Group - using PROC MEAMS';

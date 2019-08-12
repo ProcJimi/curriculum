@@ -24,7 +24,7 @@ data have;
  3 3 37 1
  3 1 66 0
  ;
- ;run;quit;
+ title1 'Example Data Set';
 proc print noobs; run;
 
 *Ex8B_Collapse_multi_records.sas (Part 2);
