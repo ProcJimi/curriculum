@@ -31,7 +31,7 @@ run;
 title1 'LISTNG - WORK.TRANS';
 proc print data=work.TRANS; 
 run;
-
+title1;
 *Ex3_merge_update_BY.sas (Part 2);
 options nocenter nodate nonumber;
 data work.Merged_NEW;
@@ -56,39 +56,45 @@ proc print data=
      work.Updated_NEW; 
 run;
 
-*Ex3_merge_update_BY.sas (Part 4);
+*Ex3_merge_update_BY.sas (Part 4) - Subway Master File;
 DATA master;
 INFILE DATALINES DLM=',';
-INPUT Id item & $25.  sub_6_inch footlong;
+INPUT Id item & $14.  sub_6_inch footlong;
 DATALINES;
-1,Cold Cut Combo,	 3.50,	 5.00
-2,Pizza Sub,	 	 3.50,	 5.00
-3,Spicy Italian,	 3.50,	 5.00
-4,Veggie Delite,	 3.50,	 5.00
-5,Turkey Breast,	 4.00,	 6.00
-6,Tuna,	             4.00,	 6.00
-7,Veggie Patty,	     4.00,	 6.00
-8,Subway Club,	     4.50,	 7.00
-9,Subway Melt,	     4.50,	 7.00
-10,Steak & Cheese,	 4.50,	 7.25
-11,Roast Beef,	     4.50,	 7.25
+1,Cold Cut Combo,3.50, 5.00
+2,Pizza Sub,3.50, 5.00
+3,Spicy Italian,3.50, 5.00
+4,Veggie Delite, 3.50, 5.00
+5,Turkey Breast, 4.00, 6.00
+6,Tuna,             4.00, 6.00
+7,Veggie Patty,     4.00, 6.00
+8,Subway Club,     4.50, 7.00
+9,Subway Melt,     4.50, 7.00
+10,Steak & Cheese, 4.50, 7.25
+11,Roast Beef,     4.50, 7.25
 ;
-Proc print data=master noobs; run;
-DATA Transact;
-INFILE DATALINES DLM=',';
-INPUT Id item & $25.  sub_6_inch footlong;
-DATALINES;
-9,Subway Melt,	     5.50,	 8.00
-10,Steak & Cheese,	 5.50,	 9.25
-11,Roast Beef,	     5.50,	 8.25
-;
-Proc print data=Transact noobs; run;
 PROC SORT DATA=master; 
   BY id; 
 run;
+title1 'Master File - Subway Menu';
+Proc print data=master noobs; run;
+
+*Ex3_merge_update_BY.sas (Part 5) - Subway Transaction File;
+DATA Transact;
+INFILE DATALINES DLM=',';
+INPUT Id item & $14.  sub_6_inch footlong;
+DATALINES;
+9,Subway Melt,     5.50, 8.00
+10,Steak & Cheese, 5.50, 9.25
+11,Roast Beef,     5.50, 8.25
+;
 PROC SORT DATA=Transact; 
   BY id; 
 run;
+title1 'Transaction File - Subway Menu';
+Proc print data=Transact noobs; run;
+
+*Ex3_merge_update_BY.sas (Part 6) - Subway Updated File;
 DATA updated; 
  UPDATE master Transact; BY id;
 run;
@@ -102,9 +108,6 @@ DATA master_x;
  MODIFY master_x Transact; 
 BY id;
 run;
+title1 'Updated File - Subway Menu';
 PROC PRINT DATA=Master_x noobs; 
 run;
-
-
-
-

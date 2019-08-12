@@ -79,7 +79,7 @@ quit;
 *Ex6_sql_moreCode.sas (Part 7);
 *** The following two code blocks (PROC PRINT and PROC SQL) 
     provide the same results;
-title 'Listing from PROC PRINT';
+title1 'Listing from PROC PRINT';
 proc print data=sashelp.cars noobs;
   var make type;
  where make='BMW';
@@ -87,17 +87,17 @@ run;
 
 *Ex6_sql_moreCode.sas (Part 8);
 proc sql;
-title 'Query from from the SELECT clause with PROC SQL';
+title1 'Query from from the SELECT clause with PROC SQL';
  select make, type
  From sashelp.cars
  where make='BMW';
 quit;
-title;
-*Ex6_sql_moreCode.sas (Part 9);
+title1;
 *** The following two code blocks (DATA Step and PROC SQL) 
     provide the same results -  there are other DATA step solutions
     (not shown here);
 
+*Ex6_sql_moreCode.sas (Part 9);
 data _null_;
   set sashelp.cars end=eof;
   count+1;
@@ -110,10 +110,11 @@ proc sql;
  From sashelp.cars;
 quit;
 
-*Ex6_sql_moreCode.sas (Part 11);
+
 *** The following two code blocks (PROC SORT/PROC PRINT and PROC SQL) 
     provide the same results);
 
+*Ex6_sql_moreCode.sas (Part 11);
 proc sort data=sashelp.cars 
        (where=(make='BMW')) nodupkey
   out=distinct_make_type (keep=make type);
@@ -130,12 +131,12 @@ proc sql;
  order by type;
 quit;
 
-*Ex6_sql_moreCode.sas (Part 13);
-*** The GROUP BY clause classifies the data based on the values 
+*** In the following code, the GROUP BY clause classifies the data based on the values 
 of the MAKE column and calculate the mean INVOICE price for each 
 unique value of the grouping column (i.e., MAKE). 
 The ORDER BY clause order the results in descending order;
  
+*Ex6_sql_moreCode.sas (Part 13);
 proc sql;
  select make, 
   mean(invoice) as mean_invoice_price format=comma8.
@@ -144,14 +145,13 @@ proc sql;
    order by mean_invoice_price desc;
 quit;
 
-*Ex6_sql_moreCode.sas (Part 14);
-
-** The HAVING clause subsets groups based om the expression value.
+** In the following code, the HAVING clause subsets groups based om the expression value.
 Here we use a column alias to refer to a calculated value. and hence, use 
 the CALCULATED keyword with the alias to inform PROC SQL that 
 the value is calculated within the query (SAS Documentation);
- 
-options nocenter nodate ls=90;
+
+
+*Ex6_sql_moreCode.sas (Part 14); 
 proc sql ; 
 select name
        ,pop
