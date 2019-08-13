@@ -1,12 +1,11 @@
-*Ex11_summary_detail.sas (Part 1);
 /******************************************************
 *Combine summary value (average) to the detail dataset
 and calculate the deviation of the individual weight
 from the mean
 *Proc step/Data step approach 
 ******************************************************/
-
-*** Summary value using PROC MEAMS;
+*Ex11_summary_detail.sas (Part 1);
+*** Summary value using PROC MEANS;
 options nocenter nodate nonumber;
 proc means data=sashelp.class noprint;
          output out=summary_data_m(keep=avg_weight)
@@ -53,7 +52,7 @@ select  name
  quit;
 
 
-
+*Ex11_summary_detail.sas (Part 5);
 * DATA Step Approach  ;
 data detail_class;
  length new_var $1;
@@ -80,8 +79,8 @@ format weight avg_weight 5.1
 run;
 
 
-
-*** Solution 4 PROC Step, CALL SYMPUTX, DATA Step;
+*Ex11_summary_detail.sas (Part 6);
+*** PROC Step, CALL SYMPUTX, DATA Step;
 Options nocenter nodate nonumber;
 proc means data=sashelp.class noprint;
 var weight;

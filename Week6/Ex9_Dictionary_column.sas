@@ -48,8 +48,8 @@ from sashelp.vtable
 where libname = upcase("&lref.") and upcase(memname) = upcase("&dsn.");
 quit;
 
-%put &=n_char_x;
-%put &n_num_x;
+%put Number of character variables = &n_char_x;
+%put Number of numeric variables = &n_num_x;
 
 
 
@@ -66,8 +66,9 @@ from sashelp.vcolumn
 where libname = upcase("&lref.") and upcase(memname) = upcase("&dsn.");
 quit;
 
-%put &=n_char;
-%put &=n_num;
+%put Number of character variables = &n_char_x;
+%put Number of numeric variables = &n_num_x;
+
 
  *Ex9_Dictionary_column.sas (Part 6);
 *  Solution 3 - Data Step Approach;
@@ -76,17 +77,18 @@ Data test;
   array nums(*) _numeric_;
   array chrs(*) _character_;
      call symputx('nb1',dim(nums),'G');
-      %put &=nb2;
      call symputx('nb2',dim(chrs),'G');
 run;
 
-%put &=nb1;
+%put Number of numeric variables = &nb1;
+%put Number of numeric variables = &nb2;
 
- *Ex9_Dictionary_column.sas (Part 6);
+ *Ex9_Dictionary_column.sas (Part 7);
 
 proc sql noprint; 
  select name into :varlist_status separated by ' '
  from dictionary.columns
- where libname='SASHELP' and memname='HEART' /* your library and data set name here in uppercase */
- and name like '%_Status';
+ where libname='SASHELP' and memname='HEART'
+ and name like "%#_Status" escape '#';
  quit;
+%put &varlist_status;

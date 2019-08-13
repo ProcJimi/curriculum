@@ -1,4 +1,5 @@
 *Ex10_first_var_last_var.sas (Part 1);
+options nodate nocenter nonumber; 
 DATA work.Have;
 INPUT ID $ calorie_intake;
  DATALINES;
@@ -15,20 +16,19 @@ INPUT ID $ calorie_intake;
  D 900
  D 800
 ;
-run;
-
-*Ex10_first_var_last_var.sas (Part 2);
 PROC SORT data=work.Have 
    out=work.Sorted_have; 
  BY ID; 
 run;
 
+*Ex10_first_var_last_var.sas (Part 2);
 DATA _NULL_;
  SET work.sorted_have; BY ID; 
  PUTLOG ID= First.ID=  LAST.ID= calorie_intake=;
 run;
 
 *Ex10_first_var_last_var.sas (Part 3);
+options nodate nocenter nonumber; 
 Data _Null_;
  SET work.sorted_have; 
   BY ID;
