@@ -1,4 +1,4 @@
-*Ex4_Multilabel_Format.sas ;
+*Ex4_Multilabel_Format.sas (Part 1);
 options nodate nonumber;
 proc format ;
  value m_agefmt (multilabel notsorted)
@@ -27,6 +27,7 @@ proc tabulate data=sashelp.heart;
   title2 ' Class AgeAtStart/mlf preloadfmt order=data';
 run;
 
+*Ex4_Multilabel_Format.sas (Part 2);
 proc tabulate data=sashelp.heart;
   class AgeAtStart/mlf;  
   var AgeAtdeath;

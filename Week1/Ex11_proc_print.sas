@@ -1,4 +1,4 @@
-
+*Ex11_proc_print.sas (Part 1);
 options nocenter nodate ps=58 ls=78;
 proc format;
 value $regionfmt
@@ -9,24 +9,7 @@ value $regionfmt
 	'SEAR' = 'South-East Asia'
 	'WPR' = 'Western Pacific';
 	run;
-proc freq data=sashelp.demographics; 
-  tables region; 
-  format region $regionfmt.;
-run;
-proc sort data=sashelp.demographics out=work.demographics; 
-  by region; run;
-title 'Listing from SASHELP.DEMOGRAPHICS';
-proc print data=work.demographics noobs split='*'; 
-label name ='Country'
-      pop = 'Population*Size'
-	  popAGR='Annual Population*Growth Rate*(1995-2005)';
-var name popAGR ;
-sum pop;
-by region;
-pageby region;
-format region $regionfmt.;
-run;
-
+*Ex11_proc_print.sas (Part 1);
 * Find the seven most populous counties in the world;
  proc sort data=sashelp.demographics 
    out=work.demographics; 
@@ -41,8 +24,22 @@ label name ='Country'
 var region name pop popAGR ;
 format region $regionfmt.;
 run;
+proc sort data=sashelp.demographics out=work.demographics; 
+  by region; run;
+title 'Listing from SASHELP.DEMOGRAPHICS by Region';
+proc print data=work.demographics noobs split='*'; 
+label name ='Country'
+      pop = 'Population*Size'
+	  popAGR='Annual Population*Growth Rate*(1995-2005)';
+var name popAGR ;
+sum pop;
+by region;
+pageby region;
+format region $regionfmt.;
+run;
 
-title 'Listing from SASHELP.DEMOGRAPHICS - Pop Growtth Rate > 0%';
+*Ex11_proc_print.sas (Part 3);
+title 'Listing from SASHELP.DEMOGRAPHICS - Pop Growtth Rate Less than 0%';
 proc print data=sashelp.demographics noobs  split='*'; 
 label name ='Country'
       region = 'Region'

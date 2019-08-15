@@ -1,5 +1,5 @@
 
-*Ex3_proc_tabulate.sas;
+*Ex3_proc_tabulate.sas (Part 1);
 options nonumber nodate ls=132 ps=58 ;
 PROC TABULATE data=sashelp.heart format=comma7. ;
   TITLE1 'Two Dimensional TABLE';
@@ -8,6 +8,7 @@ PROC TABULATE data=sashelp.heart format=comma7. ;
   TABLE weight_status all, (BP_Status all)*(N rowpctn*f=6.1);
 run;
 
+*Ex3_proc_tabulate.sas (Part 2);
 PROC TABULATE data=sashelp.heart format=comma7. ;
 TITLE1 'Two Dimensional TABLE';
   TITLE2 'Variable Labels Changed and KEYLABEL Statement Added';
@@ -17,7 +18,7 @@ TITLE1 'Two Dimensional TABLE';
         (BP_Status='Blood Pressure Category' all)*(N rowpctn*f=6.1);
 run;
 
-
+*Ex3_proc_tabulate.sas (Part 3);
 PROC TABULATE data=sashelp.heart format=comma7. ;
 TITLE1 'Three Dimensional TABLE';
   TITLE2 'Mean Weight';
@@ -29,6 +30,7 @@ TITLE1 'Three Dimensional TABLE';
         *(N weight*mean);
 run;
 
+*Ex3_proc_tabulate.sas (Part 4);
 PROC TABULATE data=sashelp.heart format=comma7.;
 TITLE1 'Concatenated Rows - Two Dimensional TABLES';
   TITLE2 'Mean Weight';

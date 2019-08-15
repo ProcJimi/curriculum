@@ -1,5 +1,5 @@
 *Ex7_ODS_Files.sas;
-
+options nocenter nodate nonumber nosource;
 ods trace on;
   proc univariate data=SASHELP.CLASS;    
   var weight;   
@@ -15,8 +15,8 @@ run;
 ods trace off; 
 
 ods listing;
-ods output basicmeasures=measures;
 ods select basicmeasures;
+*ods output basicmeasures=measures;
 proc univariate data=sashelp.class noprint;
 var weight;
 run;
@@ -39,20 +39,8 @@ run;
 proc print data=stats; run;
 
 
-ods trace on / listing;
-proc contents data=sashelp.class; 
-run; 
-ods trace off;
-
-ods trace on / listing;
-proc freq data=sashelp.heart; 
- tables weight_status*bp_status ;
- WHERE sex='Male';
-run;
-ods trace off;
-
 ods pdf;
-ods pdf file = 'C:\SASCourse\Week7\FromProcFreq.pdf';
+ods pdf file = 'C:\Data\FromProcFreq.pdf';
 ods output CrossTabFreqs=CrossTab_Freqs;
 proc freq data=sashelp.heart ; 
  tables weight_status*bp_status ;

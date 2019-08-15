@@ -104,7 +104,6 @@ run;
  /*cancel title2 and title3 */
  title2; title3;
 
-*Example_proc_freq_weight.sas;
 *Adapted from SAS-L ;
 *Contributed by data_null - 7/19/2016;
 options nonumber nodate  ps=58 ls=90;
