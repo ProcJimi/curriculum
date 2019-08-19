@@ -116,44 +116,13 @@ where libname = 'SASHELP'
 quit;
 
 
+*Ex9_Contents_many_ways.sas;
 proc sql;
 select name, type, length
  from dictionary.columns
- where libname= upcase("PUFMEPS") and memname = upcase("h192")
- and 
-     name like "FAMID%" or 
-	 name like "ELGRND%" or 
-	 name like "FAMSZE%" or 
-     name like "RULETR%" or 
-	 name like "REGION%" or 
-	 name like "BEGRF%" or 
-     name like "ENDRF%" or 
-	 name like "REFPRS%" or 
-     name like "RESP%" or 
-	 name like "ELGRND%" or 
-     name like "PROXY%" or 
-	 name like "INSCOP%" or 
-     name like "PSTATS%"; 
-quit;
-
-* Find the number of observations (Method 1);
-title1 '_1read_Flights.sas';
-data _NULL_;
-	if 0 then set sashelp.cars nobs=n;
-	call symputx('nrows',n);
-	stop;
-run;
-%put nobs=&nrows;
-
-** Find the number of observations as well as variables (Method 2);
-proc sql;
-select nobs format=comma7.
-       ,nvar 
-    from dictionary.tables
-    where libname = 'SASHELP' and memname = 'CARS';
+ where libname= "SASHELP" and memname = "HEART"
+ and name like "%_Status";
  quit;
-
-
 
 
 
