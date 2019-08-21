@@ -1,5 +1,4 @@
-*http://blogs.sas.com/content/iml/2012/04/02/count-missing-values-in-observations.html;
-*Ex31_CMISS_Base_IML.sas;
+*Ex31_CMISS_Base_IML.sas (Part 1);
 data Missing;
 input A B C;
 datalines;
@@ -17,6 +16,7 @@ numMissing = cmiss(of vars[*]);
 run;
 proc print data=A; run;
 
+*Ex31_CMISS_Base_IML.sas (Part 2);
 proc iml;
 use Missing;
   read all var _NUM_ into x;

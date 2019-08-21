@@ -1,4 +1,4 @@
-*Ex38_XSECT_SETDIF.sas;
+*Ex38_XSECT_SETDIF.sas (Part 1);
 * Contributed by Rick Wicklin to SAS-L - 12/28/2016;
 proc iml;
 candidates = {Name, Sex, Income};
@@ -7,7 +7,7 @@ In = xsect(upcase(candidates), upcase(varNames));
 Out = setdif(upcase(candidates), upcase(varNames));
 print In[label="Vars In Data"], Out[label="Vars Not In Data"];
 quit;
-*Ex38_XSECT_SETDIF.sas;
+*Ex38_XSECT_SETDIF.sas (Part 2);
 proc iml;
 varNames_d1 = contents("sashelp","class");;
 varNames_d2 = contents("sashelp","classfit");

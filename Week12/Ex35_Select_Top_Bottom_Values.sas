@@ -1,4 +1,4 @@
-*Ex35_Select_Top_Bottom_Values.sas;
+*Ex35_Select_Top_Bottom_Values.sas (Part 1);
 *Selecting 2 top and 2 bottom values;
 data a;
 input a @@;
@@ -12,7 +12,7 @@ ODS select ExtremeObs;
 proc univariate data=a; 
 run;
 
-
+*Ex35_Select_Top_Bottom_Values.sas (Part 2);
 *Solution 2;
 proc summary data=a;
 output out=top 
@@ -28,6 +28,7 @@ data topbotsum(keep=fro A_:);
 run;
 proc print data=topbotsum; run;
  
+*Ex35_Select_Top_Bottom_Values.sas (Part 3);
 *Solution 3;
 proc iml;
 use a;

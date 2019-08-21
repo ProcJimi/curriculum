@@ -1,6 +1,5 @@
 *Ex19_Create_matrix_J_Function.sas;
-ods graphics off; ods html close; ods listing;
-options nodate nonumber;
+options nocenter nodate nonumber;
 proc iml;
  obs= {8 4 4 3 6 11};
  n=sum(obs);
@@ -8,6 +7,6 @@ proc iml;
  *constant matrix - J(nrow,ncol,value);
  p=j(1, ncol_obs, 1/ncol_obs);   
  np=n*p;
- print obs, n, ncol_obs, p, np;
+ print obs n ncol_obs p np;
 quit;
 

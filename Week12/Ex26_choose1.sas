@@ -1,4 +1,4 @@
-*Ex26_Choose1.sas;
+*Ex26_Choose1.sas (Part 1);
 proc iml;
 id = {1,2,3,4,5};
 quiz1= {12,18,13,9,7};
@@ -7,7 +7,7 @@ r_quiz1=choose(makeup>quiz1, makeup, quiz1);
 print  id quiz1 makeup r_quiz1;
 quit;
 
-*Ex26_Choose1.sas;
+*Ex26_Choose1.sas (Part 2);
 *Acknowledgements: Xia Kesan SAS-L;
 proc iml;
  faulty = {15   12   13,    

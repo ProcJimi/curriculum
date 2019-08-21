@@ -1,6 +1,6 @@
 *Ex28_store_matrix.sas;
 OPTIONS FORMCHAR="|----|+|---+=|-/\<>*";
-%LET Path=C:\Users\Pradip Muhuri\SASClassGWU\TopicsByWeek\Week12;
+%LET Path=C:\SASCourse\Week12;
 libname imlin "&Path";
 PROC IML;
 reset deflib=imlin;

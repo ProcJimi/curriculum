@@ -7,7 +7,7 @@ a = {11 22 33,
 create data_from_matrix 
    from a[colname={"Test1" "Test2" "Test3"}];
 append from a;
-print ; 
+print a; 
 list all;
 close data_from_matrix; 
 quit;

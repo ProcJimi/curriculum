@@ -1,11 +1,11 @@
-*Ex41_Summary.sas;
+*Ex41_Summary.sas (Part 1);
 options nodate nonumber;
 proc iml;
 USE sashelp.heart;
  SUMMARY class {sex} var {AgeAtDeath  weight};
 CLOSE;
 quit;
-*Ex41_Summary.sas;
+*Ex41_Summary.sas (Part 2);
 proc iml;
 USE sashelp.heart;
 summary class {sex} var {AgeAtDeath weight} 

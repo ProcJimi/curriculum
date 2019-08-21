@@ -1,5 +1,5 @@
 *Ex3_matrix_subtraction.sas;
-ods graphics off; ods html close; ods listing;
+ods graphics off; 
 options nodate nonumber;
 proc iml;
     M1 = {1 2 3,4 5 6, 7 8 9} ;  *3 X 3 matrix; 

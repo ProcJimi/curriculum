@@ -1,4 +1,4 @@
-* Ex32_LOC.sas;
+* Ex32_LOC.sas (Part 1);
 proc iml;
  sort Sashelp.demographics out=Sorted_countries 
     by descending pop;
@@ -20,7 +20,7 @@ proc iml;
    mean_world_pop2 [format=comma15.],
    mean_world_pop3 [format=comma15.];
  quit;
-
+* Ex32_LOC.sas (Part 2);
 proc iml;
  use sashelp.demographics;
  read all var {name pop};
@@ -29,7 +29,7 @@ proc iml;
           /pop[loc(name='CHINA')]-1;
  print pop_India_over_china[format=percent7.2];
  quit;
-
+* Ex32_LOC.sas (Part 3);
  proc iml;
   use sashelp.demographics;
  read all var {pop}  
