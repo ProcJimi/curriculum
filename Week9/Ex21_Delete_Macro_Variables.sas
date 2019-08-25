@@ -1,5 +1,24 @@
 *Ex21_Delete_Macro_Variables.sas;
 options SYMBOLGEN nodate nonumber;
+
+
+* Code obtanied from John Simon (SAS Blog);
+ods html close;
+%macro deleteALL;
+ options nonotes;
+ %local vars;
+ proc sql noprint;
+        select name into: vars separated by ' '
+           from dictionary.macros
+                 where scope='GLOBAL' 
+   and not name contains 'SYS_SQL_IP_';
+   quit;
+    %symdel &vars;
+    options notes;
+     %put NOTE: Macro variables deleted.;
+ %mend deleteALL;
+ %put _user_;
+
 * Create macro variables;
 %let mvar1=var_name1;
 %let mvar2=var_value2;

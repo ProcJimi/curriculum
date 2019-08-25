@@ -1,4 +1,4 @@
-*Ex2_BQUOTE_NRBQUOTE.sas;
+*Ex2_BQUOTE_NRBQUOTE.sas (Part 1);
 options symbolgen;
 data test;
   store="Kids'Corner";
@@ -10,7 +10,7 @@ run;
 %MEND BQ;
 %BQ   
 
-*Ex2_BQUOTE_NRBQUOTE.sas;
+*Ex2_BQUOTE_NRBQUOTE.sas (Part 2);
 %MACRO BQ_x;
   %LOCAL state;
   data _null_;
@@ -22,6 +22,6 @@ run;
 %put &State;
 %MEND BQ_x;
 %BQ_x 
-
+options nosymbolgen;
 
 

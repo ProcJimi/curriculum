@@ -18,6 +18,5 @@ option symbolgen;
   %one
   %two
   %put &Year_outside &Year_inside_one; 
-  %put &Year_inside_one;
 %mend last;
 %last

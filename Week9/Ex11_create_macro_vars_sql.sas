@@ -1,4 +1,4 @@
-*Ex11_one_multiple_mvars_sql.sas;
+*Ex11_one_multiple_mvars_sql.sas (Part 1);
 proc sql noprint;
  select count(*)
         INTO :nobs
@@ -7,7 +7,7 @@ quit;
 %put Number of Observations = %SYSFUNC(LEFT(&nobs));
 run;
 
-*Ex11_one_multiple_mvars_sql.sas;
+*Ex11_one_multiple_mvars_sql.sas (Part 2);
 Options nosymbolgen;
 proc sql noprint;
  select distinct make
@@ -16,7 +16,7 @@ proc sql noprint;
 quit;
 %put List of Values of Car Make (Unique) : &makes;
 
-*Ex11_one_multiple_mvars_sql.sas;
+*Ex11_one_multiple_mvars_sql.sas (Part 3);
 %let Put_title = List of Values into a Series of Macro Variables;
 proc sql noprint;
  select distinct make
@@ -33,7 +33,7 @@ quit;
 %reveal
 
 *More examples;
-
+*Ex11_one_multiple_mvars_sql.sas (Part 4);
 *Create a macro variable containing a single value that equals the
 number of distinct value of a DATA step variable;
 
@@ -43,6 +43,7 @@ proc sql;
  quit;
  %put &sex_value;
 
+*Ex11_one_multiple_mvars_sql.sas (Part 5);
 
  *Create multiple macro variables, each containing a distinct 
   value of a DATA step variable;

@@ -1,4 +1,4 @@
-*Ex14_VList_HList.sas;
+*Ex14_VList_HList.sas (Part 1);
 options nodate nonumber symbolgen;
 %macro VList;
 %local ds1 ds2 ds3 j;
@@ -8,20 +8,20 @@ options nodate nonumber symbolgen;
 %let dscount = 3;
 %do j = 1 %to &dscount;
   title1 "%upcase(sashelp.&&ds&j)";
-  proc print data=sashelp.&&ds&j (obs=5) noobs;
+  proc print data=sashelp.&&ds&j (obs=3) noobs;
   run;
 %end;
 %mend VList;
 %VList
 
-*Ex14_VList_HList.sas;
+*Ex14_VList_HList.sas (Part 2);
 options nodate nonumber symbolgen;
 %macro HList;
   %local dslist j;
   %let dslist = class revhub2 iris;
   %do j =1 %to %sysfunc(countw(&dslist));
 	 title1 "sashelp.%scan(&dslist,&j)";
-	 proc print data= sashelp.%scan(&dslist, &j)(obs=5) noobs;
+	 proc print data= sashelp.%scan(&dslist, &j)(obs=3) noobs;
 	 run;
   %end;
 %mend HList;

@@ -1,4 +1,4 @@
-*Ex16_posi_key_para_macro.sas;
+*Ex16_posi_key_para_macro.sas (Part 1);
 options obs=5;
 %macro printit(dsn);
   proc print data=&dsn;
@@ -7,7 +7,7 @@ options obs=5;
 %mend printit;
 %printit (sashelp.class)
 
-*Ex16_posi_key_para_macro.sas;
+*Ex16_posi_key_para_macro.sas (Part 2);
 %MACRO printdata(dsn, num=);
   PROC PRINT DATA=&dsn (obs=&num) noobs;
 RUN;
