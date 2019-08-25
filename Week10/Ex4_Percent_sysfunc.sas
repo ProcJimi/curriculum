@@ -26,26 +26,37 @@ run;
 %put Note: &=mvar1  &=mvar2 ;
 %put Note: %sysfunc(cats(&mvar1,*, %sysfunc(tranwrd(&mvar1,C_, P_))));
 
-%put %sysfunc(intnx(month,%sysfunc(today()),1),monname3.);
-%put %sysfunc(intnx(month,%sysfunc(today()),-1,s),year.);
-%put %sysfunc(intnx(year,%sysfunc(today()),2),year.);
-
-
-%let x13=%sysfunc(intnx(month,%sysfunc(today()),1));
-%let x14=%sysfunc(putn(%eval(&x13-1),year.));
-%put &x13 &x14;
-
 
 %let stat=weight;
+%put &=stat;
+
 %let vars=age sex;
-%let xvars=age, sex;
-%let yvars="age", "sex";
+%put &=vars;
+
 %let nv=%sysfunc(countw(&vars));
-%let xnv=%sysfunc(countw(&xvars),%str(,));
-%let ynv=%sysfunc(countw(&yvars),%str(,));
-%put &=stat &=vars &=nv 
-     &=xvars &=xnv 
-     &=yvars &=ynv;
+%put &=nv;
+
+
+%let xvars=age, sex;
+%put &=xvars;
+%let xnv=%sysfunc(countw(%quote(&xvars)));
+%put &=xnv;
+
+%let yvars="age", "sex";
+%put &=yvars;
+%let ynv=%sysfunc(countw(%quote(&yvars)),%str(,));
+%put  &=ynv;
+
+* Code by KurtBremser;
+%let arrete = 20170630 ; 
+%let date_arr = %sysfunc(mdy(%substr(&arrete,5,2),%substr(&arrete,7,2),%substr(&arrete,1,4)));
+
+%put &date_arr ; 
+
+%let date_hr = %sysfunc(intnx(month, &date_arr, - 3  ,e), ddmmyy10.);
+
+%put  &date_hr ;
+
 
 
 /*
@@ -71,13 +82,6 @@ run;
 
  Data work.Created_%sysfunc(today(),date9.);
   set sashelp.class;
-run;
-
-
-Data work.Created_&sysday
-     work.&sysday._Created
-     work.Created_By_%sysfunc(left(%SCAN(&sysuserid, 2)));
-    set sashelp.class;
 run;
 
 

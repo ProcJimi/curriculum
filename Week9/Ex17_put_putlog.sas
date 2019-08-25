@@ -1,6 +1,6 @@
 *Ex17_put_putlog.sas;
 /*Use the PUTLOG statement to write informational 
-message (includding the debugging message) to the SAS log.  
+message (including the debugging message) to the SAS log.  
 Use the PUT statement to write to an external file that is
 specified in the FILE statement. */
 
@@ -18,8 +18,8 @@ Washington, DC, 20052
 Phone: 202-994-6356 | Fax: 202-994-6917
 ;;;;
 
-*Use the PUTLOG or PUT statement to write to the SAS log; 
-PUTLOG, PUT and FILE statements;
+/*Use the PUTLOG or PUT statement to write to the SAS log; 
+PUTLOG, PUT and FILE statements;*/
 data _null_;
   input;
    putlog _INFILE_ ;
