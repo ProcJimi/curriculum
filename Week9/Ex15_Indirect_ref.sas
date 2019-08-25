@@ -49,3 +49,10 @@ run;
 %end;
 %mend test;
 %test;
+
+options symbolgen;
+%let data = class;
+%let class = students; 
+%put Note: %nrstr(&data) resolves to: &data;
+%put Note: %nrstr(&&data) resolves to: &&data;
+%put Note: %nrstr(&&&data) resolves to: &&&data;
