@@ -175,6 +175,9 @@ function](https://blogs.sas.com/content/iml/2017/06/07/ifn-function-versus-if-th
 
 Functions
 
+[Fifteen Functions to Supercharge Your SAS® Code by Joshua M. Horstman. WUSS,
+2017](https://www.lexjansen.com/wuss/2017/92_Final_Paper_PDF.pdf)
+
 [Working with Character
 Data](https://www.mwsug.org/proceedings/2014/SA/MWSUG-2014-SA06.pdf)
 
@@ -977,6 +980,10 @@ SAS® and Python: The Perfect Partners in Crime
 
 [SAS vs. Python - How Do They Compare (SESUG,
 2017)](http://www.scsug.org/wp-content/uploads/2017/10/db55.pdf)
+
+[Machine learning with SASPy: Exploring and preparing your data (part 1) Blogs,
+Sep 9,
+2019](https://blogs.sas.com/content/sgf/2019/09/09/machine-learning-with-saspy-exploring-and-preparing-your-data-part-1/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+TheSasTrainingPost+%28The+SAS+Learning+Post+-%3e+SAS+Users%29)
 
 Jupyter Notebook
 
