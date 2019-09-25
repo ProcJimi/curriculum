@@ -8,7 +8,6 @@ proc http
 run;
 
 
-
 *** Task 3: Unzip the SAS transport data file into the work folder;
 filename inzip zip "c:\Data\h197gssp.zip" ;
 filename sit "C:\Users\pmuhuri\downloads\h197g.ssp" ;
