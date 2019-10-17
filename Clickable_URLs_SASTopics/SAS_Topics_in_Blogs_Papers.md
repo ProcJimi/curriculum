@@ -628,6 +628,17 @@ Programmer](http://support.sas.com/resources/papers/proceedings11/272-2011.pdf)
 
 Macro Facility
 
+[Passing comma-delimited values into SAS macros and macro functions
+(blogs.sas.com - Leonid Batkhan - July 17,
+2019)](https://blogs.sas.com/content/sgf/2019/07/17/passing-comma-delimited-values-into-sas-macros-and-macro-functions/)
+
+[Quote confusion: How do quotes and macro work together? By Marty Hultgren
+(Blogs - Dec 21,
+2015)](https://blogs.sas.com/content/sastraining/2015/12/21/quote-confusion-how-do-quotes-and-macro-work-together/)
+
+[Macro Topics (Blogs by various authors,
+2011-2018)](https://blogs.sas.com/content/tag/macro/)
+
 [Surviving the SAS® Macro Jungle by Using Your Own Programming Toolkit
 (PharmaSUG,
 2018)](http://support.sas.com/resources/papers/387699_macro-programming-tools.pdf)
