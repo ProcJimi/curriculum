@@ -26,18 +26,17 @@ data test;
   set SASHELP.class;
   weight_ratio=weight/"&average_wgt";
  run;
- title1 " Program dated &sysdate9";
+ title " Program dated &sysdate9";
  proc print data=test2; run;
- title1;
+ title;
 
- *Ex1_Motivation_for_macro_variables (Part 5);
- *The following nonmacro code works; 
+
  data test2;
  if _n_ = 1 then  set stats;
  set SASHELP.class;
  weight_ratio=weight/average_wgt;
  run;
- title1 'Nonmacro code using two SET statements';
+ title 'Nonmacro code using two SET statements';
  proc print data=test2; run;
- title1;
+ title;
 

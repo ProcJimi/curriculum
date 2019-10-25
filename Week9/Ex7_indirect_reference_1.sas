@@ -1,4 +1,5 @@
 *Ex7_indirect_reference_1.sas;
+%macro ref;
 Options symbolgen;
 %LET disease1=cvd; 
 %LET disease2=cancer;
@@ -6,8 +7,7 @@ Options symbolgen;
 %LET disease4=hbp;
 %LET disease5=diabetes;
 %LET last_element=5;
-%macro ref;
-   %DO i = 1 %TO &last_element;
+  %DO i = 1 %TO &last_element;
      %put  &&disease&i; 
    %END; 
 %mend ref;
