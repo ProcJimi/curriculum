@@ -18,4 +18,3 @@ proc print data=all_yrs noobs split='*';
 label year= 'Survey Year'
       exp= 'Mean expenses*for treatment*on influenza*per person per year';
 run;
-

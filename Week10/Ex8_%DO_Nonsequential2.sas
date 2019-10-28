@@ -12,4 +12,5 @@ options nocenter nodate nonumber symbolgen;
 	  run;
 	  %end;                                                                                            
 %mend loop;                                            
-%loop(%str(sashelp.class|sashelp.cars|sashelp.retail))
+%loop(%str(sashelp.class|sashelp.iris|sashelp.retail))
+

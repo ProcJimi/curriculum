@@ -1,7 +1,7 @@
 *Ex7_%DO_Nonsequential1.sas;
 options nonumber nocenter nodate symbolgen;
 %LET list = %str(sashelp.class| 
-                 sashelp.cars| 
+                 sashelp.iris| 
                  sashelp.retail);
 /* Count # of values in the string */
 %LET count=%sysfunc(countw(&list, %STR(|))); 
