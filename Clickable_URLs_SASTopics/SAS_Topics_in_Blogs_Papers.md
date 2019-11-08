@@ -628,6 +628,9 @@ Programmer](http://support.sas.com/resources/papers/proceedings11/272-2011.pdf)
 
 Macro Facility
 
+[Underutilized Features in the SAS® Macro Language (Excellent
+article)](http://www.wiilsu.org/Hofhiuey832lpsd/Proceedings/Papers/Hurley%20-%20Underutilized%20Features%20in%20SAS%20Macro%20Language.pdf)
+
 [Passing comma-delimited values into SAS macros and macro functions
 (blogs.sas.com - Leonid Batkhan - July 17,
 2019)](https://blogs.sas.com/content/sgf/2019/07/17/passing-comma-delimited-values-into-sas-macros-and-macro-functions/)
@@ -776,6 +779,12 @@ Source](http://cinsug.org/uploads/3/6/2/9/36298586/winand_sas_and_open_source.pd
 [Calling Functions in the R
 Language](https://documentation.sas.com/?docsetId=imlug&docsetTarget=imlug_r_toc.htm&docsetVersion=14.3&locale=en)
 (SAS Documentation)
+
+Data Download from Websites
+
+[The ABCs of PROC
+HTTP](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3232-2019.pdf)
+(Henry, Joseph. 2013)
 
 Statistical Analyses
 
