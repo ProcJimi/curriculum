@@ -1,6 +1,7 @@
 
 OPTIONS nocenter nodate nonumber symbolgen;
 libname new 'C:\MEPS'  access=readonly;
+libname xnew 'C:\Data';
 proc datasets nolist kill; quit;
 
 %macro loops(file) / mindelimiter=',' minoperator;
@@ -8,8 +9,7 @@ proc datasets nolist kill; quit;
      %let xcount=%sysfunc(countw(&file, %STR(|))); /* Count the number of data sets*/
      %do i = 1 %to &xcount; /* Loop through the total # of data sets */   
 	     %let yr=%sysfunc(putn(%eval(&i-1),z2.)); /* Generate values from 00 to 15*/
-             proc sql;
-
+            data xnew.FY_&yr;
                set new.%scan(&file,&i,%str(|)) 
                   (keep= totexp: perwt:
 						%if %scan(&file,&i,%str(|)) in (h50, h60) %then %do;
