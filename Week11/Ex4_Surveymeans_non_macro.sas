@@ -1,26 +1,21 @@
 
-OPTIONS nocenter nodate nonumber symbolgen;
+OPTIONS nocenter nodate nonumber ;
 libname new 'C:\Data';
   
-%macro runit (first=, last=);
-%do yr=&first %to &last;
- title "MEPS, 20%sysfunc(putn(&yr,z2.))";
+ title "MEPS, 2015";
  ods graphics off;
  ods exclude statistics;
-          proc surveymeans data=new.FY_%sysfunc(putn(&yr,z2.)) nobs sumwgt mean stderr sum ;
+          proc surveymeans data=new.FY_15 nobs sumwgt mean stderr sum ;
           stratum varstr;
           cluster varpsu;
-          weight perwt%sysfunc(putn(&yr,z2.))f;
-          var  totexp%sysfunc(putn(&yr,z2.));
+          weight perwt15f;
+          var  totexp15;
           domain nmiss_exp('1') ;
-          ods output domain=_overall_%sysfunc(putn(&yr,z2.));
+          ods output domain=_overall_15;
           run;
-  %end ;
-%mend runit;
-%runit(first=00, last=15)
-*******;
-data new.overall_HD (drop= domainlabel varname);   
-  set  _overall: indsname=source;
+ *******;
+data overall_HD (drop= domainlabel varname);   
+  set  _overall_15 indsname=source;
   Year = cats('20',scan(source, -1, '_'));
 run;
 
@@ -32,9 +27,9 @@ proc format;
 run;
 title 'Health care expenditures for';
 title2 'civillian noninstitutionalized population,';
-title3 'United States, MEPS 2000-2015';
+title3 'United States, MEPS 2015';
 
-proc print data=new.overall_HD noobs label; 
+proc print data=overall_HD noobs label; 
 var year N mean sum ;
 label N= 'Number of sample persons'
       mean = 'Mean expenditure per person ($)'

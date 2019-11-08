@@ -1,8 +1,6 @@
 
 OPTIONS nocenter nodate nonumber symbolgen;
-libname pufmeps  'S:\CFACT\Shared\PUF SAS files\SAS V8' access=readonly;
-libname new 'U:\A_DataRequest';
-libname xnew 'U:\A_DataRequest\SDS';
+libname new 'C:\MEPS'  access=readonly;
 proc datasets nolist kill; quit;
 
 %macro loops(file) / mindelimiter=',' minoperator;
@@ -10,8 +8,9 @@ proc datasets nolist kill; quit;
      %let xcount=%sysfunc(countw(&file, %STR(|))); /* Count the number of data sets*/
      %do i = 1 %to &xcount; /* Loop through the total # of data sets */   
 	     %let yr=%sysfunc(putn(%eval(&i-1),z2.)); /* Generate values from 00 to 15*/
-             data xnew.FY_&yr;
-               set pufmeps.%scan(&file,&i,%str(|)) 
+             proc sql;
+
+               set new.%scan(&file,&i,%str(|)) 
                   (keep= totexp: perwt:
 						%if %scan(&file,&i,%str(|)) in (h50, h60) %then %do;
 						      varstr&yr varpsu&yr
