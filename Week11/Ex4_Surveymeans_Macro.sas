@@ -1,6 +1,6 @@
 
-OPTIONS nocenter nodate nonumber symbolgen;
-libname new 'C:\Data';
+OPTIONS center nodate nonumber symbolgen;
+libname new 'C:\MEPS';
   
 %macro runit (first=, last=);
 %do yr=&first %to &last;
@@ -31,15 +31,15 @@ proc format;
       1E12-<1000000000000000='0000.99 T' (prefix='$' mult=1E-010);
 run;
 title 'Health care expenditures for';
-title2 'civillian noninstitutionalized population,';
+title2 'the civillian noninstitutionalized population,';
 title3 'United States, MEPS 2000-2015';
-
 proc print data=new.overall_HD noobs label; 
-var year N mean sum ;
-label N= 'Number of sample persons'
-      mean = 'Mean expenditure per person ($)'
-
-sum= 'Total expenditures ($)';
-format mean dollar7. sum bigmoney.;
+var year N mean stderr sum stddev ;
+label N= 'Number of sampled persons'
+      mean = 'Mean HC expenditure per person'
+      stderr = 'SE'
+      sum= 'Total HC expenditures'
+	  stddev 'STD';
+format N comma9. mean stderr dollar7. sum stddev bigmoney.;
 run;
 

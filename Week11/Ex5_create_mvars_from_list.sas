@@ -1,4 +1,5 @@
-*Ex5_create_mvars_fronm_lIst.sas;
+*Ex5_create_mvars_from_list.sas;
+* You can use %BQUOTE() instead of %STR() below (line 5);
 %macro loops(list) ;
      %local xcount i yr FY_;                                             
      %let xcount=%sysfunc(countw(&list, %STR(|))); /* Count the number of data sets*/

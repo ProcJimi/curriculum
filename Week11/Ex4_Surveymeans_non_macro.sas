@@ -1,6 +1,6 @@
 
 OPTIONS nocenter nodate nonumber ;
-libname new 'C:\Data';
+libname new 'C:\MEPS';
   
  title "MEPS, 2015";
  ods graphics off;
@@ -35,6 +35,6 @@ label N= 'Number of sample persons'
       mean = 'Mean expenditure per person ($)'
 
 sum= 'Total expenditures ($)';
-format mean dollar7. sum bigmoney.;
+format n comma9. mean dollar7. sum bigmoney.;
 run;
 
