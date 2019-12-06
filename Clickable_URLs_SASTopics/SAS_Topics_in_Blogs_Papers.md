@@ -36,12 +36,14 @@ Expert](https://blogs.sas.com/content/sastraining/2019/01/22/interview-with-leon
 [Rhymes, mnemonics and tips in learning
 SAS](https://blogs.sas.com/content/sastraining/2013/02/26/rhymes-mnemonics-and-tips-in-learning-sas/)
 
+[Making your SAS code more readable, Cody, R. SAS Blogs. November,
+2019](https://blogs.sas.com/content/sgf/2019/11/06/making-your-sas-code-more-readable/)
+
 SAS University Edition
 
 [Helpful hints and a useful tip for SAS University
-Edition](https://blogs.sas.com/content/sastraining/2019/01/30/helpful-hints-and-a-useful-tip-for-sas-university-edition/)
-
-Base SAS Procedures
+Edition](https://blogs.sas.com/content/sastraining/2019/01/30/helpful-hints-and-a-useful-tip-for-sas-university-edition/)ase
+SAS Procedures
 
 [It’s All about the Base—Procedures (SGF,
 2019)](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3068-2019.pdf)
@@ -67,6 +69,9 @@ Statement](https://go.documentation.sas.com/?docsetId=lrcon&docsetTarget=n1w749t
 
 [Simplify data preparation using SAS data
 templates](https://blogs.sas.com/content/sgf/2019/01/09/simplify-data-preparation-using-sas-data-templates/)
+
+[How to create dummy variables using DATA
+step](https://blogs.sas.com/content/sastraining/2013/04/05/tell-me-about-those-pesky-class-variables-part-1-glm-and-reference-coding/)
 
 Extracting metadata from SAS datasets
 
@@ -324,6 +329,9 @@ right?](http://sems.sas.com/bess/get?id=386238.-1:-jskgr6kn:rzzb.1erfcbafrf0&RZN
 
 Array
 
+[A Beginners Guide to ARRAYs and DO Loops (Waller, J. 2019. SAS Global
+Forum.](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3115-2019.pdf)
+
 [Loop-Do-Loop Around Arrays](https://www.lexjansen.com/nesug/nesug05/pm/pm8.pdf)
 
 >   [Fun with Fancy Arrays](http://www2.sas.com/proceedings/sugi29/158-29.pdf)
@@ -384,6 +392,9 @@ Transpose"](http://www.sascommunity.org/sugi/SUGI95/Sugi-95-69%20Tilanus.pdf)
 data:](http://support.sas.com/resources/papers/proceedings13/082-2013.pdf)
 
 Combining Data
+
+[SET, MERGE and beyond. Telanus, EW. 2008. SAS Global Forum
+Paper.](https://support.sas.com/resources/papers/proceedings/pdfs/sgf2008/167-2008.pdf)
 
 >   [Many-to-Many Merges in the DATA
 >   Step](http://www2.sas.com/proceedings/forum2008/081-2008.pdf)
@@ -631,6 +642,9 @@ Macro Facility
 [Underutilized Features in the SAS® Macro Language (Excellent
 article)](http://www.wiilsu.org/Hofhiuey832lpsd/Proceedings/Papers/Hurley%20-%20Underutilized%20Features%20in%20SAS%20Macro%20Language.pdf)
 
+[No, it's not magic: De-mystifying the SAS® Macro Facility by Jaffe, JA. WUSS.
+2009](https://www.lexjansen.com/wuss/2009/tut/TUT-Jaffe.pdf)
+
 [Passing comma-delimited values into SAS macros and macro functions
 (blogs.sas.com - Leonid Batkhan - July 17,
 2019)](https://blogs.sas.com/content/sgf/2019/07/17/passing-comma-delimited-values-into-sas-macros-and-macro-functions/)
@@ -672,6 +686,17 @@ easy](https://blogs.sas.com/content/sgf/2014/08/15/macro-quoting-made-easy/)
 [Five Ways to Create Macro
 Variables](http://support.sas.com/resources/papers/proceedings17/1516-2017.pdf)
 (SAS Global Forum, 2017)
+
+[A Practical Guide to Macro Quoting and Working with Macro Variables by
+Militowski D. PhUse
+2017](https://www.phusewiki.org/docs/Conference%202017%20IS%20Papers/IS06.pdf)
+
+[Dequote me on that: Using the dequote function to add some friendliness to SAS
+macros by Hendrickx. PhUSE
+2014](https://www.lexjansen.com/phuse/2014/cc/CC02.pdf)
+
+[Macro Quoting: Which Function Should We Use? by Guo, P. PharmaSUG China
+2016](https://www.lexjansen.com/pharmasug-cn/2016/PS/PharmaSUG-China-2016-PS05.pdf)
 
 [To %Bquote or not to
 %Bquote?](http://support.sas.com/resources/papers/proceedings15/3268-2015.pdf)
@@ -951,6 +976,31 @@ SAS University Edition
 
 SASPy
 
+[Python-izing the SAS Programmer. By Mike Molter. PharmaSUG 2019 - Paper
+AP-212](https://www.pharmasug.org/proceedings/2019/AP/PharmaSUG-2019-AP-212.pdf)
+
+[Connecting to Datasets through Python and SAS® By Matise, J. MWSUG,
+2019](https://www.mwsug.org/proceedings/2019/AL/MWSUG-2019-AL-047.pdf)
+
+[Integrate Python with SAS® using SASPy for a Simpler, More Effective Script By
+Vickery J. SESUG Paper
+152-2019](https://www.lexjansen.com/sesug/2019/SESUG2019_Paper-152_Final_PDF.pdf)
+
+[A Complete Introduction to SASPy and Jupyter Notebooks. By Jason Phillips,
+2019](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3238-2019.pdf)
+
+[Everything is better with friends: Executing SAS® code in Python scripts with
+SASPy. By Lankham, I and Slaughter, M. WUSS.
+2019](https://proceedings.wuss.org/2019/142_Final_Paper_PDF.pdf)
+
+[Machine learning with SASPy: Exploring and preparing your data (part 1) Blogs,
+Sep 9,
+2019](https://blogs.sas.com/content/sgf/2019/09/09/machine-learning-with-saspy-exploring-and-preparing-your-data-part-1/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+TheSasTrainingPost+%28The+SAS+Learning+Post+-%3e+SAS+Users%29)
+
+[Machine learning with SASPy: Exploring and preparing your data (part 2), Sep
+27,
+2019](https://blogs.sas.com/content/sgf/2019/09/27/machine-learning-with-saspy-exploring-and-preparing-your-data-part-2/)
+
 [SAS® and Open Source: Two Integrated
 Worlds](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3415-2019.pdf)
 
@@ -961,15 +1011,7 @@ Notebooks](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proce
 [Deploying Models Using SAS® and Open Source (SGF,
 2019)](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3368-2019.pdf)
 
-[STEPPING UP YOUR SAS® GAME WITH JUPYTER NOTEBOOKS (SGF,
-2019)](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3262-2019.pdf)
-
-[Everything is better with friends: Executing SAS® code in Python scripts with
-SASPy (SGF,
-2019)](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3189-2019.pdf)
-
-[Why SAS Programmers Should Learn Python Too (PharmaSUG,
-2018)](https://www.pharmasug.org/proceedings/2018/AD/PharmaSUG-2018-AD12.pdf)
+Why SAS Programmers Should Learn Python Too (PharmaSUG, 2018)
 
 [Utilization of Python in clinical study by
 SASPy](https://www.lexjansen.com/phuse/2018/tt/TT10.pdf) (PhUSE Connect 2018)
@@ -1001,11 +1043,14 @@ SAS® and Python: The Perfect Partners in Crime
 [SAS vs. Python - How Do They Compare (SESUG,
 2017)](http://www.scsug.org/wp-content/uploads/2017/10/db55.pdf)
 
-[Machine learning with SASPy: Exploring and preparing your data (part 1) Blogs,
-Sep 9,
-2019](https://blogs.sas.com/content/sgf/2019/09/09/machine-learning-with-saspy-exploring-and-preparing-your-data-part-1/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+TheSasTrainingPost+%28The+SAS+Learning+Post+-%3e+SAS+Users%29)
-
 Jupyter Notebook
+
+[Teaching and Learning with
+Jupyter](https://jupyter4edu.github.io/jupyter-edu-book/getting-going.html),
+2019
+
+[STEPPING UP YOUR SAS® GAME WITH JUPYTER NOTEBOOKS by Hunter Glanz,
+2019](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3262-2019.pdf)
 
 [Revolutionizing Statistical Computing in
 SAS®](https://support.sas.com/resources/papers/proceedings17/0838-2017.pdf) with

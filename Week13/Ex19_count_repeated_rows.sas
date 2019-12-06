@@ -13,6 +13,8 @@ Thompson Jennifer Houston Texas
 Smith John Richmond Virginia
 Johnson Mary Miami Florida
 ;
+proc sort data=duplicates; by LastName FirstName City State;
+run;
 proc print data=Duplicates;
   title 'Sample Data for Counting Duplicates';
 run;
@@ -32,5 +34,9 @@ excludes the rows that have no duplicates
 Note: You must include all of the columns in your table 
 	  in the GROUP BY clause to find exact duplicates.
 */
+proc sort data=duplicates noduprec out=singles; 
+  by LastName FirstName City State;
+run;
 
+proc print data=singles; run;
 

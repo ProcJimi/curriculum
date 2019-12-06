@@ -9,7 +9,8 @@ Data work.Have(drop=i);                                                         
 /* count the values of 1 and 2 */                                                                                                       
   do i = 1 to 4;                                                                                                                        
     if test(i) = 1 then counter1+1;                                                                                                     
-    else if test(i) = 2 then counter2+1;                                                                                                
+    else if test(i) = 2 then counter2+1; 
+    counter1x=sum(of test[*]); 
   end;                                                                                                                                  
   datalines;                                                                                                                            
 1  0  1  2                                                                                                                              
