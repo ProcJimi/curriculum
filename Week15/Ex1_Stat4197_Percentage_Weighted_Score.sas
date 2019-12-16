@@ -2,8 +2,9 @@
 data Have;
 input id $ TEST1-TEST5 ASSIGNMENT1 MIDTERM FINAL;
 datalines;
-X1 80 70 90 100 100 99 80 86
-X2 65 40 75  55  90 96 80 54 
+X1 50 40 75 100 100 82 72 64
+X2 40 25 45 70 60 60 24 52
+X3 55 35 0 90 100 82 72 66
 ;
 data have2;
  set have;
