@@ -3,10 +3,15 @@ proc sql;
 select type, mean(invoice) as Mean_invoice_by_Type
              format=dollar8.
 from sashelp.cars
-group by type;
+group by type
+union all
+select 'Total',
+     mean(invoice) as Mean_invoice_by_Type
+             format=dollar8.
+from sashelp.cars;
 quit;
 
-proc means data=sashelp.cars;
+proc means data=sashelp.cars noprint;
   class type;
   var invoice;
   output out=mean_data1(drop=_type_) mean=;
@@ -87,5 +92,19 @@ columns type n invoice,(mean);
  define n / 'Count';
  define invoice / analysis f=dollar12.; 
  *define n  / analysis f=comma5.; 
+ rbreak after/summarize;
  run;
  
+ * Select car type in the top 1% based on the invoice price;
+
+ * Calculate the 99th percentile;
+proc summary data=sashelp.cars;
+var invoice;
+output out=pct p99=p99;
+run;
+* Filter invoice prices that are >= p99;
+proc sql ;
+select a.type, invoice
+    from sashelp.cars as a
+    where a.invoice >= (select p99 from pct);
+quit;
