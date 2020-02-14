@@ -17,3 +17,16 @@ title2 'BY statement added to PROC TRANSPOSE step';
 proc print data=long noobs; 
 run;
 
+data Long_x;
+set wide;
+array Tests[*] Test1-Test5;
+do _t = 1 to dim(Tests);
+  Test = tests[_t];
+  output;
+end;
+keep Student_id Test;
+run;
+title1 'Wide data transposed to long';
+title2 'Using the DATA step and ARRAY statement';
+proc print data=long_x noobs; 
+run;
