@@ -8,7 +8,7 @@ proc http
 run;
 
 
-*** Task 3: Unzip the SAS transport data file into the work folder;
+*** Task 2: Unzip the SAS transport data file into the work folder;
 filename inzip zip "c:\Data\h173ssp.zip" ;
 filename sit "C:\Users\pmuhuri\downloads\h173.ssp" ;
 data _null_;
@@ -20,10 +20,17 @@ return;
 eof: stop;
 run;
 
-*** Task 4: Create a SAS data set from the SAS transport file;
+*** Task 3: Create a SAS data set from the SAS transport file;
 
 libname test xport "C:\Users\pmuhuri\downloads\h173.ssp";
 libname myfolder "C:\Data";
 proc copy in=test out=Myfolder;
+run;
+
+proc contents data=myfolder.h173; 
+ods select variables;
+run;
+
+proc means data=myfolder.h173; 
 run;
 
