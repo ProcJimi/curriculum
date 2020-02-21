@@ -29,28 +29,28 @@ with keywordS: LOW, and HIGH.
 Title 'Format for numeric values';
 proc format;
   value numfmt
-           Low - <0  = "Nonresponse"
-		   0="Never"
-           1-5 = "Within past 5 years"
-           6-High = "More than 5 years ago"
-		   . ="Missing" ;
+           Low - <0  = "Nonresponse (exncluding missing values)"
+		   0         = "Never"
+           1-5       = "Within past 5 years"
+           6-High    = "More than 5 years ago"
+		   .         = "Missing" ;
    value $charfmt
-           Low-<'0'  = "Nonresponse"
-		   '0' = "Never"
-           '1'-'5' = "Within past 5 years"
-		   '6'-High = "More than 5 years ago" ; 
+           Low-<'0'  = "Nonresponse (including missing values)"
+		   '0'       = "Never"
+           '1'-'5'   = "Within past 5 years"
+		   '6'-High  = "More than 5 years ago" ; 
  run;
 data work.have;
 input id $ 1 Colonoscopy 3-4 c_Colonoscopy $6-7;
 datalines;
 A -1 -1 
-B  . 
+B   
 C 3   3
 D -9 -9
 F 3  3
 G 5  5
 H 6  6 
-I .   
+I    
 J 7  7
 ;
 proc freq data=work.have;

@@ -1,10 +1,11 @@
 
-*Ex2_Nested_Formats.sas;
+Ex2_Nested_Formats.sas;
 proc format;
 value date_grp_fmt
-  low-'03jul1995'd = 'Pre July 4th 1995'
+  low-'03jul1995'd          = 'Pre July 4th 1995'
   '04jul1995'd-'31jul1995'd = [mmddyy8.]
-  '01aug1995'd-high = 'Aug 1-Dec 31, 1995';
+  '01aug1995'd-high         = 'Aug 1-Dec 31, 1995';
+  
 value sales_fmt
   low-<5000 = 'Less than $5,000'
   5000-9999 = '$5,000-<$10,000'
@@ -16,5 +17,4 @@ value sales_fmt
   format shipdate date_grp_fmt.
     sales93 sales_fmt.;
   run;
-
  

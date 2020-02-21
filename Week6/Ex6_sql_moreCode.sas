@@ -145,7 +145,7 @@ proc sql;
    order by mean_invoice_price desc;
 quit;
 
-** In the following code, the HAVING clause subsets groups based om the expression value.
+** In the following code, the HAVING clause subsets groups based on the expression value.
 Here we use a column alias to refer to a calculated value. and hence, use 
 the CALCULATED keyword with the alias to inform PROC SQL that 
 the value is calculated within the query (SAS Documentation);

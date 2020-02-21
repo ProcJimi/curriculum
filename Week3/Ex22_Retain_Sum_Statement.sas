@@ -1,23 +1,35 @@
 *Ex22_Retain_Sum_Statement.sas (Part 1);
+* Creating the accumulator variable using the SUM statement;
 DATA temp ;
-  INPUT month sales @@;
+  INPUT month sales;
       Total_sales+sales;
  FORMAT Sales Total_sales dollar8.;
   DATALINES;
-    1 4000 2 5000 3 . 4 5500 5 5000 
+    1 4000 
+    2 5000 
+    3 . 
+    4 5500 
+    5 5000 
     ;
 title1 'Ex22_Retain_Sum_Statement.sas (Part 1)';
 title2 'SUM Statement';
 PROC PRINT noobs; run;
 
 *Ex22_Retain_Sum_Statement.sas (Part 2);
+* Creating the accumulator variable using the REATIN and 
+  ASSIGNMENT statements;
+
 DATA temp1 ;
    RETAIN Total_sales 0;
    FORMAT Sales Total_sales dollar8.;
-   INPUT month sales @@;
+   INPUT month sales ;
     Total_sales= sum(Total_sales, sales);
    DATALINES;
-   1 4000 2 5000 3 . 4 5500 5 5000 
+   1 4000 
+   2 5000 
+   3 . 
+   4 5500 
+   5 5000 
    ;
 title1 'Ex22_Retain_Sum_Statement.sas (Part 2)';
 title2 'RETAIN Statement';
@@ -33,13 +45,21 @@ To reset the sum variable to a different number,
 you need to use the RETAIN statement.  
 */
 *Ex22_Retain_Sum_Statement.sas (Part 3);
+
+* Creating the accumulator variable using RETAIN and 
+  SUM statements;
+
 DATA temp;
    RETAIN Total_sales 1000;
-   INPUT month sales @@;
+   INPUT month sales;
     Total_sales+sales;
    FORMAT Sales Total_sales dollar8.;
    DATALINES;
-   1 4000 2 5000 3 . 4 5500 5 5000 
+   1 4000 
+   2 5000 
+   3 . 
+   4 5500 
+   5 5000 
    ;
 title1 'Ex22_Retain_Sum_Statement.sas (Part 3)';
 title2 'RETAIN and SUM Statements';
