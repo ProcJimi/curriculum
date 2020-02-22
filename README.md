@@ -46,7 +46,7 @@ For a high-level overview, topics covered in the course are listed under differe
   * Accumulating sub-totals and totals using DATA step statements
   * Using SAS functions to manipulate numeric and character data
   * Using SAS functions to convert character data to numeric and vice versa
-  * Processing data using ARRAYS and DO LOOPS
+  * Processing data using `ARRAYS` and `DO LOOPS`
   * Combining data vertically and horzintally
   * Aggregating/summarizing data
         
