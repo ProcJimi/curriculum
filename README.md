@@ -53,10 +53,10 @@ For a high-level overview, topics covered in the course are listed under differe
         
 ### <font color='green'>2.2 Base SAS Procedures</font>  
   * Utility procedures
-    (e.g., PROC APPEND, PROC DATASETS, PROC FORMAT, PROC SORT, PROC SQL, 
-             PROC TRANSPOSE, PROC SURVEYSELECT)
+    (e.g., `PROC APPEND`, `PROC DATASETS`, `PROC FORMAT`, `PROC SORT`, `PROC SQL`, 
+             `PROC TRANSPOSE`, `PROC SURVEYSELECT`)
              
-  * Getting information about SAS data sets (PROC CONTENTS)
+  * Getting information about SAS data sets (`PROC CONTENTS`)
   * Performining pre-analysis tasks 
             
   * Statistical-Esque Procedures
