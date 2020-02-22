@@ -60,8 +60,8 @@ For a high-level overview, topics covered in the course are listed under differe
   * Performining pre-analysis tasks 
             
   * Statistical-Esque Procedures
-     (e.g., PROC FREQ, PROC MEANS, PROC UNIVARIATE, PROC SUMMARY, PROC SQL, 
-              PROC REPORT, PROC TABULATE, PROC SURVEYMEANS, PROC SURVEYFREQ) 
+     (e.g., `PROC FREQ`, `PROC MEANS`, `PROC UNIVARIATE`, `PROC SUMMARY`, `PROC SQL`, 
+              `PROC REPORT`, `PROC TABULATE`, `PROC SURVEYMEANS`, `PROC SURVEYFREQ`) 
                   
       * Obtaining counts and percentages, and performing statistical tests    
           
