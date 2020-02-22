@@ -32,7 +32,7 @@ For a high-level overview, topics covered in the course are listed under differe
 
 ## <font color='green'>2. Overview of Base SAS</font>    
 ### <font color='green'>2.1 DATA Step</font>
-(e.g., INPUT and INFILE (and/or DATALINES), SET, MERGE, and UPDATE Statements)
+(e.g., `INPUT` and `INFILE` (and/or `DATALINES`), `SET`, `MERGE`, and `UPDATE` Statements)
 
   * [Overview of DATA Step Processing](https://go.documentation.sas.com/?docsetId=lrcon&docsetTarget=p08a4x7h9mkwqvn16jg3xqwfxful.htm&docsetVersion=9.4&locale=en) 
   * [Processing a DATA Step: A Walk-through](https://go.documentation.sas.com/?docsetId=lrcon&docsetTarget=p18vk5t9cwort1n18g7zg2no6tr4.htm&docsetVersion=9.4&locale=en)
