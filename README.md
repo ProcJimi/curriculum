@@ -32,7 +32,7 @@ For a high-level overview, topics covered in the course are listed under differe
 
 ## <font color='green'>2. Overview of Base SAS</font>    
 ### <font color='green'>2.1 DATA Step</font>
-(e.g., INPUT and INFILE (and/or DATALINES), SET, MERGE, and UPDATE Statements)
+(e.g., `INPUT` and `INFILE` (and/or `DATALINES`), `SET`, `MERGE`, and `UPDATE` Statements)
 
   * [Overview of DATA Step Processing](https://go.documentation.sas.com/?docsetId=lrcon&docsetTarget=p08a4x7h9mkwqvn16jg3xqwfxful.htm&docsetVersion=9.4&locale=en) 
   * [Processing a DATA Step: A Walk-through](https://go.documentation.sas.com/?docsetId=lrcon&docsetTarget=p18vk5t9cwort1n18g7zg2no6tr4.htm&docsetVersion=9.4&locale=en)
@@ -46,22 +46,22 @@ For a high-level overview, topics covered in the course are listed under differe
   * Accumulating sub-totals and totals using DATA step statements
   * Using SAS functions to manipulate numeric and character data
   * Using SAS functions to convert character data to numeric and vice versa
-  * Processing data using ARRAYS and DO LOOPS
+  * Processing data using `ARRAYS` and `DO LOOPS`
   * Combining data vertically and horzintally
   * Aggregating/summarizing data
         
         
 ### <font color='green'>2.2 Base SAS Procedures</font>  
   * Utility procedures
-    (e.g., PROC APPEND, PROC DATASETS, PROC FORMAT, PROC SORT, PROC SQL, 
-             PROC TRANSPOSE, PROC SURVEYSELECT)
+    (e.g., `PROC APPEND`, `PROC DATASETS`, `PROC FORMAT`, `PROC SORT`, `PROC SQL`, 
+             `PROC TRANSPOSE`, `PROC SURVEYSELECT`)
              
-  * Getting information about SAS data sets (PROC CONTENTS)
+  * Getting information about SAS data sets (`PROC CONTENTS`)
   * Performining pre-analysis tasks 
             
   * Statistical-Esque Procedures
-     (e.g., PROC FREQ, PROC MEANS, PROC UNIVARIATE, PROC SUMMARY, PROC SQL, 
-              PROC REPORT, PROC TABULATE, PROC SURVEYMEANS, PROC SURVEYFREQ) 
+     (e.g., `PROC FREQ`, `PROC MEANS`, `PROC UNIVARIATE`, `PROC SUMMARY`, `PROC SQL`, 
+              `PROC REPORT`, `PROC TABULATE`, `PROC SURVEYMEANS`, `PROC SURVEYFREQ`) 
                   
       * Obtaining counts and percentages, and performing statistical tests    
           
