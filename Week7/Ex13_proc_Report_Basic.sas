@@ -1,8 +1,9 @@
+
 *Ex13_proc_Report_Basic.sas;
 OPTIONS ps=59 ls=72 nonumber nodate ;
 DATA work.HC_spend1;
  INFILE DATALINES DLM=',' MISSOVER;
- INPUT service_type: & $ 32. amount_in_B;
+ INPUT service_type: $ 32. amount_in_B;
  DATALINES;
  Hospital Care, 882.3
  Physician and Clinical Services, 556.0

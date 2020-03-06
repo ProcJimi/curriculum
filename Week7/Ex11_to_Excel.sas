@@ -13,7 +13,6 @@ run;
 ods csv file= 'C:\SASCourse\Week7\class3.csv ';
 proc print data = sashelp.class noobs;
 run;
-ods trace on; /*telling SAS no to print the results in the output window*/
 ods csv close;
 
 filename csv 'C:\SASCourse\Week7\class4.csv';
