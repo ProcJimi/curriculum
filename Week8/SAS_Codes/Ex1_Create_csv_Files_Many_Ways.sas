@@ -17,8 +17,7 @@ data _null_;
   select memname
    into :memlist separated by ' '
    from dictionary.members
-     where libname = 'SASHELP' and memtype = 'DATA'
-       and memname like '%' ;
+     where libname = 'SASHELP' and memtype = 'DATA' ;
   quit ;
 %put &memlist;
 
