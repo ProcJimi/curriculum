@@ -131,6 +131,7 @@ For a high-level overview, topics covered in the course are listed under differe
 ## <font color= 'red'>7. SAS Viya</font>  
  * Data Management: Self-Service Data Preparation on SAS Viya
  * Programming: Programming for SAS Viya
+ * Cloud Analytic Services Language (CASL) - [Read this artcle - What ia CASL?] (https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3040-2019.pdf)
  * Visualization: SAS Visual Analytics 1 for SAS Viya - Basics
  * Analytics: SAS Visual Analytics on SAS Viya: Interatcive Model Building
  * Analytics: SAS Visual Data Mining and Machine Learning on SAS Viya: Interactive Machine Learning
