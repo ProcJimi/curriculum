@@ -68,7 +68,7 @@ to the revision/expansion of the original program.
 	 %PUT %SYSFUNC(PATHNAME(WORK));
      %PUT %SYSFUNC(PATHNAME(MyFolder)); 
 	 proc copy in=test out=Myfolder; run;
-%mend;
+%mend load_meps;
 %load_meps(h50)
 
 %load_meps(h60) %load_meps(h70) %load_meps(h79) 

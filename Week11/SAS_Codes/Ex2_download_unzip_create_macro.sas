@@ -31,7 +31,7 @@ run;
 
 *** Task 3: Create a SAS data set from the SAS transport file;
 
-libname test xport "C:\Users\pmuhuri\downloads\&file..ssp";
+libname test xport "C:\xtra\&file..ssp";
 libname myfolder "C:\Data";
 proc copy in=test out=Myfolder;
 run;
