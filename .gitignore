@@ -1,5 +1,7 @@
 *.docx
 *.zip
+~$t_commands_mine.md
+media
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
 
