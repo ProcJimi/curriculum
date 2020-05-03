@@ -20,9 +20,8 @@ git push -u origin master
 
 If you're using Windows it will not let you create a file without a filename in
 Windows Explorer. It will give you the error "*You must type a file name*" if
-you try to rename a text file as **.gitignore**  
-  
-  
+you try to rename a text file as **.gitignore**
+
 To get around this I used the following steps
 
 1.  Create the text file gitignore.txt
@@ -53,23 +52,33 @@ git rm -r --cached \<folder\>
 
 The removal of the file from the head revision will happen on the next commit.
 
-**A Quick Guide for Making a Git Ignore (.gitignore) File for Jupyter Notebook Based Projects/Repositories**
-============================================================================================================
+How to undo git rm
+------------------
+
+Executing git rm is not a permanent update. The command will update the staging
+index and the working directory. These changes will not be persisted until a new
+commit is created and the changes are added to the commit history. This means
+that the changes here can be "undone" using common Git commands.
+
+git reset HEAD
+
+A Quick Guide for Making a Git Ignore (.gitignore) File for Jupyter Notebook Based Projects/Repositories
+========================================================================================================
 
 <https://medium.com/@cruble/a-quick-guide-for-making-a-git-ignore-gitignore-e645d70676b2>
 
 \# Clone the GithHub repository  
-C:\\ git vs github \\\> git clone http://github.com/abc/rps.git  
-  
+C:\\ git vs github \\\> git clone http://github.com/abc/rps.git
+
 \# Create a new file  
-C:\\ git vs github \\\> touch what-is-git-and-github.txt  
-  
+C:\\ git vs github \\\> touch what-is-git-and-github.txt
+
 \# Add the file to the Git tracking mechanism  
-C:\\ git vs github \\\> git add what-is-git-and-github.txt  
-  
+C:\\ git vs github \\\> git add what-is-git-and-github.txt
+
 \# Commit the changes to Git locally  
-C:\\ git vs github \\\> git commit -m "Git and GitHub tutorial"  
-  
+C:\\ git vs github \\\> git commit -m "Git and GitHub tutorial"
+
 \# Push local Git commits back to the GitHub server  
 C:\\ git vs github \\\> git push origin
 

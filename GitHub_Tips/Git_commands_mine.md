@@ -61,6 +61,14 @@ Now run the commit command:
 
 Now you are good to go for making a push and making changes online.
 
+How to remove the file from the Git repository **and the local drive?**
+
+PMuhuri\@CCASTA-HWJP0G2 MINGW64 /c/AnalyzeMEPS (master)
+
+\$ git rm Untitled.ipynb
+
+rm 'Untitled.ipynb'
+
 [How to remove a file from the remote repo
 (GitHub)?](https://stackoverflow.com/questions/2047465/how-can-i-delete-a-file-from-git-repo)
 
@@ -84,15 +92,11 @@ PMuhuri\@CCASTA-HWJP0G2 MINGW64 /c/sascourse (master)
 
 \$ git push --set-upstream origin SASCourse_rev
 
-PMuhuri\@CCASTA-HWJP0G2 MINGW64 /c/sascourse (master)
+Remove a file from index with git rm --cached before commit
+===========================================================
 
-\$ cd week10
-
-PMuhuri\@CCASTA-HWJP0G2 MINGW64 /c/sascourse/week10 (master)
-
-\$ git rm -r --cached .ipynb_checkpoints
-
-rm 'Week10/.ipynb_checkpoints/Macro Questions-checkpoint.ipynb'
+The cached option specifies that the removal should happen only on the staging
+index. Working directory files will be left alone.
 
 ![](media/888f271433ea585e8f91e3b252c3a248.png)
 
